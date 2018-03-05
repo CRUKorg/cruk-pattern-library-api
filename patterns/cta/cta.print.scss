@@ -1,12 +1,13 @@
 $font-size: 14px !default;
+$font-weight-heavy: 700 !default;
 $brand-primary: #2e008b !default;
-$icon-print: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1792 1792\"><path d=\"M885 634h-47v233H186V634h-46C46 634 0 588 0 494V215h186V-64h652v279h186v279c0 94-46 140-139 140zM279 774h466V634H279v140zM745 29H279v279h466V29zm186 419H93v46h838v-46zM326 262h372v-47H326v47zm0-93h233v-47H326v47z\"/></svg>") !default;
+$icon-print: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M885 634h-47v233H186V634h-46C46 634 0 588 0 494V215h186V-64h652v279h186v279c0 94-46 140-139 140zM279 774h466V634H279v140zM745 29H279v279h466V29zm186 419H93v46h838v-46zM326 262h372v-47H326v47zm0-93h233v-47H326v47z"/></svg>') !default;
 
 .cr-cta--print {
   color: $brand-primary;
   display: block;
   font-size: $font-size;
-  font-weight: bold;
+  font-weight: $font-weight-heavy;
   padding-left: 20px;
 
   &::before {

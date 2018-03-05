@@ -1,4 +1,5 @@
 var path = require('path');
+var StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -6,6 +7,12 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: 'main.bundle.js'
   },
+  plugins: [
+    new StyleLintPlugin({
+      context: './patterns',
+      syntax: 'scss',
+    }),
+  ],
   module: {
     rules: [
       {
