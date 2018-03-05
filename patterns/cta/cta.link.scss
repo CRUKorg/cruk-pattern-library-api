@@ -1,0 +1,18 @@
+$font-size: 14px !default;
+$brand-secondary: #ec008c !default;
+$icon-chevron-right: url("data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1792 1792\"><path d=\"M633 413L209-11a36 36 0 0 0-52 0L62 84a36 36 0 0 0 0 51l304 304L62 742a36 36 0 0 0 0 52l95 95c14 14 37 14 52 0l424-424c14-15 14-38 0-52z\"/></svg>") !default;
+
+.cr-cta--link {
+  color: $brand-secondary;
+  display: block;
+  font-size: $font-size;
+  font-weight: bold;
+  padding-left: 20px;
+
+  &::before {
+    background-image: $icon-chevron-right;
+    padding-right: 8px;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+}
