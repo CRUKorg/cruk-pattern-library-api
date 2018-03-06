@@ -2,10 +2,13 @@ var path = require('path');
 var StyleLintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './main.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: 'main.bundle.js'
+    path: path.resolve(__dirname, 'lib'),
+    filename: 'patterns.js',
+    library: 'patterns',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   plugins: [
     new StyleLintPlugin({
@@ -35,6 +38,5 @@ module.exports = {
   },
   node: {
     fs: 'empty'
-  },
-  devtool: 'source-map'
+  }
 };

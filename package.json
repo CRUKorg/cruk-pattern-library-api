@@ -2,11 +2,11 @@
   "name": "cruk-pattern-library-api",
   "version": "1.0.0",
   "description": "CRUK Pattern Library API",
-  "main": "index.js",
+  "main": "lib/patterns.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "babel": "babel --presets env src/index.js -o build/main.bundle.js",
-    "webpack": "webpack"
+    "build": "WEBPACK_ENV=build webpack",
+    "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch"
   },
   "repository": {
     "type": "git",
