@@ -33,5 +33,8 @@ module.exports = {
   stats: {
     colors: true
   },
+  node: {
+    fs: 'empty'
+  },
   devtool: 'source-map'
 };
