@@ -5,8 +5,8 @@
   "main": "lib/patterns.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "WEBPACK_ENV=build webpack",
-    "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch"
+    "build": "node ./scripts/processPatterns.js && webpack --mode production",
+    "dev": "node ./scripts/processPatterns.js && webpack --progress --colors --watch --mode development"
   },
   "repository": {
     "type": "git",
