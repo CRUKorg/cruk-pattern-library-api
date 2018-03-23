@@ -1,10 +1,12 @@
 $font-size: 16px !default;
 $font-weight-heavy: 700 !default;
+$WHITE: white !default;
 $brand-secondary: #ec008c !default;
 
 .cr-cta--primary {
   text-decoration: none;
   display: inline-block;
+  color: $WHITE;
   background-color: $brand-secondary;
   border: 1px solid $brand-secondary;
   font-size: $font-size;

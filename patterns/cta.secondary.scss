@@ -1,7 +1,7 @@
 $font-size: 14px !default;
 $font-weight-heavy: 700 !default;
 $brand-secondary: #ec008c !default;
-$icon-chevron-right: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path d="M633 413L209-11a36 36 0 0 0-52 0L62 84a36 36 0 0 0 0 51l304 304L62 742a36 36 0 0 0 0 52l95 95c14 14 37 14 52 0l424-424c14-15 14-38 0-52z"/></svg>') !default;
+$icon-chevron-right: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792"><path fill=" #ec008c" d="M633 413L209-11a36 36 0 0 0-52 0L62 84a36 36 0 0 0 0 51l304 304L62 742a36 36 0 0 0 0 52l95 95c14 14 37 14 52 0l424-424c14-15 14-38 0-52z"/></svg>') !default;
 
 .cr-cta--secondary {
   color: $brand-secondary;
@@ -9,11 +9,15 @@ $icon-chevron-right: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/
   font-size: $font-size;
   font-weight: $font-weight-heavy;
   padding-left: 20px;
+  text-decoration: none;
 
   &::before {
-    background-image: $icon-chevron-right;
-    padding-right: 8px;
-    text-decoration: none;
+    background: $icon-chevron-right no-repeat;
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    float: left;
     vertical-align: middle;
   }
 }
