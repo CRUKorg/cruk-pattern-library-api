@@ -1,8 +1,8 @@
-@import './svg';
+//
+//== Mixins (If you don't need attributes, consider placeholders instead).
+//
 
-/**
- * Common mixins.
- */
+@import './svg';
 
 @mixin text-replace($imageURL) {
   background: url($imageURL) no-repeat;

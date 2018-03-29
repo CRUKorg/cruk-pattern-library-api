@@ -1,6 +1,6 @@
-/**
- * General functions for manipulating strings, etc.
- */
+//
+//== General functions for manipulating strings, etc.
+//
 
 @function str-replace($string, $search, $replace: '') {
   $index: str-index($string, $search);
