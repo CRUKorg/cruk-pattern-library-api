@@ -1,0 +1,95 @@
+//== Colors
+
+//## Color constants.
+// See: https://davidwalsh.name/sass-color-variables-dont-suck
+// Color names come from http://chir.ag/projects/name-that-color/.
+// No grayscale here please. Instead, use the gray variants below.
+// Sort alphabetically.
+//
+$BLACK:            black;
+$BURNT_SIENNA:     #ef5350;
+$CERULEAN:         #00b6ed;
+$HOLLYWOOD_CERISE: #ec008c;
+$KINGFISHER_DAISY: #2e008b;
+$PALE_ROSE:        #ffe0ec;
+$SCAMPI:           #6c5c99;
+$SUNGLOW:          #fdc02f;
+$SUSHI:            #8bc34a;
+$TROPICAL_BLUE:    #bfe8f6;
+$WHITE:            white;
+
+//## Grayscale.
+$gray-2: darken($WHITE, 2%);      // #fafafa
+$gray-5:  darken($WHITE, 5%);     // #f2f2f2
+$gray-10: darken($WHITE, 10.98%); // #E3E3E3
+$gray-20: darken($WHITE, 21.57%); // #C8C8C8
+$gray-30: darken($WHITE, 30%);    // #b3b3b3
+$gray-40: darken($WHITE, 40%);    // #999
+$gray-50: darken($WHITE, 50%);    // #808080
+$gray-60: darken($WHITE, 60%);    // #666        // Lightest allowed text on white.
+$gray-70: darken($WHITE, 70%);    // #4d4d4d
+$gray-80: darken($WHITE, 80%);    // #333
+$gray-90: darken($WHITE, 90%);    // #191919
+
+// Brand Colors.
+$brand-primary:         $KINGFISHER_DAISY;
+$brand-secondary:       $HOLLYWOOD_CERISE;
+$brand-secondary-light: lighten(desaturate(adjust-hue($brand-secondary, 0.0377), 14.4796), 10.3922);
+$brand-tertiary:        $CERULEAN;
+$brand-gray-dark:       $gray-60;
+$brand-gray-light:      $gray-10;
+$brand-gray-medium:     $gray-20;
+$brand-gray-vlight:     $gray-2;
+
+$brand-danger:          $BURNT_SIENNA;
+$brand-warning:         $SUNGLOW;
+$brand-success:         $SUSHI;
+$brand-info:            $CERULEAN;
+
+$body-bg:               $WHITE;
+$text-color:            $gray-80;
+$text-color-error:      $brand-danger;
+$link-color:            $brand-primary;
+$link-hover-color:      $brand-secondary;
+$disabled-gray:         $gray-40;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+// @TODO: Implement proper vertical rhythm.
+// See: https://github.com/primer/primer/blob/master/modules/primer-support/lib/variables/layout.scss
+
+$font-family-sans-serif:  Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+$font-family-monospace:   Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+$font-family-museo:       'MuseoSans', 'museo-sans-rounded', 'Museo Sans', $font-family-sans-serif;
+
+$fonts-directory: '../fonts' !default;
+
+$font-family-base:        $font-family-sans-serif;
+$font-family-headings:    $font-family-museo;
+
+$font-weight-heavy: 700;
+$font-weight-medium: 500;
+$font-weight-light: 300;
+$font-weight-vlight: 100;
+
+$font-size-base:  14px;
+$font-size:       1rem;
+$font-size-large: 1.143rem;
+$font-size-small: 0.8571rem;
+$font-size-h1:    2rem;
+$font-size-h2:    1.4rem;
+$font-size-h3:    1.4rem;
+$font-size-h4:    1.16rem;
+$font-size-h5:    0.93rem;
+$font-size-h6:    0.93rem;
+
+$line-height-base: 1.428571429;
+
+// Icons.
+@import 'svg';
+$icon-chevron-right: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 593 922"><path fill="currentColor" d="M582 435L158 11a36 36 0 0 0-52 0l-95 95a36 36 0 0 0 0 51l304 304L11 764a36 36 0 0 0 0 52l95 95c14 14 37 14 52 0l424-424c14-15 14-38 0-52z"/></svg>');
+$icon-cross: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><path fill="#030104" d="M28 22l-8-8 8-8-6-6-8 8-8-8-6 6 8 8-8 8 6 6 8-8 8 8z"/></svg>');
+$icon-plus: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 1792 1792" width="1792" height="1792"><path fill="currentColor" d="M1613 569v192q0 40-28 68t-68 28h-416v416q0 40-28 68t-68 28H813q-40 0-68-28t-28-68V857H301q-40 0-68-28t-28-68V569q0-40 28-68t68-28h416V57q0-40 28-68t68-28h192q40 0 68 28t28 68v416h416q40 0 68 28t28 68z"/></svg>');
+$icon-print: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="1792" height="1792"><path fill="currentColor" d="M885 634h-47v233H186V634h-46C46 634 0 588 0 494V215h186V-64h652v279h186v279c0 94-46 140-139 140zM279 774h466V634H279v140zM745 29H279v279h466V29zm186 419H93v46h838v-46zM326 262h372v-47H326v47zm0-93h233v-47H326v47z"/></svg>');

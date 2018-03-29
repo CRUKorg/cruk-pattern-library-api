@@ -1,0 +1,21 @@
+@import 'base';
+
+@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_9_0", 900, normal);
+
+@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_0_0", 700, normal);
+
+@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_1_0", 300, normal);
+
+@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_3_0", 500, normal);
+
+@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_4_0", 100, normal);
+
+@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_2_0", 900, italic);
+
+@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_5_0", 700, italic);
+
+@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_8_0", 500, italic);
+
+@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_6_0", 300, italic);
+
+@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_7_0", 100, italic);

@@ -7,11 +7,17 @@ Methods to return markup / styles / scripts for reusable patterns.
 import Patterns from 'cruk-pattern-library-api';
 
 const markup = Patterns.getPatternMarkup('cta.link', { text: 'Do it!', href: 'https://www.example.com/' });
-const style = Patterns.getPatternStyle('cta.link');
 const script = Patterns.getPatternScript('cta.link');
 ```
 
 Methods should return an empty string if there is no content.
+
+To import scss, use the following in your styles.scss file:
+
+```
+$fonts-directory: '~cruk-pattern-library-api/fonts';
+@import "~cruk-pattern-library-api/scss/all.scss";
+```
 
 ## Adding patterns
 

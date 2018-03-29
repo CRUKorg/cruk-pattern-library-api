@@ -1,0 +1,28 @@
+/**
+ * SVGs need to be encoded for IE.
+ */
+
+@import 'tools';
+
+$encoding-reference: (
+  ('<','%3C'),
+  ('>','%3E'),
+  ('"','\''),
+  ('#','%23'),
+  ('&','%26')
+);
+
+@function ie-char-replace($string) {
+  @each $char, $encoded in $encoding-reference {
+    $string: str-replace($string, $char, $encoded);
+  }
+  @return $string;
+}
+
+@function svg-encode($svg) {
+  @return 'data:image/svg+xml,' + ie-char-replace($svg);
+}
+
+@function svg-fill-replace($svg, $color) {
+  @return str-replace($svg, "fill='currentColor'", "fill='"+ie-char-replace(''+$color)+"'");
+}

@@ -12,10 +12,14 @@ export default {
     const template = patternsData.html[patternName];
     return processTemplate(template, patternConfig);
   },
-  getPatternStyle: (patternName) => {
-    return patternsData.scss[patternName];
-  },
   getPatternScript: (patternName) => {
     return patternsData.js[patternName];
+  },
+  getPatternList: () => {
+    return [
+      'cta.primary',
+      'cta.print',
+      'cta.secondary',
+    ];
   },
 };
