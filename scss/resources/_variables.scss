@@ -1,4 +1,6 @@
+//
 //== Colors
+//
 
 //## Color constants.
 // See: https://davidwalsh.name/sass-color-variables-dont-suck
@@ -53,12 +55,11 @@ $link-color:            $brand-primary;
 $link-hover-color:      $brand-secondary;
 $disabled-gray:         $gray-40;
 
+//
 //== Typography
 //
-//## Font, line-height, and color for body text, headings, and more.
 
-// @TODO: Implement proper vertical rhythm.
-// See: https://github.com/primer/primer/blob/master/modules/primer-support/lib/variables/layout.scss
+//## Font, line-height, and color for body text, headings, and more.
 
 $font-family-sans-serif:  Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 $font-family-monospace:   Consolas, 'Liberation Mono', Menlo, Courier, monospace;
@@ -85,9 +86,31 @@ $font-size-h4:    1.16rem;
 $font-size-h5:    0.93rem;
 $font-size-h6:    0.93rem;
 
-$line-height-base: 1.428571429;
+//
+//== Rhythm
+//
 
-// Icons.
+// @TODO: Implement proper vertical rhythm.
+// See: https://github.com/primer/primer/blob/master/modules/primer-support/lib/variables/layout.scss
+
+$line-height-base: 1.428571429;
+$rhythm-vertical-base: 10px;
+$rhythm-horizontal-base: 10px;
+
+//
+//== Breakpoints
+//
+
+$breakpoint-a: 680px;
+$breakpoint-b: 960px;
+
+//
+//== Icons
+//
+
+// Compress SVGs.
+// Ensure every <path> contains fill="currentColor"
+
 @import 'svg';
 $icon-chevron-right: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 593 922"><path fill="currentColor" d="M582 435L158 11a36 36 0 0 0-52 0l-95 95a36 36 0 0 0 0 51l304 304L11 764a36 36 0 0 0 0 52l95 95c14 14 37 14 52 0l424-424c14-15 14-38 0-52z"/></svg>');
 $icon-cross: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><path fill="#030104" d="M28 22l-8-8 8-8-6-6-8 8-8-8-6 6 8 8-8 8 6 6 8-8 8 8z"/></svg>');

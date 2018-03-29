@@ -1,0 +1,55 @@
+@import '../scss/base';
+
+.cr-layout-row {
+  margin-bottom: $rhythm-horizontal-base;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: $rhythm-vertical-base;
+  grid-row-gap: $rhythm-horizontal-base;
+}
+
+// At the first breakpoint, apply the grid.
+@media screen and (min-width: $breakpoint-a) {
+  .cr-layout-row--100 {
+    grid-template-columns: 1fr;
+  }
+
+  .cr-layout-row--50-50 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cr-layout-row--66-33 {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .cr-layout-row--33-66 {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .cr-layout-row--33-33-33 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .cr-layout-row--25-50-25 {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  .cr-layout-row--25-25-25-25 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+// At the second breakpoint, constrain the width.
+@media screen and (min-width: $breakpoint-b) {
+  .cr-layout-row {
+    margin-left: auto;
+    margin-right: auto;
+    width: $breakpoint-b;
+  }
+
+  .cr-layout-row--full,
+  .cr-layout-cell .cr-layout-row {
+    width: auto;
+  }
+}
