@@ -31,7 +31,7 @@
     "selector-attribute-quotes": "always",
     "selector-combinator-space-after": "always",
     "selector-max-attribute": 0,
-    "selector-max-combinators": 0,
+    "selector-max-combinators": 2,
     "selector-max-id": 0,
     "selector-max-type": 0,
     "selector-max-universal": 0,

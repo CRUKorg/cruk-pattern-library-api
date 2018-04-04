@@ -10,7 +10,7 @@ const processTemplate = (source, data) => {
 export default {
   getPatternMarkup: (patternName, patternConfig) => {
     const template = patternsData.html[patternName];
-    return processTemplate(template, patternConfig);
+    return processTemplate(template, patternConfig).trim();
   },
   getPatternScript: (patternName) => {
     return patternsData.js[patternName];

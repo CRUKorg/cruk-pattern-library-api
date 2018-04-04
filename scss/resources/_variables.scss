@@ -65,7 +65,7 @@ $font-family-sans-serif:  Arial, Calibri, nimbussansl, liberationsans, freesans,
 $font-family-monospace:   Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 $font-family-museo:       'MuseoSans', 'museo-sans-rounded', 'Museo Sans', $font-family-sans-serif;
 
-$fonts-directory: '../fonts' !default;
+$fonts-directory: '~cruk-pattern-library-api/fonts' !default;
 
 $font-family-base:        $font-family-sans-serif;
 $font-family-headings:    $font-family-museo;
@@ -101,6 +101,7 @@ $rhythm-horizontal-base: 10px;
 //== Breakpoints
 //
 
+$min-supported-width: 320px;
 $breakpoint-a: 680px;
 $breakpoint-b: 960px;
 
