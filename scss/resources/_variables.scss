@@ -102,8 +102,12 @@ $rhythm-horizontal-base: 10px;
 //
 
 $min-supported-width: 320px;
-$breakpoint-a: 680px;
-$breakpoint-b: 960px;
+$content-width-constraint: 980px;
+
+$breakpoint-a: 576px;
+$breakpoint-b: 768px;
+$breakpoint-c: 992px;
+$breakpoint-d: 1200px;
 
 //
 //== Icons

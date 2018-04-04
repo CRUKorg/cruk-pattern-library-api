@@ -1,16 +1,24 @@
 @import '../scss/base';
 
 .cr-layout__row {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: $rhythm-horizontal-base;
   width: auto;
+  max-width: $content-width-constraint;
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: $rhythm-vertical-base;
   grid-row-gap: $rhythm-horizontal-base;
 }
 
-// At the first breakpoint, apply the grid.
-@media screen and (min-width: $breakpoint-a) {
+.cr-layout__row--full,
+.cr-layout__cell .cr-layout__row {
+  max-width: none;
+}
+
+// On screens that are big enough, apply the grid.
+@media screen and (min-width: $breakpoint-b) {
 
   .cr-layout__row--100 {
     grid-template-columns: 1fr;
@@ -38,20 +46,5 @@
 
   .cr-layout__row--25-25-25-25 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-// At the second breakpoint, constrain the width.
-@media screen and (min-width: $breakpoint-b) {
-
-  .cr-layout__row {
-    margin-left: auto;
-    margin-right: auto;
-    width: $breakpoint-b;
-  }
-
-  .cr-layout__row--full,
-  .cr-layout__cell .cr-layout__row {
-    width: auto;
   }
 }
