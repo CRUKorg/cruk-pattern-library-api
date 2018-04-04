@@ -101,13 +101,13 @@ $rhythm-horizontal-base: 10px;
 //== Breakpoints
 //
 
-$min-supported-width: 320px;
-$content-width-constraint: 980px;
+$min-supported-width: 320px !default;
+$content-width-constraint: 980px !default;
 
-$breakpoint-a: 576px;
-$breakpoint-b: 768px;
-$breakpoint-c: 992px;
-$breakpoint-d: 1200px;
+$breakpoint-a: 576px !default;
+$breakpoint-b: 768px !default;
+$breakpoint-c: 992px !default;
+$breakpoint-d: 1200px !default;
 
 //
 //== Icons

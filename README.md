@@ -15,7 +15,6 @@ Methods should return an empty string if there is no content.
 To import scss, use the following in your styles.scss file:
 
 ```
-$fonts-directory: '~cruk-pattern-library-api/fonts';
 @import "~cruk-pattern-library-api/scss/all.scss";
 ```
 
