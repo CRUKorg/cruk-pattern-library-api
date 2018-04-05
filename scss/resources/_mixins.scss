@@ -1,8 +1,14 @@
+//
+//== Mixins (If you don't need attributes, consider placeholders instead).
+//
+
 @import './svg';
 
-/**
- * Common mixins.
- */
+@mixin evil-ie {
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    @content;
+  }
+}
 
 @mixin text-replace($imageURL) {
   background: url($imageURL) no-repeat;
