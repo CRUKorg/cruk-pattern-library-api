@@ -48,3 +48,37 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
+
+//
+// == IE Backwards Compatibility
+//
+
+@include evil-ie {
+  @media screen and (max-width: $breakpoint-b) {
+
+    .cr-layout__row {
+      display: block;
+    }
+  }
+  @media screen and (min-width: $breakpoint-b) {
+
+    .cr-layout__cell {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .cr-layout__cell:nth-of-type( 2 ) {
+      -ms-grid-column: 2;
+    }
+
+    .cr-layout__cell:nth-of-type( 3 ) {
+      -ms-grid-column: 3;
+    }
+
+    .cr-layout__cell:nth-of-type( 4 ) {
+      -ms-grid-column: 4;
+    }
+  }
+}
+
+
