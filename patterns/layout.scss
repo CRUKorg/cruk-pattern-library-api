@@ -1,11 +1,9 @@
 @import '../scss/base';
 
 .cr-layout__row {
-  margin-left: auto;
-  margin-right: auto;
+  @extend %constrain-width;
   margin-bottom: $rhythm-horizontal-base;
   width: auto;
-  max-width: $content-width-constraint;
   display: grid;
   grid-template-columns: 1fr;
   grid-column-gap: $rhythm-vertical-base;

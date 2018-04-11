@@ -35,6 +35,7 @@ $gray-90: darken($WHITE, 90%);    // #191919
 
 // Brand Colors.
 $brand-primary:         $KINGFISHER_DAISY;
+$brand-primary-light:   lighten(desaturate(adjust-hue($brand-primary, -4), 75.10), 20.78);
 $brand-secondary:       $HOLLYWOOD_CERISE;
 $brand-secondary-light: lighten(desaturate(adjust-hue($brand-secondary, 0.0377), 14.4796), 10.3922);
 $brand-tertiary:        $CERULEAN;
@@ -121,3 +122,4 @@ $icon-chevron-right: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox
 $icon-cross: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><path fill="#030104" d="M28 22l-8-8 8-8-6-6-8 8-8-8-6 6 8 8-8 8 6 6 8-8 8 8z"/></svg>');
 $icon-plus: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 1792 1792" width="1792" height="1792"><path fill="currentColor" d="M1613 569v192q0 40-28 68t-68 28h-416v416q0 40-28 68t-68 28H813q-40 0-68-28t-28-68V857H301q-40 0-68-28t-28-68V569q0-40 28-68t68-28h416V57q0-40 28-68t68-28h192q40 0 68 28t28 68v416h416q40 0 68 28t28 68z"/></svg>');
 $icon-print: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="1792" height="1792"><path fill="currentColor" d="M885 634h-47v233H186V634h-46C46 634 0 588 0 494V215h186V-64h652v279h186v279c0 94-46 140-139 140zM279 774h466V634H279v140zM745 29H279v279h466V29zm186 419H93v46h838v-46zM326 262h372v-47H326v47zm0-93h233v-47H326v47z"/></svg>');
+$icon-phone: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="512" height="512"><path fill="currentColor" d="M487 493l24-104c3-11-3-23-14-27l-112-48c-9-4-21-2-28 7l-49 60c-77-36-141-99-177-177l60-49c9-7 11-19 7-28L150 15c-5-11-16-17-27-14L19 25C8 27 0 37 0 48c0 256 207 464 464 464 11 0 21-8 23-19z"/></svg>');

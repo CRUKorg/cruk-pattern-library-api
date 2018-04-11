@@ -4,8 +4,20 @@
 
 %clearfix {
   &:after {
+    clear: both;
     content: "";
     display: table;
-    clear: both;
   }
+}
+
+%constrain-width {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $content-width-constraint;
+}
+
+%text-hide {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
 }
