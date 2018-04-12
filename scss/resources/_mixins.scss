@@ -19,6 +19,22 @@
 
 @mixin icon-background($icon, $color: #000) {
   background: url(svg-fill-replace($icon, $color)) no-repeat;
+  background-size: contain;
+}
+
+@mixin icon-beside($icon, $color: #000, $side: left, $size: 10px) {
+  position: relative;
+  &::before {
+    @include icon-background($icon, $color);
+    $side: 0;
+    content: '';
+    display: block;
+    height: $size;
+    margin: -($size/2) ($size/2);
+    position: absolute;
+    top: 50%;
+    width: $size;
+  }
 }
 
 @mixin font-face($font-family, $file-path, $font-weight, $font-style) {
