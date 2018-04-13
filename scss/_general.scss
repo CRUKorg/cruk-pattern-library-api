@@ -7,6 +7,11 @@ html {
 }
 
 body {
+  background-color: $WHITE;
+  color: $text-color;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
   min-width: $min-supported-width;
 }
 
@@ -38,4 +43,22 @@ h5 {
 h6 {
   font-family: $font-family-headings;
   font-size: $font-size-h6;
+}
+
+a {
+  color: $brand-primary;
+  text-decoration: none;
+
+  &:visited { color: $brand-primary-light; }
+  &:hover { color: $brand-secondary; }
+}
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+input {
+  color: $text-color;
+  font-size: 1rem;
+  font-family: $font-family-base;
 }

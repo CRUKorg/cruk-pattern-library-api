@@ -1,0 +1,5 @@
+@import '../scss/base';
+
+.cr-page-title {
+  @extend %constrain-width;
+}

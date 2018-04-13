@@ -1,0 +1,25 @@
+@import '../scss/base';
+
+.cr-simple-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($WHITE, 0.7);
+  z-index: 999;
+}
+
+.cr-simple-loader__spinner-item {
+  width: 40px;
+  height: 40px;
+}
+
+.cr-simple-loader__spinner {
+  width: 200px;
+  position: absolute;
+  margin-top: -20px;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+}
