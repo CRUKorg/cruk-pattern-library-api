@@ -10,8 +10,7 @@
   grid-row-gap: $rhythm-horizontal-base;
 }
 
-.cr-layout__row--full,
-.cr-layout__cell .cr-layout__row {
+.cr-layout__row.cr-layout__row--fullbleed {
   max-width: none;
 }
 
