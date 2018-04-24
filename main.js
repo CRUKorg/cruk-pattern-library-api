@@ -20,6 +20,7 @@ export default {
       'cta.primary',
       'cta.print',
       'cta.secondary',
+      'divider',
       'header.page-title',
       'layout',
       'loader',
