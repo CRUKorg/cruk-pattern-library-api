@@ -66,7 +66,7 @@ $font-family-sans-serif:  Arial, Calibri, nimbussansl, liberationsans, freesans,
 $font-family-monospace:   Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 $font-family-museo:       'MuseoSans', 'museo-sans-rounded', 'Museo Sans', $font-family-sans-serif;
 
-$fonts-directory: '~cruk-pattern-library-api/fonts' !default;
+$fonts-directory: 'https://d1sdcpcj8z0g1h.cloudfront.net/fonts' !default;
 
 $font-family-base:        $font-family-sans-serif;
 $font-family-headings:    $font-family-museo;
@@ -120,6 +120,7 @@ $breakpoint-d: 1200px !default;
 @import 'svg';
 $icon-chevron-right: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 593 922"><path fill="currentColor" d="M582 435L158 11a36 36 0 0 0-52 0l-95 95a36 36 0 0 0 0 51l304 304L11 764a36 36 0 0 0 0 52l95 95c14 14 37 14 52 0l424-424c14-15 14-38 0-52z"/></svg>');
 $icon-cross: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28"><path fill="currentColor" d="M28 22l-8-8 8-8-6-6-8 8-8-8-6 6 8 8-8 8 6 6 8-8 8 8z"/></svg>');
+$icon-minus: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 910 217" width="910" height="217"><path fill="currentColor" d="M0 91.65v33.33C0 185 31.69 216.7 91.65 216.7h726.87c59.96.06 91.7-31.69 91.7-91.7V91.64C910.22 31.63 878.48 0 818.57 0H91.65C31.69 0 0 31.69 0 91.65z"/></svg>');
 $icon-phone: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"  width="512" height="512"><path fill="currentColor" d="M487 493l24-104c3-11-3-23-14-27l-112-48c-9-4-21-2-28 7l-49 60c-77-36-141-99-177-177l60-49c9-7 11-19 7-28L150 15c-5-11-16-17-27-14L19 25C8 27 0 37 0 48c0 256 207 464 464 464 11 0 21-8 23-19z"/></svg>');
 $icon-plus: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -256 1792 1792" width="1792" height="1792"><path fill="currentColor" d="M1613 569v192q0 40-28 68t-68 28h-416v416q0 40-28 68t-68 28H813q-40 0-68-28t-28-68V857H301q-40 0-68-28t-28-68V569q0-40 28-68t68-28h416V57q0-40 28-68t68-28h192q40 0 68 28t28 68v416h416q40 0 68 28t28 68z"/></svg>');
 $icon-print: svg-encode('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1792 1792" width="1792" height="1792"><path fill="currentColor" d="M885 634h-47v233H186V634h-46C46 634 0 588 0 494V215h186V-64h652v279h186v279c0 94-46 140-139 140zM279 774h466V634H279v140zM745 29H279v279h466V29zm186 419H93v46h838v-46zM326 262h372v-47H326v47zm0-93h233v-47H326v47z"/></svg>');

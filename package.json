@@ -1,6 +1,6 @@
 {
   "name": "cruk-pattern-library-api",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "CRUK Pattern Library API",
   "main": "lib/patterns.js",
   "scripts": {
@@ -23,19 +23,37 @@
     "pattern-library"
   ],
   "dependencies": {
-    "handlebars": "^4.0.11"
+    "handlebars": "^4.0.11",
+    "prop-types": "^15.6.1",
+    "react": "^16.3.2",
+    "react-slide-toggle": "^0.1.12"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.3",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-block-scoping": "^6.26.0",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-plugin-transform-es2015-object-super": "^6.24.1",
+    "babel-plugin-transform-proto-to-assign": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-airbnb": "^2.1.1",
     "babel-preset-env": "^1.6.1",
-    "eslint": "^4.18.2",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
     "eslint-loader": "^2.0.0",
-    "stylelint": "^9.1.1",
-    "stylelint-config-recommended-scss": "^3.1.0",
-    "stylelint-scss": "^2.4.0",
-    "stylelint-webpack-plugin": "^0.10.3",
-    "webpack": "^4.1.0",
-    "webpack-cli": "^2.0.10"
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jasmine": "^2.9.3",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "stylelint": "^9.2.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-scss": "^2.5.0",
+    "stylelint-webpack-plugin": "^0.10.4",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3"
   }
 }

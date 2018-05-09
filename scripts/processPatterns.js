@@ -37,7 +37,9 @@ function readPatternFiles(dirname) {
       if (err) return reject(err);
       if (!content || typeof content !== 'string') return reject(`Could not process file ${filename}`);
       const patternInfo = inspectFilename(filename);
-      patternsData[patternInfo.extension][patternInfo.patternName] = content;
+      if (patternsData[patternInfo.extension]) {
+        patternsData[patternInfo.extension][patternInfo.patternName] = content;
+      }
       return resolve(true);
     });
   };

@@ -4,6 +4,11 @@
         "node": true
     },
     "extends": "eslint:recommended",
+    "parser": "babel-eslint",
+    "plugins": [
+        "react",
+        "jasmine"
+    ],
     "parserOptions": {
         "sourceType": "module"
     },

@@ -1,10 +1,15 @@
 import Handlebars from 'handlebars';
 import patternsData from './patternsData.build';
+import collapsible from './patterns/collapsible.jsx';
 
 const processTemplate = (source, data) => {
   // @TODO: Something something about precompilation being faster?
   const template = Handlebars.compile(source);
   return template(data);
+};
+
+export const PatternComponents = {
+  collapsible
 };
 
 export default {
@@ -17,6 +22,7 @@ export default {
   },
   getPatternList: () => {
     return [
+      'collapsible',
       'cta.primary',
       'cta.print',
       'cta.secondary',

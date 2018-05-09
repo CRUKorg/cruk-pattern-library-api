@@ -16,16 +16,29 @@ module.exports = {
       syntax: 'scss',
     }),
   ],
+  resolve: {
+    alias: {
+      react: path.resolve('./node_modules/react'),
+    },
+    extensions:['.js', '.jsx', '.webpack.js', '.web.js','*']
+  },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         use: [
           {
             loader: 'babel-loader',
-            options: {
-              presets: ['env']
+            query: {
+              plugins: [
+                'transform-class-properties',
+                'transform-es2015-object-super',
+                'transform-proto-to-assign',
+                'transform-es2015-block-scoping',
+                ['transform-es2015-classes', {'loose': true}]
+              ],
+              presets: ['react', 'env', 'stage-0']
             }
           },
           'eslint-loader'
