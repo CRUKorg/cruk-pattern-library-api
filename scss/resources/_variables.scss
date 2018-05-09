@@ -66,7 +66,7 @@ $font-family-sans-serif:  Arial, Calibri, nimbussansl, liberationsans, freesans,
 $font-family-monospace:   Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 $font-family-museo:       'MuseoSans', 'museo-sans-rounded', 'Museo Sans', $font-family-sans-serif;
 
-$fonts-directory: '~cruk-pattern-library-api/fonts' !default;
+$fonts-directory: 'https://d1sdcpcj8z0g1h.cloudfront.net/fonts' !default;
 
 $font-family-base:        $font-family-sans-serif;
 $font-family-headings:    $font-family-museo;
