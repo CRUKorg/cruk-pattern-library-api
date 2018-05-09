@@ -18,7 +18,7 @@
 }
 
 @mixin icon-background($icon, $color: #000) {
-  background: url(svg-fill-replace($icon, $color)) no-repeat;
+  background: url(svg-fill-replace($icon, $color)) no-repeat center center;
   background-size: contain;
 }
 

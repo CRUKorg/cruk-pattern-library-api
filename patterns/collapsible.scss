@@ -45,8 +45,4 @@
       @include icon-beside($icon-plus, $brand-secondary, left, $rhythm-horizontal-base * 2);
     }
   }
-
-  .cr-collapsible__content {
-    display: none;
-  }
 }
