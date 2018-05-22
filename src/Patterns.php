@@ -10,14 +10,14 @@ class Patterns {
   protected $twig;
 
   public function __construct() {
-    $twigLoader = new Twig_Loader_Filesystem('../patterns');
+    $twigLoader = new Twig_Loader_Filesystem(__DIR__.'/../patterns');
     $twigSettings = [
       'autoescape' => 'html',
     ];
     $this->twig = new Twig_Environment($twigLoader, $twigSettings);
   }
 
-  public function getMarkup(string $patternName, array $patternData): ?string {
+  public function getMarkup(string $patternName, array $patternData = []): ?string {
     return $this->twig->render($patternName . '.twig', $patternData);
   }
 
