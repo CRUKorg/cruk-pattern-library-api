@@ -3,6 +3,8 @@ Methods to return markup / styles / scripts for reusable patterns.
 
 ## Usage Examples
 
+@TODO: How do you load vanilla js snippets to go with the static markup returned? When not using JSX?
+
 ### PHP Usage
 
 composer.json
@@ -50,7 +52,7 @@ To import specific patterns only:
 @import "~cruk-pattern-library-api/patterns/cta.primary.scss";
 ```
 
-### JS Usage
+### JS Usage (return a string)
 
 package.json:
 
@@ -73,7 +75,7 @@ const markup = Patterns.getPatternMarkup('cta.primary', {
 
 getPatternMarkup should return an empty string if there is no content.
 
-### React Usage
+### React Usage (Return a JSX component)
 
 ```
 import React from 'react';

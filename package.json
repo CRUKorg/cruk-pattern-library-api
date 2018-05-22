@@ -23,7 +23,6 @@
     "pattern-library"
   ],
   "dependencies": {
-    "handlebars": "^4.0.11",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-slide-toggle": "^0.1.12",
