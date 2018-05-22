@@ -119,3 +119,4 @@ For example: `foo-pattern.twig`. Sub-patterns look like `type.variant.twig`.
 * Reduce the effort involved in adding new patterns
 * Add more global styles
 * Add all the missing patterns
+* Provide some way to document each pattern, including what arguments it accepts.
