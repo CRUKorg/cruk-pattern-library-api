@@ -1,10 +1,12 @@
 import Twig from 'twig';
 import patternsData from './patternsData.build';
-import collapsible from './patterns/collapsible.jsx';
 
-export const PatternComponents = {
-  collapsible
-};
+export {default as Collapsible} from './patterns/collapsible';
+export {default as CtaPrimary} from './patterns/cta.primary';
+export {default as CtaSecondary} from './patterns/cta.secondary';
+export {default as Divider} from './patterns/divider';
+export {default as HeaderPageTitle} from './patterns/header.page-title';
+export {default as Loader} from './patterns/loader';
 
 export default {
   getPatternMarkup: (patternName, patternConfig) => {
