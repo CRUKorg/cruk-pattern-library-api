@@ -6,7 +6,7 @@ const path = require('path');
 
 const patternsDir = './patterns';
 const patternsData = {
-  html: {},
+  twig: {},
   scss: {},
   js: {},
 };

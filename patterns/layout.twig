@@ -1,30 +1,30 @@
-{{#if isRoot}}
+{% if isRoot %}
     <div class="cr-layout">{{{contents}}}</div>
-{{/if}}
-{{#if isRow-full}}
+{% endif %}
+{% if isRow-full %}
     <div class="cr-layout__row cr-layout__row--full">{{{contents}}}</div>
-{{/if}}
-{{#if isRow-100}}
+{% endif %}
+{% if isRow-100 %}
     <div class="cr-layout__row cr-layout__row--100">{{{contents}}}</div>
-{{/if}}
-{{#if isRow-50-50}}
+{% endif %}
+{% if isRow-50-50 %}
     <div class="cr-layout__row cr-layout__row--50-50">{{{contents}}}</div>
-{{/if}}
-{{#if isRow-66-33}}
+{% endif %}
+{% if isRow-66-33 %}
     <div class="cr-layout__row cr-layout__row--66-33">{{{contents}}}</div>
-{{/if}}
-{{#if isRow-33-66}}
+{% endif %}
+{% if isRow-33-66 %}
     <div class="cr-layout__row cr-layout__row--33-66">{{{contents}}}</div>
-{{/if}}
-{{#if isRow-33-33-33}}
+{% endif %}
+{% if isRow-33-33-33 %}
     <div class="cr-layout__row cr-layout__row--33-33-33">{{{contents}}}</div>
-{{/if}}
-{{#if isRow-25-50-25}}
+{% endif %}
+{% if isRow-25-50-25 %}
     <div class="cr-layout__row cr-layout__row--25-50-25">{{{contents}}}</div>
-{{/if}}
-{{#if isRow-25-25-25-25}}
+{% endif %}
+{% if isRow-25-25-25-25 %}
     <div class="cr-layout__row cr-layout__row--25-25-25-25">{{{contents}}}</div>
-{{/if}}
-{{#if isCell}}
+{% endif %}
+{% if isCell %}
     <div class="cr-layout__cell">{{{contents}}}</div>
-{{/if}}
+{% endif %}
