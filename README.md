@@ -110,3 +110,12 @@ export default function YourComponent(props) {
 
 Files should be named consistently as {pattern-name}.{extension}.
 For example: `foo-pattern.twig`. Sub-patterns look like `type.variant.twig`.
+
+## Roadmap
+
+* UNIT TESTING AS SOON AS POSSIBLE
+* Break up the patterns directory into sub-dirs
+* Display patterns visually using github pages or similar
+* Reduce the effort involved in adding new patterns
+* Add more global styles
+* Add all the missing patterns
