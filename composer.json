@@ -1,0 +1,27 @@
+{
+    "name": "cruk/cruk-pattern-library-api",
+    "version": "2.0.0",
+    "description": "An api for loading reusable FE patterns into your projects",
+    "type": "library",
+    "license": "proprietary",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://crukorg.github.io/cruk-php-packages"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Chris Gillis",
+            "email": "thechrisgillis@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4" : {
+            "Cruk\\CrukPatternLibraryApi\\": "src/"
+        }
+    },
+    "require": {
+        "twig/twig": "^1.35.0"
+    }
+}

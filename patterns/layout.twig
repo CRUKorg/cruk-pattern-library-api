@@ -1,0 +1,30 @@
+{% if isRoot %}
+    <div class="cr-layout">{{ contents|raw }}</div>
+{% endif %}
+{% if isRow_full %}
+    <div class="cr-layout__row cr-layout__row--full">{{ contents|raw }}</div>
+{% endif %}
+{% if isRow_100 %}
+    <div class="cr-layout__row cr-layout__row--100">{{ contents|raw }}</div>
+{% endif %}
+{% if isRow_50_50 %}
+    <div class="cr-layout__row cr-layout__row--50-50">{{ contents|raw }}</div>
+{% endif %}
+{% if isRow_66_33 %}
+    <div class="cr-layout__row cr-layout__row--66-33">{{ contents|raw }}</div>
+{% endif %}
+{% if isRow_33_66 %}
+    <div class="cr-layout__row cr-layout__row--33-66">{{ contents|raw }}</div>
+{% endif %}
+{% if isRow_33_33_33 %}
+    <div class="cr-layout__row cr-layout__row--33-33-33">{{ contents|raw }}</div>
+{% endif %}
+{% if isRow_25_50_25 %}
+    <div class="cr-layout__row cr-layout__row--25-50-25">{{ contents|raw }}</div>
+{% endif %}
+{% if isRow_25_25_25_25 %}
+    <div class="cr-layout__row cr-layout__row--25-25-25-25">{{ contents|raw }}</div>
+{% endif %}
+{% if isCell %}
+    <div class="cr-layout__cell">{{ contents|raw }}</div>
+{% endif %}

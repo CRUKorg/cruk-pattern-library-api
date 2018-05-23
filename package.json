@@ -1,6 +1,6 @@
 {
   "name": "cruk-pattern-library-api",
-  "version": "1.0.7",
+  "version": "2.0.0",
   "description": "CRUK Pattern Library API",
   "main": "lib/patterns.js",
   "scripts": {
@@ -23,10 +23,10 @@
     "pattern-library"
   ],
   "dependencies": {
-    "handlebars": "^4.0.11",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
-    "react-slide-toggle": "^0.1.12"
+    "react-slide-toggle": "^0.1.12",
+    "twig": "^1.11.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
