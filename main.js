@@ -1,6 +1,7 @@
 import Twig from 'twig';
 import patternsData from './patternsData.build';
 
+export {default as Breadcrumb} from './patterns/breadcrumb';
 export {default as Collapsible} from './patterns/collapsible';
 export {default as CtaPrimary} from './patterns/cta.primary';
 export {default as CtaSecondary} from './patterns/cta.secondary';
@@ -18,14 +19,18 @@ export default {
   },
   getPatternList: () => {
     return [
+      'breadcrumb',
       'collapsible',
       'cta.primary',
       'cta.print',
       'cta.secondary',
       'divider',
+      'header.h2',
+      'header.h3',
       'header.page-title',
       'layout',
       'loader',
+      'text',
     ];
   },
 };
