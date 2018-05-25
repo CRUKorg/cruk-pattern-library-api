@@ -69,6 +69,7 @@
   }
 
   // The "current" page.
+
   &:last-child .cr-breadcrumb__link {
     text-decoration: none;
     color: $BLACK;
@@ -82,11 +83,13 @@
 }
 
 // Hide the current page link.
+
 .cr-breadcrumb--hide-current .cr-breadcrumb__list-item:last-child {
   @extend %sr-only;
 }
 
 // Hide the home page link.
+
 .cr-breadcrumb--hide-top {
 
   .cr-breadcrumb__list-item:first-child {
