@@ -1,18 +1,8 @@
-<nav
-    id="breadcrumb" aria-label="You are here"
-    class="cr-breadcrumb cr-breadcrumb--hide-current cr-breadcrumb--hide-top"
->
+<nav id="breadcrumb" aria-label="You are here" class="cr-breadcrumb cr-breadcrumb--hide-current cr-breadcrumb--hide-top">
     <ol itemScope itemType="http://schema.org/BreadcrumbList">
         {% for crumb in crumbs %}
-            <li
-                itemProp="itemListElement"
-                itemScope
-                itemType="http://schema.org/ListItem"
-                aria-level="{{ loop.index }}"
-            >
-                <a itemProp="item" href={{ crumb.href }}>
-                    {{ crumb.label }}
-                </a>
+            <li itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem" aria-level="{{ loop.index }}">
+                <a itemProp="item" href={{ crumb.href }}>{{ crumb.label }}</a>
                 <meta itemProp="position" content="{{ loop.index }}" />
             </li>
         {% endfor %}
