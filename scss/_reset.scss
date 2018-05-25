@@ -1,1 +1,5 @@
 // @TODO: Apply a global reset.
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
