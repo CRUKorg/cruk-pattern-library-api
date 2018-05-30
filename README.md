@@ -76,6 +76,12 @@ package.json:
 },
 ```
 
+To import everything including patterns and global styles:
+
+```
+@import "~cruk-pattern-library-api/scss/all.scss";
+```
+
 To import only variables, mixins, and other tools (no rules):
 
 ```
@@ -86,12 +92,6 @@ To import specific patterns only:
 
 ```
 @import "~cruk-pattern-library-api/patterns/cta.primary.scss";
-```
-
-To import everything including patterns and global styles:
-
-```
-@import "~cruk-pattern-library-api/scss/all.scss";
 ```
 
 ## Updating
@@ -122,13 +122,14 @@ For example: `foo-pattern.twig`. Sub-patterns look like `type.variant.twig`.
 ## Roadmap
 
 * UNIT TESTING AS SOON AS POSSIBLE
+* Themable - e.g. rfl, su2c, etc. have different color schemes
 * Display patterns visually using github pages or similar
-* Provide some way to document each pattern, including what arguments it accepts.
-* Add more global styles
-* Improve styles! Horizontal and vertical rhythm would be nice.
+* Provide some way to document each pattern, including what arguments it accepts
+* Add more global styles, reset, etc
+* Improve styles! Horizontal and vertical rhythm would be nice
 * Break up the patterns directory into sub-dirs
 * Add all the missing patterns
 * Reduce the effort involved in adding new patterns
-* Extend for other technologies (E.g. React Native)
+* Extend for other technologies (E.g. React Native, react styled components)
 * CI/CD
 * Compile a CSS file and push to S3 on build
