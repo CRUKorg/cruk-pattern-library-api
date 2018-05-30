@@ -32,26 +32,6 @@ $markup = $patterns->getMarkup('cta.primary', [
 ]);
 ```
 
-### SCSS Usage
-
-To import everything including patterns and global styles:
-
-```
-@import "~cruk-pattern-library-api/scss/all.scss";
-```
-
-To import only variables, mixins, and other tools (no rules):
-
-```
-@import "~cruk-pattern-library-api/scss/base.scss";
-```
-
-To import specific patterns only:
-
-```
-@import "~cruk-pattern-library-api/patterns/cta.primary.scss";
-```
-
 ### JS Usage (return a string)
 
 package.json:
@@ -86,6 +66,34 @@ export default function YourComponent(props) {
 }
 ```
 
+### SCSS Usage
+
+package.json:
+
+```
+"dependencies": {
+    "cruk-pattern-library-api": "^2.0",
+},
+```
+
+To import only variables, mixins, and other tools (no rules):
+
+```
+@import "~cruk-pattern-library-api/scss/base.scss";
+```
+
+To import specific patterns only:
+
+```
+@import "~cruk-pattern-library-api/patterns/cta.primary.scss";
+```
+
+To import everything including patterns and global styles:
+
+```
+@import "~cruk-pattern-library-api/scss/all.scss";
+```
+
 ## Updating
 
 * Increment the version number in `package.json`.
@@ -114,9 +122,13 @@ For example: `foo-pattern.twig`. Sub-patterns look like `type.variant.twig`.
 ## Roadmap
 
 * UNIT TESTING AS SOON AS POSSIBLE
-* Break up the patterns directory into sub-dirs
 * Display patterns visually using github pages or similar
-* Reduce the effort involved in adding new patterns
-* Add more global styles
-* Add all the missing patterns
 * Provide some way to document each pattern, including what arguments it accepts.
+* Add more global styles
+* Improve styles! Horizontal and vertical rhythm would be nice.
+* Break up the patterns directory into sub-dirs
+* Add all the missing patterns
+* Reduce the effort involved in adding new patterns
+* Extend for other technologies (E.g. React Native)
+* CI/CD
+* Compile a CSS file and push to S3 on build
