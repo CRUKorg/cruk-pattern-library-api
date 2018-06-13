@@ -23,6 +23,8 @@
   display: block;
   width: 100%;
   text-align: left;
+  font-family: $font-family-headings;
+  font-weight: $font-weight-heavy;
 
   &:hover, &:focus {
     @include icon-beside($icon-minus, $brand-secondary, left, $rhythm-horizontal-base * 2);

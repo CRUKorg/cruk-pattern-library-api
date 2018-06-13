@@ -2,18 +2,19 @@
 
 .cr-cta--primary {
   background-color: $brand-secondary;
-  border-radius: 4px;
+  border-radius: $border-radius;
   border: 1px solid $brand-secondary;
   color: $WHITE;
   display: inline-block;
   font-family: $font-family-museo;
   font-size: $font-size-large;
   font-weight: $font-weight-heavy;
-  padding: 9px 12px;
+  padding: 10px 19px;
   position: relative;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
+  line-height: $line-height-cta;
 
   &:hover {
     color: $WHITE;

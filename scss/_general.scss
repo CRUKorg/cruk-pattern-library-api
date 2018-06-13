@@ -62,3 +62,11 @@ input {
   font-size: 1rem;
   font-family: $font-family-base;
 }
+
+sup {
+  vertical-align: super;
+}
+
+sub {
+  vertical-align: sub;
+}
