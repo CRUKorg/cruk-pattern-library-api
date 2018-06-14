@@ -91,3 +91,28 @@
     @media #{$query} { @content; }
   }
 }
+
+@mixin font-size-map($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      @include line-height-map($fs-font-size);
+    }
+    @else {
+      @include breakpoint($fs-breakpoint) {
+        @include line-height-map($fs-font-size);
+      }
+    }
+  }
+}
+
+@mixin line-height-map($fs-font-size) {
+  @if type-of($fs-font-size) == "list" {
+    font-size: nth($fs-font-size, 1);
+    @if (length($fs-font-size) > 1) {
+      line-height: nth($fs-font-size, 2);
+    }
+  }
+  @else {
+    font-size: $fs-font-size;
+  }
+}

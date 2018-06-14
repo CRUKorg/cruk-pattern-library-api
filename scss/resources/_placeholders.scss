@@ -3,6 +3,8 @@
 //
 
 %clearfix {
+  clear: both;
+
   &:after {
     clear: both;
     content: "";
@@ -31,4 +33,50 @@
   overflow: hidden;
   clip: rect(0,0,0,0);
   border: 0;
+}
+
+%sr-only-focusable {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+%visually-hidden {
+  position: absolute !important;
+  clip: rect(1px,1px,1px,1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+%skip-link {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 50;
+  background: $TUNDORA;
+  color: $WHITE;
+  font-size: 0.94em;
+  padding: 1px 10px 2px;
+  border-radius: 0 0 10px 10px;
+}
+
+%caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid\9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
 }

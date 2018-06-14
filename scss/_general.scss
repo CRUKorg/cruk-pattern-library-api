@@ -16,33 +16,32 @@ body {
 }
 
 h1 {
-  font-family: $font-family-headings;
-  font-size: $font-size-h1;
+  @include font-size-map($h1-font-size);
 }
 
 h2 {
-  font-family: $font-family-headings;
-  font-size: $font-size-h2;
+  @include font-size-map($h2-font-size);
 }
 
 h3 {
-  font-family: $font-family-headings;
-  font-size: $font-size-h3;
+  @include font-size-map($h3-font-size);
 }
 
 h4 {
-  font-family: $font-family-headings;
   font-size: $font-size-h4;
 }
 
 h5 {
-  font-family: $font-family-headings;
   font-size: $font-size-h5;
 }
 
 h6 {
-  font-family: $font-family-headings;
   font-size: $font-size-h6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-headings;
+  font-weight: $font-weight-heavy;
 }
 
 a {
