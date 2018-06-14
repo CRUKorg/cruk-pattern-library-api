@@ -48,7 +48,6 @@
   }
 }
 
-.visually-hidden,
 %visually-hidden {
   position: absolute !important;
   clip: rect(1px,1px,1px,1px);
@@ -58,7 +57,6 @@
   word-wrap: normal;
 }
 
-.skip-link,
 %skip-link {
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -72,7 +70,7 @@
   border-radius: 0 0 10px 10px;
 }
 
-.caret {
+%caret {
   display: inline-block;
   width: 0;
   height: 0;
