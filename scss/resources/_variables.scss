@@ -139,6 +139,28 @@ $breakpoint-c: 992px !default;
 $breakpoint-d: 1200px !default;
 
 //
+// == Font size map
+// @TODO: implement proper ratio line-height
+// breakpoint: (font-size, line-height)
+$h1-font-size: (
+  null: (1.4rem, $line-height-base),
+  $breakpoint-b: (1.4rem, $line-height-base),
+  $breakpoint-c: (2rem, $line-height-base)
+);
+
+$h2-font-size: (
+  null: (1.16rem, $line-height-base),
+  $breakpoint-b: (1.16rem, $line-height-base),
+  $breakpoint-c: (1.4rem, $line-height-base)
+);
+
+$h3-font-size: (
+  null: (1.16rem, $line-height-base),
+  $breakpoint-b: (1.16rem, $line-height-base),
+  $breakpoint-c: (1.4rem, $line-height-base)
+);
+
+//
 //== Icons
 //
 
