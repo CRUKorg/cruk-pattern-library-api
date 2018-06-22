@@ -1,0 +1,25 @@
+@import '../scss/base';
+
+.cr-search-input__label {
+  @extend %sr-only;
+}
+
+.cr-search-input {
+  @extend %input-group__group;
+  margin-bottom: $rhythm-vertical-base * 2;
+}
+
+.cr-search-input--focused {
+  @extend %input-group__group--focused;
+}
+
+.cr-search-input__input {
+  @extend %input-group__input;
+}
+
+.cr-search-input__button {
+  @extend %input-group__button;
+  @include text-replace($icon-search, $gray-20);
+  border: 0;
+  background-size: 18px;
+}

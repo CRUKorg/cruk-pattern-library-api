@@ -80,3 +80,55 @@
   border-right: 4px solid transparent;
   border-left: 4px solid transparent;
 }
+
+%textfield {
+  border-radius: $border-radius;
+  box-shadow: none;
+  color: $gray-80;
+  display: block;
+  font-size: $font-size;
+  height: 36px;
+  line-height: $line-height;
+  padding: 7px 12px 5px;
+  transition: border-color 100ms linear;
+}
+
+%input-group__group {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+
+  position: relative;
+  border-collapse: separate;
+  background: $WHITE;
+  border: 2px solid $gray-20;
+  border-radius: $border-radius;
+  transition: border-color 100ms linear;
+}
+
+%input-group__group--focused {
+  border-color: $brand-info;
+}
+
+%input-group__input {
+  @extend %textfield;
+  background: transparent;
+  border: 0;
+  flex: 1;
+  width: auto;
+  outline: none;
+}
+
+%input-group__button {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin-left: -1px;
+  padding: 6px 12px;
+  position: relative;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+  z-index: 2;
+  outline: none;
+  flex: 0 0 36px;
+}

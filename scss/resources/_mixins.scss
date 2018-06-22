@@ -10,13 +10,6 @@
   }
 }
 
-@mixin text-replace($imageURL) {
-  background: url($imageURL) no-repeat;
-  text-indent: 200%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 @mixin icon-background($icon, $color: #000) {
   background: url(svg-fill-replace($icon, $color)) no-repeat center center;
   background-size: contain;
@@ -35,6 +28,13 @@
     top: 50%;
     width: $size;
   }
+}
+
+@mixin text-replace($icon, $color: #000) {
+  @include icon-background($icon, $color);
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @mixin font-face($font-family, $file-path, $font-weight, $font-style) {
