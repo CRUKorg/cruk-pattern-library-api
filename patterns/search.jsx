@@ -7,7 +7,7 @@ function Search(props) {
     <form role="search" onSubmit={props.submitCallback || defaultSubmitCallback}>
       <div className="cr-input-group cr-search-input">
         <label htmlFor={props.uniqueId} className="cr-search-input__label">{props.label}</label>
-        <input type="search" id={props.uniqueId} onChange={props.changeCallback} className="cr-input-group__input cr-search-input__input" placeholder={props.label} autoComplete="off" autoCorrect="off" />
+        <input type="search" name="search" id={props.uniqueId} onChange={props.changeCallback} className="cr-input-group__input cr-search-input__input" placeholder={props.label} autoComplete="off" autoCorrect="off" />
         <button type="submit" className="cr-input-group__button cr-search-input__button" aria-label="Submit your search">Search</button>
       </div>
     </form>
