@@ -104,10 +104,10 @@
   border: 2px solid $gray-20;
   border-radius: $border-radius;
   transition: border-color 100ms linear;
+}
 
-  &--focused {
-    border-color: $brand-info;
-  }
+%input-group__group--focused {
+  border-color: $brand-info;
 }
 
 %input-group__input {

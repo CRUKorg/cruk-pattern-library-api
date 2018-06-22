@@ -9,6 +9,10 @@
   margin-bottom: $rhythm-vertical-base * 2;
 }
 
+.cr-search-input--focused {
+  @extend %input-group__group--focused;
+}
+
 .cr-search-input__input {
   @extend %input-group__input;
 }
