@@ -21,4 +21,8 @@
     text-decoration: none;
     background-color: $brand-secondary-light;
   }
+
+  &:visited {
+    color: $WHITE;
+  }
 }
