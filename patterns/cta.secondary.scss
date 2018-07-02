@@ -11,6 +11,7 @@
 
   &:hover {
     color: $brand-secondary;
+    text-decoration: underline;
   }
 
   &::before {
@@ -23,5 +24,9 @@
     position: absolute;
     top: 50%;
     width: 16px;
+  }
+
+  &:visited {
+    color: $brand-secondary-light;
   }
 }
