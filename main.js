@@ -9,6 +9,8 @@ export {default as Divider} from './patterns/divider';
 export {default as HeaderPageTitle} from './patterns/header.page-title';
 export {default as Loader} from './patterns/loader';
 export {default as Search} from './patterns/search';
+export {default as ListOrdered} from './patterns/list.ordered';
+export {default as ListUnordered} from './patterns/list.unordered';
 
 export default {
   getPatternMarkup: (patternName, patternConfig) => {
@@ -30,6 +32,8 @@ export default {
       'header.h3',
       'header.page-title',
       'layout',
+      'list.ordered',
+      'list.unordered',
       'loader',
       'search',
       'text',
