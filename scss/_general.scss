@@ -46,20 +46,26 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $font-weight-heavy;
 }
 
-a {
+a, button {
   color: $brand-primary;
   text-decoration: none;
+  font-weight: $font-weight-medium;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-large;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+    color: $brand-secondary;
+    text-decoration: underline;
+    background-color: transparent;
+    outline: none;
+  }
 
   &:visited {
     color: $brand-primary-light;
   }
-  &:hover {
-    color: $brand-secondary;
-  }
-}
-
-*, *::after, *::before {
-  box-sizing: border-box;
 }
 
 input,
@@ -75,6 +81,7 @@ select {
     background-color: $gray-5;
     opacity: 1;
   }
+
   &[disabled],
   fieldset[disabled] & {
     cursor: not-allowed;
