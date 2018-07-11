@@ -1,0 +1,27 @@
+@import '../scss/base';
+
+.cr-list--unordered {
+  list-style: disc inside;
+}
+
+.cr-list--ordered {
+  list-style: decimal inside;
+}
+
+.cr-list--unordered .cr-list--unordered,
+.cr-list--ordered .cr-list--unordered {
+  list-style: circle inside;
+  margin-left: $rhythm-horizontal-base;
+}
+
+.cr-list--ordered .cr-list--ordered,
+.cr-list--unordered .cr-list--ordered {
+  list-style: lower-latin inside;
+  margin-left: $rhythm-horizontal-base;
+}
+
+/* stylelint-disable selector-max-universal */
+
+.cr-list__item * {
+  display: inline;
+}

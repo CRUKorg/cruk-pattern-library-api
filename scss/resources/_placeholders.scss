@@ -62,7 +62,7 @@
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   z-index: 50;
-  background: $TUNDORA;
+  background: $gray-20;
   color: $WHITE;
   font-size: 0.94em;
   padding: 1px 10px 2px;
@@ -131,4 +131,13 @@
   z-index: 2;
   outline: none;
   flex: 0 0 36px;
+}
+
+%inline-error-message {
+  border-left: 6px solid $brand-danger;
+  color: $brand-danger;
+  font-size: $font-size;
+  line-height: $line-height-base;
+  margin-top: 10px;
+  padding-left: 10px;
 }
