@@ -39,3 +39,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+button {
+  -webkit-appearance: none;
+  background: transparent;
+  border-radius: 0;
+  border: 0 transparent;
+  cursor: pointer;
+  padding: 0;
+}

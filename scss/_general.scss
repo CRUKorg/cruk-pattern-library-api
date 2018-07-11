@@ -1,5 +1,7 @@
 @import 'base';
 
+/* stylelint-disable selector-max-type, selector-max-universal, selector-max-attribute */
+
 html {
   font-size: $font-size-base;
   font-family: $font-family-base;
@@ -44,22 +46,83 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $font-weight-heavy;
 }
 
-a {
+a, button {
   color: $brand-primary;
   text-decoration: none;
+  font-weight: $font-weight-medium;
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-large;
 
-  &:visited { color: $brand-primary-light; }
-  &:hover { color: $brand-secondary; }
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+    color: $brand-secondary;
+    text-decoration: underline;
+    background-color: transparent;
+    outline: none;
+  }
+
+  &:visited {
+    color: $brand-primary-light;
+  }
 }
 
-*, *:after, *:before {
-  box-sizing: border-box;
-}
-
-input {
+input,
+textarea,
+select {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-large;
   color: $text-color;
-  font-size: 1rem;
-  font-family: $font-family-base;
+
+  &[disabled],
+  &[readonly],
+  fieldset[disabled] & {
+    background-color: $gray-5;
+    opacity: 1;
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: not-allowed;
+  }
+}
+
+input[type = 'text'] {
+  background: $WHITE;
+  border-radius: $border-radius;
+  border: 1px solid $gray-20;
+  box-shadow: inset 0 1px 1px rgba($BLACK, 0.075);
+  display: block;
+  height: 34px;
+  line-height: 1.42857;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
+  width: 100%;
+
+  &::-moz-placeholder {
+    color: $gray-40;
+    opacity: 1;
+  }
+
+  &::-webkit-input-placeholder {
+    color: $gray-40;
+  }
+
+  &::-ms-expand {
+    border: 0;
+    background-color: transparent;
+  }
+
+  &:-ms-input-placeholder {
+    color: $gray-40;
+  }
+
+  &:focus {
+    border-color: $CERULEAN;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba($BLACK, 0.075), 0 0 8px rgba($CERULEAN, 0.6);
+  }
 }
 
 sup {
