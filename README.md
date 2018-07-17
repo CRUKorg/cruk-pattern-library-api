@@ -3,8 +3,6 @@ Methods to return markup / styles / scripts for reusable patterns.
 
 ## Usage Examples
 
-@TODO: How do you load vanilla js snippets to go with the static markup returned? When not using JSX?
-
 ### PHP Usage
 
 composer.json
@@ -92,6 +90,23 @@ To import specific patterns only:
 
 ```
 @import "~cruk-pattern-library-api/patterns/cta.primary.scss";
+```
+
+### Rendering flat markup
+
+When rendering the flat markup, you will need to attach behaviour
+handlers for things like collapsible slide toggles, etc.
+
+Something like this:
+
+```
+import Patterns from 'cruk-pattern-library-api';
+
+const markup = 'theFullMarkupOfAllPatterns';
+
+<div className="foo-bar" dangerouslySetInnerHTML={{ __html: markup }} />
+
+Patterns.addVanillaBehaviours('foo-bar);
 ```
 
 ## Updating

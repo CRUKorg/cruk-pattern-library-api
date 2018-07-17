@@ -1,10 +1,5 @@
-var printWindow = function() {
-  window.print();
-  return false;
+module.exports = function(event, element) {
+  if (event === 'click' && element.classList.contains('cr-cta--print')) {
+    window.print();
+  }
 };
-
-var anchors = document.getElementsByClassName('cr-cta--print');
-for (var i = 0; i < anchors.length; i++) {
-  var current = anchors[i];
-  current.addEventListener('click', printWindow, false);
-}
