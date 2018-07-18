@@ -8,7 +8,8 @@ module.exports = {
     filename: 'patterns.js',
     library: 'patterns',
     libraryTarget: 'umd',
-    umdNamedDefine: true
+    umdNamedDefine: true,
+    globalObject: 'typeof self !== \'undefined\' ? self : this'
   },
   plugins: [
     new StyleLintPlugin({
