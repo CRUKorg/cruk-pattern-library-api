@@ -1,6 +1,6 @@
 {
     "name": "cruk/cruk-pattern-library-api",
-    "version": "2.0.7",
+    "version": "2.0.8",
     "description": "An api for loading reusable FE patterns into your projects",
     "type": "library",
     "license": "proprietary",
