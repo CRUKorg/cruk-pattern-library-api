@@ -11,6 +11,7 @@ export {default as Loader} from './patterns/loader';
 export {default as Search} from './patterns/search';
 export {default as ListOrdered} from './patterns/list.ordered';
 export {default as ListUnordered} from './patterns/list.unordered';
+export {default as NavigationBlock} from './patterns/navigation_block';
 
 import vCollapsible from './patterns/collapsible.js';
 import vCtaPrint from './patterns/cta.print.js';
@@ -55,6 +56,7 @@ export default {
       'list.ordered',
       'list.unordered',
       'loader',
+      'navigation_block',
       'search',
       'text',
     ];

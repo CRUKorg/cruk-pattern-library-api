@@ -1,0 +1,27 @@
+.cr-navigation-block {
+  border: 1px solid $gray-10;
+  border-radius: $border-radius;
+  padding: 15px;
+}
+
+.cr-navigation-block__title {
+  color: $KINGFISHER_DAISY;
+  padding-bottom: 5px;
+
+  .cr-navigation-block__cta:hover & {
+    color: $HOLLYWOOD_CERISE;
+    text-decoration: underline;
+  }
+}
+
+.cr-navigation-block__content {
+  color: $gray-80;
+
+  .cr-navigation-block__cta:hover & {
+    color: $gray-80;
+  }
+}
+
+.cr-navigation-block__cta:hover {
+  text-decoration: none;
+}
