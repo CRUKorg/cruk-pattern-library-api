@@ -2,7 +2,7 @@ import Twig from 'twig';
 import patternsData from './patternsData.build';
 
 export {default as Breadcrumb} from './patterns/breadcrumb';
-export {default as Collapsible} from './patterns/collapsible';
+export {default as Collapsible} from './patterns/collapsible.jsx';
 export {default as CtaPrimary} from './patterns/cta.primary';
 export {default as CtaSecondary} from './patterns/cta.secondary';
 export {default as Divider} from './patterns/divider';
