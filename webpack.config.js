@@ -34,7 +34,7 @@ module.exports = {
             query: {
               presets: [
                 '@babel/react',
-                [ '@babel/env', { useBuiltIns: 'entry' }],
+                '@babel/env',
                 '@babel/stage-0'
               ]
             }

@@ -106,7 +106,7 @@ const markup = 'theFullMarkupOfAllPatterns';
 
 <div className="foo-bar" dangerouslySetInnerHTML={{ __html: markup }} />
 
-Patterns.addVanillaBehaviours('foo-bar);
+Patterns.addVanillaBehaviours('foo-bar', window.document);
 ```
 
 ## Updating
