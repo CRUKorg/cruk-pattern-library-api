@@ -13,7 +13,7 @@ export {default as ListOrdered} from './patterns/list.ordered';
 export {default as ListUnordered} from './patterns/list.unordered';
 
 import vCollapsible from './patterns/collapsible.js';
-import vCtaPrint from './patterns/collapsible.js';
+import vCtaPrint from './patterns/cta.print.js';
 
 const vanillaHandlers = [
   vCollapsible,
@@ -27,10 +27,9 @@ export default {
   },
   // When users interact with the DOM, check if our patterns want to do anything.
   // parentClassName is the container in which your patterns are being rendered as flat html (from twig).
-  addVanillaBehaviours: (parentClassName) => {
+  addVanillaBehaviours: (parentClassName, document) => {
     const eventsWeCareAbout = ['click'];
-    let document = document || {};
-    const patternContainers  = document.getElementsByClassName(parentClassName) || [];
+    const patternContainers  = Array.from(document.getElementsByClassName(parentClassName)) || [];
     patternContainers.forEach((element) => {
       eventsWeCareAbout.forEach((eventName) => {
         element.addEventListener(eventName, (event) => {
