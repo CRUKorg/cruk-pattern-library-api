@@ -13,13 +13,33 @@ export {default as ListOrdered} from './patterns/list.ordered';
 export {default as ListUnordered} from './patterns/list.unordered';
 export {default as NavigationBlock} from './patterns/navigation_block';
 
+import vCollapsible from './patterns/collapsible.js';
+import vCtaPrint from './patterns/cta.print.js';
+
+const vanillaHandlers = [
+  vCollapsible,
+  vCtaPrint,
+];
+
 export default {
   getPatternMarkup: (patternName, patternConfig) => {
     const template = Twig.twig({ data: patternsData.twig[patternName] });
     return template.render(patternConfig).trim();
   },
-  getPatternScript: (patternName) => {
-    return patternsData.js[patternName];
+  // When users interact with the DOM, check if our patterns want to do anything.
+  // parentClassName is the container in which your patterns are being rendered as flat html (from twig).
+  addVanillaBehaviours: (parentClassName, document) => {
+    const eventsWeCareAbout = ['click'];
+    const patternContainers  = Array.from(document.getElementsByClassName(parentClassName)) || [];
+    patternContainers.forEach((element) => {
+      eventsWeCareAbout.forEach((eventName) => {
+        element.addEventListener(eventName, (event) => {
+          vanillaHandlers.forEach((handler) => {
+            handler(eventName, event.target);
+          });
+        });
+      });
+    });
   },
   getPatternList: () => {
     return [

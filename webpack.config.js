@@ -8,7 +8,8 @@ module.exports = {
     filename: 'patterns.js',
     library: 'patterns',
     libraryTarget: 'umd',
-    umdNamedDefine: true
+    umdNamedDefine: true,
+    globalObject: 'typeof self !== \'undefined\' ? self : this'
   },
   plugins: [
     new StyleLintPlugin({
@@ -31,14 +32,11 @@ module.exports = {
           {
             loader: 'babel-loader',
             query: {
-              plugins: [
-                'transform-class-properties',
-                'transform-es2015-object-super',
-                'transform-proto-to-assign',
-                'transform-es2015-block-scoping',
-                ['transform-es2015-classes', {'loose': true}]
-              ],
-              presets: ['react', 'env', 'stage-0']
+              presets: [
+                '@babel/react',
+                '@babel/env',
+                '@babel/stage-0'
+              ]
             }
           },
           'eslint-loader'
