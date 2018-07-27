@@ -32,6 +32,7 @@ export default {
     const eventsWeCareAbout = ['click'];
     const patternContainers  = Array.from(document.getElementsByClassName(parentClassName)) || [];
     patternContainers.forEach((element) => {
+      if (element.classList.contains('js-behaviours')) { return; }
       eventsWeCareAbout.forEach((eventName) => {
         element.addEventListener(eventName, (event) => {
           vanillaHandlers.forEach((handler) => {
@@ -39,6 +40,7 @@ export default {
           });
         });
       });
+      element.classList.add('js-behaviours');
     });
   },
   getPatternList: () => {

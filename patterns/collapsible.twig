@@ -1,8 +1,8 @@
-<div class="cr-collapsible cr-collapsible--expanded">
+<div class="cr-collapsible cr-collapsible--collapsed">
     <h2 class="cr-collapsible__heading">
-        <button class="cr-collapsible__heading-button" aria-expanded="1">{{ title }}</button>
+        <button class="cr-collapsible__heading-button">{{ title }}</button>
     </h2>
-    <div class="cr-collapsible__content">
+    <div class="cr-collapsible__content" aria-expanded="false" style="display: none; height: 0; overflow: hidden; transition: height 200ms ease-in-out;">
         {{ content|raw }}
     </div>
 </div>
