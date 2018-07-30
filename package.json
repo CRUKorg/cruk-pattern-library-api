@@ -1,6 +1,6 @@
 {
   "name": "cruk-pattern-library-api",
-  "version": "2.0.11",
+  "version": "2.0.12",
   "description": "CRUK Pattern Library API",
   "main": "lib/patterns.js",
   "scripts": {
