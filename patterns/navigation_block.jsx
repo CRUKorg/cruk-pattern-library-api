@@ -10,9 +10,6 @@ function NavigationBlock(props) {
           className="cr-navigation-block__content"
           dangerouslySetInnerHTML={{ __html: props.text }}
         />
-        <div className="cr-navigation-block__content">
-          {props.text}
-        </div>
       </div>
     </a>
   );
