@@ -1,8 +1,11 @@
-<div class="cr-collapsible cr-collapsible--collapsed">
+<div class="cr-collapsible">
+  <input id="cr-collapsible__input" class="cr-collapsible__input" type="checkbox">
+  <label htmlFor="cr-collapsible__input" class="cr-collapsible__heading-button">
     <h2 class="cr-collapsible__heading">
-        <button class="cr-collapsible__heading-button">{{ title }}</button>
+      {{ title }}
     </h2>
-    <div class="cr-collapsible__content" aria-expanded="false" style="display: none; height: 0; overflow: hidden; transition: height 200ms ease-in-out;">
-        {{ content|raw }}
-    </div>
+  </label>
+  <div class="cr-collapsible__content">
+    {{ content|raw }}
+  </div>
 </div>

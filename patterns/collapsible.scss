@@ -4,7 +4,7 @@
   margin-bottom: $rhythm-vertical-base * 2;
   border: 1px solid $brand-gray-light;
   border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 .cr-collapsible__heading {
@@ -12,40 +12,52 @@
   padding: 0;
 }
 
+.cr-collapsible__content {
+  display: none;
+  padding: $rhythm-vertical-base $rhythm-horizontal-base;
+}
+
 .cr-collapsible__heading-button {
-  @include icon-beside($icon-minus, $brand-primary, left, $rhythm-horizontal-base * 2);
+  @include icon-beside($icon-plus, $brand-primary, left, $rhythm-horizontal-base * 2);
+  display: block;
+  cursor: pointer;
   background: $gray-5;
   border: none;
   color: $brand-primary;
   font-size: $font-size-h2;
   padding: $rhythm-vertical-base $rhythm-horizontal-base;
   padding-left: $rhythm-horizontal-base * 4;
-  display: block;
   width: 100%;
   text-align: left;
   font-family: $font-family-headings;
   font-weight: $font-weight-heavy;
 
   &:hover, &:focus {
-    @include icon-beside($icon-minus, $brand-secondary, left, $rhythm-horizontal-base * 2);
+    @include icon-beside($icon-plus, $brand-secondary, left, $rhythm-horizontal-base * 2);
     color: $brand-secondary;
     text-decoration: underline;
     outline: none;
-    background: $gray-5;
   }
 }
 
-.cr-collapsible__content {
-  padding: $rhythm-vertical-base $rhythm-horizontal-base;
-}
+.cr-collapsible__input {
+  display: none;
 
-.cr-collapsible--collapsed {
+  &:checked {
 
-  .cr-collapsible__heading-button {
-    @include icon-beside($icon-plus, $brand-primary, left, $rhythm-horizontal-base * 2);
+    ~ .cr-collapsible__content {
+      display: block;
+    }
 
-    &:hover, &:focus {
-      @include icon-beside($icon-plus, $brand-secondary, left, $rhythm-horizontal-base * 2);
+    ~ .cr-collapsible__heading-button {
+      @include icon-beside($icon-minus, $brand-primary, left, $rhythm-horizontal-base * 2);
+
+      &:hover, &:focus {
+        @include icon-beside($icon-minus, $brand-secondary, left, $rhythm-horizontal-base * 2);
+        color: $brand-secondary;
+        text-decoration: underline;
+        outline: none;
+      }
     }
   }
 }
