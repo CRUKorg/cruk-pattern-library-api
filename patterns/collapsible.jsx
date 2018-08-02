@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { SlideToggle } from 'react-slide-toggle';
 
 class Collapsible extends Component {
   render() {
@@ -10,30 +9,22 @@ class Collapsible extends Component {
       content = <div dangerouslySetInnerHTML={{ __html: this.props.staticContent }}/>;
     }
     return (
-      <SlideToggle>
-        {({onToggle, setCollapsibleElement, toggleState}) => (
-          <div className={`cr-collapsible ${toggleState !== 'EXPANDED' ? 'cr-collapsible--collapsed' : 'cr-collapsible--expanded'}`}>
-            <h2 className="cr-collapsible__heading">
-              <button
-                className="cr-collapsible__heading-button"
-                aria-expanded={toggleState === 'EXPANDED'}
-                onClick={onToggle}
-              >
-                {this.props.title}
-              </button>
-            </h2>
-            <div className="cr-collapsible__content" ref={setCollapsibleElement}>
-              {content}
-            </div>
-          </div>
-        )}
-      </SlideToggle>
+      <div className="cr-collapsible">
+        <input id="cr-collapsible__input" className="cr-collapsible__input" type="checkbox" defaultChecked={false} />
+        <label htmlFor="cr-collapsible__input" className="cr-collapsible__heading-button">
+          <h2 className="cr-collapsible__heading">
+            {this.props.title}
+          </h2>
+        </label>
+        <div className="cr-collapsible__content">
+          {content}
+        </div>
+      </div>
     );
   }
 }
 
 Collapsible.propTypes = {
-  collapsed: PropTypes.bool,
   content: PropTypes.object, // Content as a JSX object.
   staticContent: PropTypes.string, // Content as an html string.
   title: PropTypes.string,
