@@ -8,10 +8,11 @@ class Collapsible extends Component {
     if (!this.props.content && this.props.staticContent) {
       content = <div dangerouslySetInnerHTML={{ __html: this.props.staticContent }}/>;
     }
+    const inputClass = `cr-collapsible__input-${this.props.title.replace(/\s/g, '')}`;
     return (
       <div className="cr-collapsible">
-        <input id="cr-collapsible__input" className="cr-collapsible__input" type="checkbox" defaultChecked={false} />
-        <label htmlFor="cr-collapsible__input" className="cr-collapsible__heading-button">
+        <input id={inputClass} className="cr-collapsible__input" type="checkbox" defaultChecked={false} />
+        <label htmlFor={inputClass} className="cr-collapsible__heading-button">
           <h2 className="cr-collapsible__heading">
             {this.props.title}
           </h2>

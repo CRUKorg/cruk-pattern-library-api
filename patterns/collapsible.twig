@@ -1,6 +1,6 @@
 <div class="cr-collapsible">
-  <input id="cr-collapsible__input" class="cr-collapsible__input" type="checkbox">
-  <label htmlFor="cr-collapsible__input" class="cr-collapsible__heading-button">
+  <input id="cr-collapsible__input-{{ title|replace({' ': ''}) }}" class="cr-collapsible__input" type="checkbox">
+  <label htmlFor="cr-collapsible__input-{{ title|replace({' ': ''}) }}" class="cr-collapsible__heading-button">
     <h2 class="cr-collapsible__heading">
       {{ title }}
     </h2>
