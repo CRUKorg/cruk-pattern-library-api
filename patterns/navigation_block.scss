@@ -16,6 +16,7 @@
 
 .cr-navigation-block__content {
   color: $gray-80;
+  word-break: break-word;
 
   .cr-navigation-block__cta:hover & {
     color: $gray-80;
