@@ -3,6 +3,7 @@ import patternsData from './patternsData.build';
 
 export {default as Breadcrumb} from './patterns/breadcrumb';
 export {default as Collapsible} from './patterns/collapsible.jsx';
+export {default as CtaLink} from './patterns/cta.link';
 export {default as CtaPrimary} from './patterns/cta.primary';
 export {default as CtaSecondary} from './patterns/cta.secondary';
 export {default as Divider} from './patterns/divider';
@@ -48,6 +49,7 @@ export default {
     return [
       'breadcrumb',
       'collapsible',
+      'cta.link',
       'cta.primary',
       'cta.print',
       'cta.secondary',
