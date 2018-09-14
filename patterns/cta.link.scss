@@ -1,0 +1,21 @@
+@import '../scss/base';
+
+.cr-cta--link {
+  color: $KINGFISHER_DAISY;
+  font-size: $font-size-large;
+  font-weight: $font-weight-heavy;
+  padding: 0.3em 0;
+  text-decoration: none;
+  display: inline-block;
+
+  &:hover {
+    color: $brand-secondary;
+    text-decoration: underline;
+  }
+
+  &:active,
+  &:focus,
+  &:visited {
+    color: $KINGFISHER_DAISY;
+  }
+}
