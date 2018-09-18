@@ -9,9 +9,8 @@ class RelatedLinks extends Component {
     }
     return (
       <div className="cr-related-links">
-        <div className="cr-related-links__bar" />
         <div className="cr-related-links__content">
-          <h3 className="cr-related-links__heading">{this.props.title}</h3>
+          <h2 className="cr-related-links__heading">{this.props.title}</h2>
           <div className="cr-related-links__body">
             {content}
           </div>
