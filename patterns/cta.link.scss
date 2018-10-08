@@ -2,11 +2,11 @@
 
 .cr-cta--link {
   color: $KINGFISHER_DAISY;
-  font-size: $font-size-large;
   font-weight: $font-weight-heavy;
   padding: 0.3em 0;
   text-decoration: none;
   display: inline-block;
+  @include font-size-map($base-font-map);
 
   &:hover {
     color: $brand-secondary;
@@ -18,4 +18,6 @@
   &:visited {
     color: $KINGFISHER_DAISY;
   }
+
+  @extend .vertical-spacing;
 }

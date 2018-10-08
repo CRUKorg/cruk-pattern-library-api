@@ -1,5 +1,6 @@
 var path = require('path');
 var StyleLintPlugin = require('stylelint-webpack-plugin');
+var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './main.js',
@@ -11,11 +12,26 @@ module.exports = {
     umdNamedDefine: true,
     globalObject: 'typeof self !== \'undefined\' ? self : this'
   },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          test: /\.css$/,
+          chunks: 'all',
+          enforce: true
+        }
+      }
+    }
+  },
   plugins: [
     new StyleLintPlugin({
       context: './patterns',
       syntax: 'scss',
     }),
+    new MiniCssExtractPlugin({
+      filename: 'all.css',
+    })
   ],
   resolve: {
     alias: {
@@ -40,6 +56,21 @@ module.exports = {
             }
           },
           'eslint-loader'
+        ]
+      },
+      {
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader'
         ]
       }
     ]

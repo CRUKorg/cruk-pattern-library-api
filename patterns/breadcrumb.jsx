@@ -11,7 +11,7 @@ function Breadcrumb(props) {
   }
   return (
     <nav id="breadcrumb" aria-label="You are here" className={classes.join(' ')}>
-      <ol itemScope itemType="http://schema.org/BreadcrumbList" className="cr-breadcrumb__list">
+      <ol itemScope itemType="http://schema.org/BreadcrumbList" className="cr-breadcrumb__list cr-breadcrumb-nav">
         {props.crumbs.map((crumb, i) => {
           return (
             <li itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem" aria-level={ i + 1 } className="cr-breadcrumb__list-item">

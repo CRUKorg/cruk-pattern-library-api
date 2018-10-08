@@ -3,11 +3,11 @@
 .cr-cta--secondary {
   color: $brand-secondary;
   display: block;
-  font-size: $font-size;
   font-weight: $font-weight-heavy;
   padding-left: 20px;
   position: relative;
   text-decoration: none;
+  @include font-size-map($base-font-map);
 
   &:hover {
     color: $brand-secondary;
@@ -29,4 +29,6 @@
   &:visited {
     color: $brand-secondary-light;
   }
+
+  @extend .vertical-spacing;
 }

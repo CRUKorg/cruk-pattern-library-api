@@ -3,9 +3,9 @@
 .cr-cta--print {
   color: $brand-primary;
   display: block;
-  font-size: $font-size;
   font-weight: $font-weight-heavy;
   padding-left: 20px;
+  @include font-size-map($base-font-map);
 
   &::before {
     @include icon-background($icon-print, $brand-primary);
