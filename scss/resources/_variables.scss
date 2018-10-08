@@ -78,23 +78,27 @@ $fonts-directory: 'https://ccp-s3.int.cruk.org/fonts' !default;
 $font-family-base:        $font-family-sans-serif;
 $font-family-headings:    $font-family-museo;
 
-$font-weight-heavy: 700;
+$font-weight-heavy:  700;
 $font-weight-medium: 500;
-$font-weight-light: 300;
+$font-weight-light:  300;
 $font-weight-vlight: 100;
 
-$font-size-base:  14px;
-$font-size:       1rem; // 14px
-$font-size-medium: 1.125rem; // 18px
-$font-size-large: 1.143rem;  // 16px
+$font-size-base:   16px;
+$font-size:        1rem;          // 16px
 $font-size-extra-large: 3.125rem; // 50px
-$font-size-small: 0.8571rem; // 13px
-$font-size-h1:    2rem;
-$font-size-h2:    1.4rem;
-$font-size-h3:    1.4rem;
-$font-size-h4:    1.16rem;
-$font-size-h5:    0.93rem;
-$font-size-h6:    0.93rem;
+$font-size-large:  1.4375rem;     // 23px
+$font-size-medium: 1.125rem;      // 18px
+$font-size-small:  0.857rem;      // 14px
+$font-size-extra-small: 0.75rem;  // 12px
+
+$heading-extra-large: 2rem;    // 32px
+$heading-large: 1.4375rem;     // 23px
+$heading-medium: 1.1875rem;    // 19px
+$heading-base:   1rem;         // 16px
+$heading-small:  0.875rem;     // 14px
+$heading-extra-small: 0.75rem; // 12px
+
+
 
 $border-radius: 3px;
 
@@ -105,18 +109,19 @@ $border-radius: 3px;
 // @TODO: Implement proper vertical rhythm.
 // See: https://github.com/primer/primer/blob/master/modules/primer-support/lib/variables/layout.scss
 
-$line-height: 1.563em;
-$line-height-base: 1.428571429;
-$line-height-cta: 1.125em;
-$rhythm-vertical-base: 10px;
-$rhythm-horizontal-base: 10px;
+$line-height: 1.5;
+$line-height-base: 1.5;
+$line-height-base-large: 2;
+
+$rhythm-vertical-base: 15px;
+$rhythm-horizontal-base: 15px;
 
 //
 //== Breakpoints
 //
 
 $min-supported-width: 320px !default;
-$content-width-constraint: 980px !default;
+$content-width-constraint: 1200px !default;
 
 $breakpoint-a: 576px !default;
 $breakpoint-b: 768px !default;
@@ -125,24 +130,54 @@ $breakpoint-d: 1200px !default;
 
 //
 // == Font size map
-// @TODO: implement proper ratio line-height
+//
 // breakpoint: (font-size, line-height)
-$h1-font-size: (
-  null: (1.4rem, $line-height-base),
-  $breakpoint-b: (1.4rem, $line-height-base),
-  $breakpoint-c: (2rem, $line-height-base)
+$base-font-map: (
+  null: ($font-size, $line-height-base),
+  $breakpoint-b: ($font-size, $line-height-base),
+  $breakpoint-c: ($font-size-medium, $line-height-base)
 );
 
-$h2-font-size: (
-  null: (1.16rem, $line-height-base),
-  $breakpoint-b: (1.16rem, $line-height-base),
-  $breakpoint-c: (1.4rem, $line-height-base)
+$base-font-large-map: (
+  null: ($font-size-medium, $line-height-base),
+  $breakpoint-b: ($font-size-medium, $line-height-base),
+  $breakpoint-c: ($font-size-large, $line-height-base)
 );
 
-$h3-font-size: (
-  null: (1.16rem, $line-height-base),
-  $breakpoint-b: (1.16rem, $line-height-base),
-  $breakpoint-c: (1.4rem, $line-height-base)
+$h1-font-map: (
+  null: ($heading-large, $line-height-base),
+  $breakpoint-b: ($heading-large, $line-height-base),
+  $breakpoint-c: ($heading-extra-large, $line-height-base)
+);
+
+$h2-font-map: (
+  null: ($heading-medium, $line-height-base),
+  $breakpoint-b: ($heading-medium, $line-height-base),
+  $breakpoint-c: ($heading-large, $line-height-base)
+);
+
+$h3-font-map: (
+  null: ($heading-base, $line-height-base),
+  $breakpoint-b: ($heading-base, $line-height-base),
+  $breakpoint-c: ($heading-medium, $line-height-base)
+);
+
+$h4-font-map: (
+  null: ($heading-small, $line-height-base),
+  $breakpoint-b: ($heading-small, $line-height-base),
+  $breakpoint-c: ($heading-base, $line-height-base)
+);
+
+$h5-font-map: (
+  null: ($heading-small, $line-height-base-large),
+  $breakpoint-b: ($heading-small, $line-height-base-large),
+  $breakpoint-c: ($heading-base, $line-height-base-large)
+);
+
+$h6-font-map: (
+  null: ($heading-extra-small, $line-height-base-large),
+  $breakpoint-b: ($heading-extra-small, $line-height-base-large),
+  $breakpoint-c: ($heading-small, $line-height-base-large)
 );
 
 //

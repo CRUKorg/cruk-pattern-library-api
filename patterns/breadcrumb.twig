@@ -6,7 +6,7 @@
     {% set class = class ~ ' cr-breadcrumb--hide-top' %}
 {% endif %}
 <nav id="breadcrumb" aria-label="You are here" class="{{ class }}">
-    <ol itemScope itemType="http://schema.org/BreadcrumbList" class="cr-breadcrumb__list">
+    <ol itemScope itemType="http://schema.org/BreadcrumbList" class="cr-breadcrumb__list cr-breadcrumb-nav">
         {% for crumb in crumbs %}
             <li itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem" aria-level="{{ loop.index }}" class="cr-breadcrumb__list-item">
                 <a itemProp="item" href={{ crumb.href }} class="cr-breadcrumb__link">{{ crumb.label }}</a>

@@ -1,6 +1,11 @@
 @import '../scss/base';
 
-.cr-breadcrumb__list {
+.cr-breadcrumb-nav {
+  padding: $rhythm-vertical-base 0 $rhythm-vertical-base/3 0;
+}
+
+.cr-breadcrumb-nav .cr-breadcrumb__item {
+  display: inline;
   padding: 0 $rhythm-horizontal-base 0 0;
   margin: $rhythm-vertical-base 0 $rhythm-vertical-base * 2;
   list-style: none;
@@ -8,78 +13,17 @@
   font-size: 0;
 }
 
-.cr-breadcrumb__link {
-  color: $brand-gray-dark;
+.cr-breadcrumb-nav .cr-breadcrumb__item span {  /* stylelint-disable-line */
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 593 922'%3E%3Cpath fill='%23333333' d='M582 435L158 11a36 36 0 0 0-52 0l-95 95a36 36 0 0 0 0 51l304 304L11 764a36 36 0 0 0 0 52l95 95c14 14 37 14 52 0l424-424c14-15 14-38 0-52z'/%3E%3C/svg%3E") no-repeat center center;
   display: inline-block;
-  padding: $rhythm-vertical-base / 2
-    $rhythm-horizontal-base
-    $rhythm-vertical-base / 2
-    $rhythm-horizontal-base * 2;
-  position: relative;
-  background-color: $WHITE;
-  text-decoration: underline;
-  white-space: nowrap;
-  font-size: $font-size-small;
-  vertical-align: middle;
-
-  &::after,
-  &::before {
-    content: '';
-    border-top: 18px solid transparent;
-    border-bottom: 18px solid transparent;
-    border-left: 15px solid;
-    margin-top: -18px;
-    position: absolute;
-    right: -14px;
-    top: 50%;
-  }
-
-  &::after {
-    border-left-color: $WHITE;
-    z-index: 2;
-  }
-
-  &::before {
-    border-left-color: $brand-gray-medium;
-    right: -15px;
-    z-index: 1;
-  }
-
-  &:hover {
-    background: $brand-gray-light;
-    color: $brand-secondary;
-
-    &::after {
-      border-left-color: $brand-gray-light;
-    }
-  }
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  background-size: 40%;
 }
 
-.cr-breadcrumb__list-item {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-bottom: 1px solid $brand-gray-medium;
-  border-left: 1px solid $brand-gray-medium;
-  border-top: 1px solid $brand-gray-medium;
-  display: inline-block;
-
-  &:first-child .cr-breadcrumb__link {
-    padding-left: $rhythm-horizontal-base;
-  }
-
-  // The "current" page.
-
-  &:last-child .cr-breadcrumb__link {
-    text-decoration: none;
-    color: $BLACK;
-    background: $brand-gray-light;
-    cursor: default;
-
-    &::after {
-      border-left-color: $brand-gray-light;
-    }
-  }
+.cr-breadcrumb-nav .cr-breadcrumb__item:nth-child( 1 ) {
+  margin-left: 0;
 }
 
 // Hide the current page link.

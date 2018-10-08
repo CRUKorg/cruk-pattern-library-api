@@ -11,34 +11,34 @@ html {
 body {
   background-color: $WHITE;
   color: $text-color;
-  font-size: 1rem;
   margin: 0;
   padding: 0;
   min-width: $min-supported-width;
+  @include font-size-map($base-font-map);
 }
 
 h1 {
-  @include font-size-map($h1-font-size);
+  @include font-size-map($h1-font-map);
 }
 
 h2 {
-  @include font-size-map($h2-font-size);
+  @include font-size-map($h2-font-map);
 }
 
 h3 {
-  @include font-size-map($h3-font-size);
+  @include font-size-map($h3-font-map);
 }
 
 h4 {
-  font-size: $font-size-h4;
+  @include font-size-map($h4-font-map);
 }
 
 h5 {
-  font-size: $font-size-h5;
+  @include font-size-map($h5-font-map);
 }
 
 h6 {
-  font-size: $font-size-h6;
+  @include font-size-map($h6-font-map);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -46,12 +46,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: $font-weight-heavy;
 }
 
+p {
+  @include font-size-map($base-font-map);
+}
+
 a, button {
   color: $brand-primary;
   text-decoration: none;
   font-weight: $font-weight-medium;
   font-family: $font-family-sans-serif;
-  font-size: $font-size-large;
+  @include font-size-map($base-font-map);
 
   &:hover,
   &:focus,
@@ -72,7 +76,7 @@ input,
 textarea,
 select {
   font-family: $font-family-sans-serif;
-  font-size: $font-size-large;
+  @include font-size-map($base-font-map);
   color: $text-color;
 
   &[disabled],
@@ -131,4 +135,26 @@ sup {
 
 sub {
   vertical-align: sub;
+}
+
+/* Helper */
+
+.paragraph-base {
+  @include font-size-map($base-font-map);
+}
+
+.paragraph-large {
+  @include font-size-map($base-font-large-map);
+}
+
+.paragraph-small {
+  font-size: $font-size-small;
+}
+
+.vertical-spacing {
+  margin-bottom: $rhythm-vertical-base;
+
+  @include breakpoint(md) {
+    margin-bottom: $rhythm-vertical-base*2;
+  }
 }

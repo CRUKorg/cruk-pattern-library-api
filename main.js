@@ -18,6 +18,8 @@ export {default as RelatedLinks} from './patterns/related.links';
 import vCollapsible from './patterns/collapsible.js';
 import vCtaPrint from './patterns/cta.print.js';
 
+import './scss/all.scss';
+
 const vanillaHandlers = [
   vCollapsible,
   vCtaPrint,

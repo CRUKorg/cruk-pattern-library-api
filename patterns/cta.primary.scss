@@ -7,14 +7,13 @@
   color: $WHITE;
   display: inline-block;
   font-family: $font-family-museo;
-  font-size: $font-size-large;
   font-weight: $font-weight-heavy;
   padding: 10px 19px;
   position: relative;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  line-height: $line-height-cta;
+  @include font-size-map($base-font-map);
 
   &:hover {
     color: $WHITE;
@@ -25,4 +24,6 @@
   &:visited {
     color: $WHITE;
   }
+
+  @extend .vertical-spacing;
 }

@@ -2,10 +2,12 @@
 
 .cr-list--unordered {
   list-style: disc inside;
+  @extend .vertical-spacing;
 }
 
 .cr-list--ordered {
   list-style: decimal inside;
+  @extend .vertical-spacing;
 }
 
 .cr-list--unordered .cr-list--unordered,
