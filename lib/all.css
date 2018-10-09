@@ -638,6 +638,10 @@ sub {
 .cr-breadcrumb-nav .cr-breadcrumb__item:nth-child(1) {
   margin-left: 0; }
 
+.cr-breadcrumb__item:last-of-type span {
+  /* stylelint-disable-line */
+  display: none; }
+
 .cr-breadcrumb--hide-top .cr-breadcrumb__list-item:nth-child(2) .cr-breadcrumb__link {
   padding-left: 15px; }
 

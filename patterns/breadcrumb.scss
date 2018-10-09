@@ -26,6 +26,10 @@
   margin-left: 0;
 }
 
+.cr-breadcrumb__item:last-of-type span { /* stylelint-disable-line */
+  display: none;
+}
+
 // Hide the current page link.
 
 .cr-breadcrumb--hide-current .cr-breadcrumb__list-item:last-child {

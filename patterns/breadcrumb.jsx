@@ -16,6 +16,7 @@ function Breadcrumb(props) {
           return (
             <li itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem" aria-level={ i + 1 } className="cr-breadcrumb__list-item">
               <a itemProp="item" href={ crumb.href } className="cr-breadcrumb__link">{ crumb.label }</a>
+              <span />
               <meta itemProp="position" content={ i + 1 } />
             </li>
           );

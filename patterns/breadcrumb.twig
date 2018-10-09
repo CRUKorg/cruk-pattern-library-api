@@ -10,6 +10,7 @@
         {% for crumb in crumbs %}
             <li itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem" aria-level="{{ loop.index }}" class="cr-breadcrumb__list-item">
                 <a itemProp="item" href={{ crumb.href }} class="cr-breadcrumb__link">{{ crumb.label }}</a>
+                <span></span>
                 <meta itemProp="position" content="{{ loop.index }}" />
             </li>
         {% endfor %}
