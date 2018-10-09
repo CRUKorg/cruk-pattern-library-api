@@ -2,16 +2,22 @@
 
 .cr-page-title {
   @extend %constrain-width;
-  text-align: center;
+  font-weight: $font-weight-heavy;
+  text-align: left;
+  padding-left: 10px;
+
+  @include breakpoint(sm) {
+    padding-left: 40px;
+  }
 }
 
 .cr-page-title,
 .page-title {
-  font-weight: $font-weight-light;
   @extend %clearfix;
 }
 
 .page-title {
+  word-break: break-word;
   padding-left: 20px;
 
   @include breakpoint(sm) {
