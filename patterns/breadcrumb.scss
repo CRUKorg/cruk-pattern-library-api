@@ -2,7 +2,7 @@
 
 .cr-breadcrumb-nav {
   padding: $rhythm-vertical-base 0;
-  max-width: $content-width-constraint;
+  @extend %constrain-width;
 
   .cr-breadcrumb__item {
     display: inline;
