@@ -2,7 +2,7 @@
 
 .cr-layout__row {
   @extend %constrain-width;
-  margin-bottom: $rhythm-horizontal-base;
+  @extend .vertical-spacing;
   width: auto;
   display: grid;
   grid-template-columns: 100%;
@@ -23,7 +23,7 @@
   }
 
   .cr-layout__row--50-50 {
-    grid-template-columns: repeat(2, 49.5%);
+    grid-template-columns: repeat(2, 49%);
   }
 
   .cr-layout__row--66-33 {

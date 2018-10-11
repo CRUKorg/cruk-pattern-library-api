@@ -3,12 +3,13 @@
 .cr-related-links {
   background-color: $LILY_WHITE;
   border-radius: $border-radius;
+  @extend .vertical-spacing;
 }
 
 .cr-related-links__content {
-  padding: 15px;
+  padding: $rhythm-base;
 }
 
 .cr-related-links__body {
-  padding-left: 15px;
+  padding-left: $rhythm-horizontal-base;
 }
