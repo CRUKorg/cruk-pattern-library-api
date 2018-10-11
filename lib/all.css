@@ -353,9 +353,6 @@ sub {
 .vertical-spacing, .cr-collapsible, .cr-cta--link, .cr-cta--primary, .cr-cta--print, .cr-cta--secondary, .cr-layout__row, .cr-list--unordered, .cr-list--ordered, .cr-search-input, .cr-navigation-block, .cr-related-links {
   margin-bottom: 15px; }
 
-.horizontal-spacing {
-  margin-bottom: 15px; }
-
 .vertical-spacing, .cr-collapsible, .cr-cta--link, .cr-cta--primary, .cr-cta--print, .cr-cta--secondary, .cr-layout__row, .cr-list--unordered, .cr-list--ordered, .cr-search-input, .cr-navigation-block, .cr-related-links {
   margin-bottom: 15px; }
 
