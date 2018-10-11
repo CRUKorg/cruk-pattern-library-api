@@ -1,8 +1,8 @@
 @import '../scss/base';
 
 .cr-breadcrumb-nav {
-  padding: $rhythm-vertical-base 0 $rhythm-vertical-base/3 0;
-  @extend %constrain-width;
+  padding: $rhythm-vertical-base 0;
+  max-width: $content-width-constraint;
 
   .cr-breadcrumb__item {
     display: inline;
@@ -18,10 +18,6 @@
       margin: 10px;
       background-size: 50%;
     }
-  }
-
-  .cr-breadcrumb__item:nth-child( 1 ) { /* stylelint-disable-line */
-    margin-left: 10px;
   }
 
   .cr-breadcrumb__item:last-of-type span { /* stylelint-disable-line */

@@ -153,8 +153,12 @@ sub {
 
 .vertical-spacing {
   margin-bottom: $rhythm-vertical-base;
+}
 
-  @include breakpoint(md) {
-    margin-bottom: $rhythm-vertical-base*2;
-  }
+.horizontal-spacing {
+  margin-bottom: $rhythm-horizontal-base;
+}
+
+.vertical-spacing {
+  margin-bottom: $rhythm-vertical-base;
 }

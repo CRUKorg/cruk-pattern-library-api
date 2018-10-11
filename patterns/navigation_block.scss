@@ -1,7 +1,8 @@
 .cr-navigation-block {
   border: 1px solid $gray-10;
   border-radius: $border-radius;
-  padding: 15px;
+  padding: $rhythm-base;
+  @extend .vertical-spacing;
 }
 
 .cr-navigation-block__title {

@@ -1,7 +1,7 @@
 @import '../scss/base';
 
 .cr-collapsible {
-  margin-bottom: $rhythm-vertical-base * 2;
+  @extend .vertical-spacing;
   border: 1px solid $brand-gray-light;
   border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
