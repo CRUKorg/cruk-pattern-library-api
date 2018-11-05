@@ -173,7 +173,7 @@
                 },
                 {
                     "group": "layout",
-                    "name": "Breakpoint",
+                    "name": "breakpoint",
                     "title": "Breakpoint",
                     "options": {
                         "disable_code_sample": true
