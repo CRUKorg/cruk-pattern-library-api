@@ -5,10 +5,11 @@
   "main": "lib/patterns.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node ./scripts/processPatterns.js && webpack --mode production",
+    "build": "node ./scripts/processPatterns.js && webpack --mode production && npm run copy:css",
     "dev": "node ./scripts/processPatterns.js && webpack --progress --colors --watch --mode development",
     "start:dev": "webpack-dev-server && webpack --progress --colors --watch",
-    "build:css": "webpack -p"
+    "build:css": "webpack -p && npm run copy:css",
+    "copy:css": "cp lib/all.css docs/app/css/"
   },
   "repository": {
     "type": "git",
