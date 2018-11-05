@@ -12,6 +12,7 @@ export {default as Loader} from './patterns/loader';
 export {default as Search} from './patterns/search';
 export {default as ListOrdered} from './patterns/list.ordered';
 export {default as ListUnordered} from './patterns/list.unordered';
+export {default as MegaMenu} from './patterns/menu';
 export {default as NavigationBlock} from './patterns/navigation_block';
 export {default as RelatedLinks} from './patterns/related.links';
 
@@ -63,6 +64,7 @@ export default {
       'list.ordered',
       'list.unordered',
       'loader',
+      'menu',
       'navigation_block',
       'related.links',
       'search',

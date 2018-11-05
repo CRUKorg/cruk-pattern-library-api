@@ -1,1 +1,132 @@
-<span style="color:#ec008c; font-style: italic;">*missing</span>
+<div class="cruk-menu__wrapper">
+    <span class="cruk-menubar__box"></span>
+    <div class="cruk-menu__inner">
+        <div class="cruk-menubar">
+            <input type="checkbox" id="cruk-menubar__menu" onClick="uncheckMenuItemTwo()">
+            <label for="cruk-menubar__menu">Menu</label>
+            <input type="checkbox" id="cruk-menubar__search" onClick="uncheckMenuItemOne()">
+            <label for="cruk-menubar__search">Search</label>
+            <div class="cruk-menubar__item--menu">
+                <nav class="cruk-menu">
+                    <ul role="menubar" tabindex="0">
+                        <li>
+                            <div class="cruk-menu__block">
+                                <span></span>
+                                <a role="menuitem" href="/test">About cancer</a>
+                            </div>
+                            <ul role="menu">
+                                <li>
+                                    <a role="menuitem" href="#">A1</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="/1234">1.1</a></li>
+                                        <li><a role="menuitem" href="/1234">1.2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">2</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="/1234">2.1</a></li>
+                                        <li><a role="menuitem" href="/1234">2.2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">3</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">3.1</a></li>
+                                        <li><a role="menuitem" href="#">3.2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">4</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">4.1</a></li>
+                                        <li><a role="menuitem" href="#">4.2</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">5</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">5.1</a></li>
+                                        <li><a role="menuitem" href="#">5.2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="cruk-menu__block">
+                                <span></span>
+                                <a role="menuitem" href="/test">Get Involved</a>
+                            </div>
+                            <ul role="menu">
+                                <li>
+                                    <a role="menuitem" href="#">1</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="/1234">1.1</a></li>
+                                        <li><a role="menuitem" href="/1234">1.2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a role="menuitem" href="#">2</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="/1234">2.1</a></li>
+                                        <li><a role="menuitem" href="/1234">2.2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a role="menuitem" href="#">3</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">3.1</a></li>
+                                        <li><a role="menuitem" href="#">3.2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a role="menuitem" href="#">4</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">4.1</a></li>
+                                        <li><a role="menuitem" href="#">4.2</a></li>
+                                    </ul>
+                                </li>
+                                <li><a role="menuitem" href="#">5</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">5.1</a></li>
+                                        <li><a role="menuitem" href="#">5.2</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="cruk-menu__block">
+                                <span></span>
+                                <a role="menuitem" href="#">Our research</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cruk-menu__block">
+                                <span></span>
+                                <a role="menuitem" href="#">Funding for researchers</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cruk-menu__block">
+                                <span></span>
+                                <a role="menuitem" href="#">Shop</a>
+                            </div>
+                        </li>
+                        <li class="has-no-children">
+                            <div class="cruk-menu__block">
+                                <span></span>
+                                <a role="menuitem" href="#">About us</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="cruk-menubar__item--search">
+                <form id="mobile-searchform" action="/searchredirect" method="get" onsubmit="return submitSearch();">
+                    <input type="hidden" value="1" name="siteid">
+                    <input type="text" class="search" placeholder="Search" name="query" id="mobile-query">
+                    <button aria-label="Search" name="searchsubmit" id="mobile-searchsubmit" class="searchsubmit">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
