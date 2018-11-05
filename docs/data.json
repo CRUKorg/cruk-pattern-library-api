@@ -1,0 +1,393 @@
+{
+    "project_logo": "cruk-logo.svg",
+    "project_favicon": "favicon.png",
+    "project_name": "CM&S DESIGN SYSTEM",
+    "project_url": "/",
+    "copyright_start_year": "2018",
+    "client_name": "Cancer Research UK",
+    "client_url": "https://www.cancerresearchuk.org/",
+    "creators": [
+        {
+            "name": null,
+            "url": null
+        }
+    ],
+    "theme": {
+        "border_color": "#E0E6ED",
+        "highlight_color": "#FAFAFA",
+        "brand_color": "#ec008c",
+        "background_color": "#FFFFFF",
+        "code_highlight_theme": "github",
+        "override_code_highlight_bg": "#F9FAFC",
+        "sample_dark_background": "#333333",
+        "show_project_name": true,
+        "show_version": true,
+        "max_width": null,
+        "titles": {
+            "library_title": "Pattern Library",
+            "pages_title": null,
+            "components_title": "Guidelines"
+        }
+    },
+    "assets": {
+        "css": [
+            "app/css/all.css"
+        ],
+        "js": []
+    },
+    "font_libraries": {
+        "typekit_code": null,
+        "typography_web_fonts": null,
+        "google_web_fonts": null
+    },
+    "content": {
+        "show_first_page_on_load": false,
+        "title": "null",
+        "pages": [
+            {
+                "name": "introduction",
+                "title": "Introduction",
+                "file": "./pages/intro.md"
+            }
+        ]
+    },
+    "groups": [
+        {
+            "name": "base",
+            "title": "Base Style",
+            "components": [
+                {
+                    "group": "base",
+                    "name": "fonts_heading",
+                    "title": "Heading fonts: MuseoSans, MuseoSansRounded",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "base",
+                    "name": "fonts_base",
+                    "title": "Base fonts: Arial",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "base",
+                    "name": "typography",
+                    "title": "Typography",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "base",
+                    "name": "paragraph",
+                    "title": "Paragraph",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "base",
+                    "name": "body-text",
+                    "title": "Body text",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "base",
+                    "name": "text-link",
+                    "title": "Text link",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "colours",
+            "title": "Colours",
+            "components": [
+                {
+                    "group": "colours",
+                    "name": "brand",
+                    "title": "Brand",
+                    "type": "colors",
+                    "colors": [
+                        "#2e008b,",
+                        "#ec008c",
+                        "#00b6ed,",
+                        "#666666",
+                        "#C8C9C7",
+                        "#E3E3E3"
+                    ]
+                },
+                {
+                    "group": "colours",
+                    "name": "grayscale",
+                    "title": "Grayscale",
+                    "type": "colors",
+                    "colors": [
+                        "#fafafa,#f2f2f2",
+                        "#e3e3e3,#d8d8d8",
+                        "#c7c7c7,#b2b2b2",
+                        "#999999,#8c8c8c",
+                        "#7f7f7f,#727272",
+                        "#666666,#4c4c4c",
+                        "#333333,#191919",
+                        "#000000,#ffffff"
+                    ]
+                },
+                {
+                    "group": "colours",
+                    "name": "extended",
+                    "title": "Extended",
+                    "type": "colors",
+                    "colors": [
+                        "#f7fcff,#e6e4df",
+                        "#ffe0ec,#ef5350",
+                        "#ebf9ff,#6c5c99",
+                        "#bfe8f6,#007eff",
+                        "#fdc02f,#8bc34a"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "layout",
+            "title": "Layout",
+            "components": [
+                {
+                    "group": "layout",
+                    "name": "page-width",
+                    "title": "Page width",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "layout",
+                    "name": "Breakpoint",
+                    "title": "Breakpoint",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "layout",
+                    "name": "spacing",
+                    "title": "Spacing",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "layout",
+                    "name": "grid",
+                    "title": "CCS grid",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "elements",
+            "title": "Elements",
+            "components": [
+                {
+                    "group": "elements",
+                    "name": "cta",
+                    "title": "Call to action",
+                    "width": "half"
+                },
+                {
+                    "group": "elements",
+                    "name": "search",
+                    "title": "Search",
+                    "width": "half"
+                },
+                {
+                    "group": "elements",
+                    "name": "list",
+                    "title": "Lists",
+                    "width": "half"
+                },
+                {
+                    "group": "elements",
+                    "name": "form",
+                    "title": "Form",
+                    "width": "half"
+                },
+                {
+                    "group": "elements",
+                    "name": "table",
+                    "title": "Table",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "elements",
+                    "name": "tab",
+                    "title": "Tab",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },                {
+                    "group": "elements",
+                    "name": "pagination",
+                    "title": "Pagination",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },                {
+                    "group": "elements",
+                    "name": "quote",
+                    "title": "Quote",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },                {
+                    "group": "elements",
+                    "name": "alert",
+                    "title": "Alert",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "patterns",
+            "title": "Patterns",
+            "components": [
+                {
+                    "group": "patterns",
+                    "name": "collapsible",
+                    "title": "Collapsible box",
+                    "width": "half"
+                },
+                {
+                    "group": "patterns",
+                    "name": "navigation_block",
+                    "title": "Navigation block",
+                    "width": "half"
+                },
+                {
+                    "group": "patterns",
+                    "name": "related_links",
+                    "title": "Related links",
+                    "width": "half"
+                },
+                {
+                    "group": "patterns",
+                    "name": "azlist",
+                    "title": "A to Z list",
+                    "width": "half",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "patterns",
+                    "name": "greybar",
+                    "title": "Grey bar",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "components",
+            "title": "Components",
+            "components": [
+                {
+                    "group": "components",
+                    "name": "breadcrumb",
+                    "title": "Breadcrumb"
+                },
+                {
+                    "group": "components",
+                    "name": "menu",
+                    "title": "Menu",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "components",
+                    "name": "mobile_menu",
+                    "title": "Mobile menu",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "components",
+                    "name": "header",
+                    "title": "Header",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "components",
+                    "name": "footer",
+                    "title": "Footer",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "components",
+                    "name": "social",
+                    "title": "Social share",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        },
+        {
+            "name": "media",
+            "title": "Media",
+            "components": [
+                {
+                    "group": "media",
+                    "name": "image",
+                    "title": "Image",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "media",
+                    "name": "video",
+                    "title": "Video",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                },
+                {
+                    "group": "media",
+                    "name": "icons",
+                    "title": "Icon",
+                    "options": {
+                        "disable_code_sample": true
+                    }
+                }
+            ]
+        }
+    ],
+    "version": "1.9.5"
+}

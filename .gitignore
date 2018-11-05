@@ -61,3 +61,5 @@ typings/
 .idea
 
 /vendor/
+
+.DS_Store
