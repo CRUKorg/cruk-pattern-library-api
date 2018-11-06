@@ -1,129 +1,361 @@
-<div class="cruk-menu__wrapper">
-    <span class="cruk-menubar__box"></span>
-    <div class="cruk-menu__inner">
-        <div class="cruk-menubar">
-            <input type="checkbox" id="cruk-menubar__menu" onClick="uncheckMenuItemTwo()">
-            <label for="cruk-menubar__menu">Menu</label>
-            <input type="checkbox" id="cruk-menubar__search" onClick="uncheckMenuItemOne()">
-            <label for="cruk-menubar__search">Search</label>
-            <div class="cruk-menubar__item--menu">
-                <nav class="cruk-menu">
+<div class="cr-menu__wrapper">
+    <hr class="cr-menu__divider">
+    <div class="cr-menu__inner">
+        <div class="cr-menu">
+            <!-- menu button (mobile)-->
+            <input type="checkbox" id="cr-menu__btn--menu" class="cr-menu__btn">
+            <label for="cr-menu__btn--menu" class="cr-menu__label">Menu</label>
+            <input type="checkbox" id="cr-menu__btn--search" class="cr-menu__btn">
+            <label for="cr-menu__btn--search" class="cr-menu__label">Search</label>
+            <!-- main menu -->
+            <div class="cr-menu__main-menu">
+                <nav class="cr-menu__nav">
                     <ul role="menubar" tabindex="0">
                         <li>
-                            <div class="cruk-menu__block">
-                                <span></span>
-                                <a role="menuitem" href="/test">About cancer</a>
+                            <div class="cr-menu__block">
+                            <span>
+                            </span>
+                                <a role="menuitem" href="#">About cancer</a>
                             </div>
                             <ul role="menu">
                                 <li>
-                                    <a role="menuitem" href="#">A1</a>
+                                    <a role="menuitem" href="#">Cancer types</a>
                                     <ul>
-                                        <li><a role="menuitem" href="/1234">1.1</a></li>
-                                        <li><a role="menuitem" href="/1234">1.2</a></li>
+                                        <li><a role="menuitem" href="#">Breast cancer</a></li>
+                                        <li><a role="menuitem" href="#">Bowel cancer</a></li>
+                                        <li><a role="menuitem" href="#">Lung cancer</a></li>
+                                        <li><a role="menuitem" href="#">Prostate cancer</a></li>
+                                        <li><a role="menuitem" href="#">More...</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a role="menuitem" href="#">2</a>
+                                    <a role="menuitem" href="#">Cancers in general</a>
                                     <ul>
-                                        <li><a role="menuitem" href="/1234">2.1</a></li>
-                                        <li><a role="menuitem" href="/1234">2.2</a></li>
+                                        <li><a role="menuitem" href="#">Breast cancer</a></li>
+                                        <li><a role="menuitem" href="#">Bowel cancer</a></li>
+                                        <li><a role="menuitem" href="#">Lung cancer</a></li>
+                                        <li><a role="menuitem" href="#">Prostate cancer</a></li>
+                                        <li><a role="menuitem" href="#">More...</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a role="menuitem" href="#">3</a>
+                                    <a role="menuitem" href="#">Causes of cancer</a>
                                     <ul>
-                                        <li><a role="menuitem" href="#">3.1</a></li>
-                                        <li><a role="menuitem" href="#">3.2</a></li>
+                                        <li><a role="menuitem" href="#">Symptoms</a></li>
+                                        <li><a role="menuitem" href="#">Screening</a></li>
+                                        <li><a role="menuitem" href="#">Tests</a></li>
+                                        <li><a role="menuitem" href="#">Treatment</a></li>
+                                        <li><a role="menuitem" href="#">Clinical trials</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a role="menuitem" href="#">4</a>
+                                    <a role="menuitem" href="#">Coping with cancer</a>
                                     <ul>
-                                        <li><a role="menuitem" href="#">4.1</a></li>
-                                        <li><a role="menuitem" href="#">4.2</a></li>
+                                        <li><a role="menuitem" href="#">Cancer Statistics</a></li>
+                                        <li><a role="menuitem" href="#">Local cancer statistics</a></li>
+                                        <li><a role="menuitem" href="#">Be Clear on Cancer</a></li>
+                                        <li><a role="menuitem" href="#">NICE suspected cancer referral guidelines</a></li>
+                                        <li><a role="menuitem" href="#">More...</a></li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a role="menuitem" href="#">5</a>
+                                    <a role="menuitem" href="#">Health Professionals</a>
                                     <ul>
-                                        <li><a role="menuitem" href="#">5.1</a></li>
-                                        <li><a role="menuitem" href="#">5.2</a></li>
+                                        <li><a role="menuitem" href="#">Breast cancer</a></li>
+                                        <li><a role="menuitem" href="#">Bowel cancer</a></li>
+                                        <li><a role="menuitem" href="#">Lung cancer</a></li>
+                                        <li><a role="menuitem" href="#">Prostate cancer</a></li>
+                                        <li><a role="menuitem" href="#">More...</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <div class="cruk-menu__block">
-                                <span></span>
-                                <a role="menuitem" href="/test">Get Involved</a>
+                            <div class="cr-menu__block">
+                            <span>
+                            </span>
+                                <a role="menuitem" href="#">Get Involved</a>
                             </div>
                             <ul role="menu">
                                 <li>
-                                    <a role="menuitem" href="#">1</a>
+                                    <a role="menuitem" href="#">Donate</a>
                                     <ul>
-                                        <li><a role="menuitem" href="/1234">1.1</a></li>
-                                        <li><a role="menuitem" href="/1234">1.2</a></li>
+                                        <li><a role="menuitem" href="#">Make a donation</a></li>
+                                        <li><a role="menuitem" href="#">By cancer type</a></li>
+                                        <li><a role="menuitem" href="#">Leave a legacy gift</a></li>
+                                        <li><a role="menuitem" href="#">Donate in Memory</a></li>
+                                        <li><a role="menuitem" href="#">World Cancer Day</a></li>
+                                        <li><a role="menuitem" href="#">More...</a></li>
                                     </ul>
                                 </li>
-                                <li><a role="menuitem" href="#">2</a>
+                                <li>
+                                    <a role="menuitem" href="#">Find an event</a>
                                     <ul>
-                                        <li><a role="menuitem" href="/1234">2.1</a></li>
-                                        <li><a role="menuitem" href="/1234">2.2</a></li>
+                                        <li><a role="menuitem" href="#">Race for Life</a></li>
+                                        <li><a role="menuitem" href="#">Charity runs</a></li>
+                                        <li><a role="menuitem" href="#">Charity walks</a></li>
+                                        <li><a role="menuitem" href="#">Search events</a></li>
+                                        <li><a role="menuitem" href="#">Relay For Life</a></li>
+                                        <li><a role="menuitem" href="#">More...</a></li>
                                     </ul>
                                 </li>
-                                <li><a role="menuitem" href="#">3</a>
+                                <li>
+                                    <a role="menuitem" href="#">Volunteer</a>
                                     <ul>
-                                        <li><a role="menuitem" href="#">3.1</a></li>
-                                        <li><a role="menuitem" href="#">3.2</a></li>
+                                        <li><a role="menuitem" href="#">Volunteer in our shops</a></li>
+                                        <li><a role="menuitem" href="#">Help at an event</a></li>
+                                        <li><a role="menuitem" href="#">Help us raise money</a></li>
+                                        <li><a role="menuitem" href="#">Volunteer in your area</a></li>
+                                        <li><a role="menuitem" href="#">More...</a></li>
                                     </ul>
                                 </li>
-                                <li><a role="menuitem" href="#">4</a>
+                                <li>
+                                    <a role="menuitem" href="#">Do your own fundraising</a>
                                     <ul>
-                                        <li><a role="menuitem" href="#">4.1</a></li>
-                                        <li><a role="menuitem" href="#">4.2</a></li>
+                                        <li><a role="menuitem" href="#">Fundraising ideas</a></li>
+                                        <li><a role="menuitem" href="#">Get a fundraising pack</a></li>
+                                        <li><a role="menuitem" href="#">Return fundraising money</a></li>
+                                        <li><a role="menuitem" href="#">Set up a Cancer Research UK Giving Page</a></li>
+                                        <li><a role="menuitem" href="#">More...</a></li>
                                     </ul>
                                 </li>
-                                <li><a role="menuitem" href="#">5</a>
+                                <li>
+                                    <a role="menuitem" href="#">More...</a>
                                     <ul>
-                                        <li><a role="menuitem" href="#">5.1</a></li>
-                                        <li><a role="menuitem" href="#">5.2</a></li>
+                                        <li><a role="menuitem" href="#">Find a shop or superstore</a></li>
+                                        <li><a role="menuitem" href="#">Fundraise at your celebration</a></li>
+                                        <li><a role="menuitem" href="#">Campaign for us</a></li>
+                                        <li><a role="menuitem" href="#">Become a partner</a></li>
+                                        <li><a role="menuitem" href="#">Cancer Research UK Kids & Teens</a></li>
+                                        <li><a role="menuitem" href="#">Our Right Now campaign</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <div class="cruk-menu__block">
-                                <span></span>
+                            <div class="cr-menu__block">
+                            <span>
+                            </span>
                                 <a role="menuitem" href="#">Our research</a>
                             </div>
+                            <ul role="menu">
+                                <li>
+                                    <a role="menuitem" href="#">By cancer type</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Brain tumours</a></li>
+                                        <li><a role="menuitem" href="#">Skin cancer</a></li>
+                                        <li><a role="menuitem" href="#">Breast cancer</a></li>
+                                        <li><a role="menuitem" href="#">All cancer types</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">By cancer topic</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">New treatments</a></li>
+                                        <li><a role="menuitem" href="#">Cancer biology</a></li>
+                                        <li><a role="menuitem" href="#">Cancer drugs</a></li>
+                                        <li><a role="menuitem" href="#">All cancer subjects</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">Near you</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Belfast</a></li>
+                                        <li><a role="menuitem" href="#">Cardiff</a></li>
+                                        <li><a role="menuitem" href="#">Edinburgh</a></li>
+                                        <li><a role="menuitem" href="#">All locations</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">By Researcher</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Professor Duncan Baird</a></li>
+                                        <li><a role="menuitem" href="#">Professor Fran Balkwill</a></li>
+                                        <li><a role="menuitem" href="#">Professor Andrew Biankin</a></li>
+                                        <li><a role="menuitem" href="#">See all researchers</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">More...</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Our achievements timeline</a></li>
+                                        <li><a role="menuitem" href="#">Our research strategy</a></li>
+                                        <li><a role="menuitem" href="#">Involving animals in research</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <div class="cruk-menu__block">
-                                <span></span>
+                            <div class="cr-menu__block">
+                            <span>
+                            </span>
                                 <a role="menuitem" href="#">Funding for researchers</a>
                             </div>
+                            <ul role="menu">
+                                <li>
+                                    <a role="menuitem" href="#">Research opportunities</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">For discovery researchers</a></li>
+                                        <li><a role="menuitem" href="#">For clinical researchers</a></li>
+                                        <li><a role="menuitem" href="#">For population researchers</a></li>
+                                        <li><a role="menuitem" href="#">In drug discovery & development</a></li>
+                                        <li><a role="menuitem" href="#">In early detection & diagnosis</a></li>
+                                        <li><a role="menuitem" href="#">For students & postdocs</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">Our funding schemes</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Career Development Fellowship</a></li>
+                                        <li><a role="menuitem" href="#">Pioneer Award</a></li>
+                                        <li><a role="menuitem" href="#">Grand Challenge</a></li>
+                                        <li><a role="menuitem" href="#">View all schemes and deadlines</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">Applying for funding</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Start your application online</a></li>
+                                        <li><a role="menuitem" href="#">How to make a successful application</a></li>
+                                        <li><a role="menuitem" href="#">Funding committees</a></li>
+                                        <li><a role="menuitem" href="#">Successful applicant case studies</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">How we deliver research</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Our research strategy</a></li>
+                                        <li><a role="menuitem" href="#">Our research infrastructure</a></li>
+                                        <li><a role="menuitem" href="#">Events and conferences</a></li>
+                                        <li><a role="menuitem" href="#">Our research partnerships</a></li>
+                                        <li><a role="menuitem" href="#">Facts & figures about our funding</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">More...</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Develop your research career</a></li>
+                                        <li><a role="menuitem" href="#">Recently funded awards</a></li>
+                                        <li><a role="menuitem" href="#">Manage your research grant</a></li>
+                                        <li><a role="menuitem" href="#">Notify us of new publications</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <div class="cruk-menu__block">
-                                <span></span>
+                            <div class="cr-menu__block">
+                            <span>
+                            </span>
                                 <a role="menuitem" href="#">Shop</a>
                             </div>
+                            <ul role="menu">
+                                <li>
+                                    <a role="menuitem" href="#">Find a shop</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Volunteer in a shop</a></li>
+                                        <li><a role="menuitem" href="#">Donate goods to a shop</a></li>
+                                        <li><a role="menuitem" href="#">Our superstores</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">Shop online</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Race for Life</a></li>
+                                        <li><a role="menuitem" href="#">Wedding favours</a></li>
+                                        <li><a role="menuitem" href="#">Cancer Care</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">Our eBay store</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Dresses</a></li>
+                                        <li><a role="menuitem" href="#">Shoes and boots</a></li>
+                                        <li><a role="menuitem" href="#">Bags and purses</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                </li>
+                                <li>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="has-no-children">
-                            <div class="cruk-menu__block">
-                                <span></span>
+                        <li>
+                            <div class="cr-menu__block">
+                            <span>
+                            </span>
                                 <a role="menuitem" href="#">About us</a>
                             </div>
+                            <ul role="menu">
+                                <li>
+                                    <a role="menuitem" href="#">What we do</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">We beat cancer</a></li>
+                                        <li><a role="menuitem" href="#">We fundraise</a></li>
+                                        <li><a role="menuitem" href="#">We develop policy</a></li>
+                                        <li><a role="menuitem" href="#">Our Year 2017/18</a></li>
+                                        <li><a role="menuitem" href="#">Our global role</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">Our organisation</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Our strategy</a></li>
+                                        <li><a role="menuitem" href="#">Our Trustees</a></li>
+                                        <li><a role="menuitem" href="#">CEO and Executive Board</a></li>
+                                        <li><a role="menuitem" href="#">Annual report and accounts</a></li>
+                                        <li><a role="menuitem" href="#">How we spend your money</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">Current jobs</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Graduates and interns</a></li>
+                                        <li><a role="menuitem" href="#">Your development</a></li>
+                                        <li><a role="menuitem" href="#">Benefits</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">Cancer news</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Science blog</a></li>
+                                        <li><a role="menuitem" href="#">Latest press releases</a></li>
+                                        <li><a role="menuitem" href="#">Latest news reports</a></li>
+                                        <li><a role="menuitem" href="#">Search all news</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a role="menuitem" href="#">More...</a>
+                                    <ul>
+                                        <li><a role="menuitem" href="#">Contact Us</a></li>
+                                        <li><a role="menuitem" href="#">Press office</a></li>
+                                        <li><a role="menuitem" href="#">Publications</a></li>
+                                        <li><a role="menuitem" href="#">Update your contact preferences</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                     </ul>
                 </nav>
             </div>
-            <div class="cruk-menubar__item--search">
-                <form id="mobile-searchform" action="/searchredirect" method="get" onsubmit="return submitSearch();">
-                    <input type="hidden" value="1" name="siteid">
-                    <input type="text" class="search" placeholder="Search" name="query" id="mobile-query">
-                    <button aria-label="Search" name="searchsubmit" id="mobile-searchsubmit" class="searchsubmit">
-                        <span class="glyphicon glyphicon-search"></span>
+            <div class="cr-menu__search">
+                <!-- Search component -->
+                <form role="search" class="cr-search-input">
+                    <label for="{{ uniqueId }}" class="cr-search-input__label">Search</label>
+                    <input
+                        type="search"
+                        name="search"
+                        id="{{ uniqueId }}"
+                        class="cr-search-input__input"
+                        placeholder="Search..."
+                        autocomplete="off"
+                        autocorrect="off"
+                    />
+                    <button
+                        type="submit"
+                        class="cr-search-input__button"
+                        aria-label="Submit your search"
+                    >
+                        Search
                     </button>
                 </form>
             </div>
