@@ -32,9 +32,13 @@ class App extends Component {
         <NavigationBlock
           href="#"
           target="_blank"
-          text="This is navigation block"
+          title="Tests"
+          text="Find out about tests to diagnose cancer and monitor it during and after treatment, including what each test can show, how you have it and how to prepare."
         />
-        <RelatedLinks />
+        <RelatedLinks
+          title="Related links"
+          staticContent={`<ul><li><a href="#"><strong>Side effects of triptorelin</strong></a></li><li><a href="#"><strong>Coping with cancer</strong></a></li><li><a href="#"><strong>Coping with cancer</strong></a></li><li><a href="#"><strong>Your cancer type</strong></a></li></ul>`}
+        />
         <HeaderPageTitle />
         <MegaMenu />
         <Divider />
