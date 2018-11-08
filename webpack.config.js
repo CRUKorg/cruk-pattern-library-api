@@ -1,12 +1,15 @@
-var path = require('path');
-var StyleLintPlugin = require('stylelint-webpack-plugin');
-var MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './main.js',
+  entry: {
+    'patterns': './main.js',
+    'index': './src/index.js',
+  },
   output: {
     path: path.resolve(__dirname, 'lib'),
-    filename: 'patterns.js',
+    filename: '[name].js',
     library: 'patterns',
     libraryTarget: 'umd',
     umdNamedDefine: true,
