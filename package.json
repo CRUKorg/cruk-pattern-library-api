@@ -9,7 +9,7 @@
     "dev": "node ./scripts/processPatterns.js && webpack --progress --colors --watch --mode development",
     "start:dev": "webpack-dev-server && webpack --progress --colors --watch",
     "build:css": "webpack -p && npm run copy:css",
-    "copy:css": "cp lib/all.css docs/app/css/"
+    "copy:css": "cp lib/all.css docs/app/css/",
   },
   "repository": {
     "type": "git",
@@ -29,8 +29,8 @@
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.4.1",
-    "react-slide-toggle": "^0.1.12",
-    "twig": "^1.11.0"
+    "twig": "^1.11.0",
+    "vue-react": "^1.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.54",
@@ -51,6 +51,7 @@
     "mini-css-extract-plugin": "^0.4.3",
     "node-sass": "^4.9.3",
     "postcss-loader": "^3.0.0",
+    "react-data-fetching": "^1.0.0-beta.1",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "stylelint": "^9.2.0",
