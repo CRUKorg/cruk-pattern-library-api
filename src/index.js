@@ -64,7 +64,7 @@ const data = {
   }
 };
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div className='cr-layout'>
@@ -120,7 +120,5 @@ class App extends Component {
     );
   }
 }
-
-export default App;
 
 ReactDOM.render(<App />, document.getElementById('root'));

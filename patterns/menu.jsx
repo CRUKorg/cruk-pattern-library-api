@@ -10,12 +10,16 @@ export default class MegaMenu extends Component {
     this.handleMenuItem = this.handleMenuItem.bind(this);
   }
 
-  // @TODO: regex to add external class
   handleMenuItem = (href, title) => {
+    const regex = /(twitter\.com|facebook\.com|addthis\.com|ebay)/;
+    const found = href.match(regex);
+
     return (
       <a
         role='menuitem'
         href={href}
+        className={!found || 'external'}
+        target={!found || '_blank'}
       >
         {title}
       </a>

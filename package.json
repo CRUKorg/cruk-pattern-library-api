@@ -9,7 +9,7 @@
     "dev": "node ./scripts/processPatterns.js && webpack --progress --colors --watch --mode development",
     "start:dev": "webpack-dev-server && webpack --progress --colors --watch",
     "build:css": "webpack -p && npm run copy:css",
-    "copy:css": "cp lib/all.css docs/app/css/",
+    "copy:css": "cp lib/all.css docs/app/css/"
   },
   "repository": {
     "type": "git",

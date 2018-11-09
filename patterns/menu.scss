@@ -318,6 +318,11 @@ ul[role='menu'] ul li a {
   }
 }
 
+a.external:after {
+  content: url(https://www.cancerresearchuk.org/sites/all/themes/custom/cruk/images/cruk-icons/external-link-icons/external-link-text.png);
+  padding-left: 5px;
+}
+
 /* CSS fallback - if we need to support IE9 */
 /*
 @media only screen and (min-width: $breakpoint-c) {
