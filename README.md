@@ -109,13 +109,23 @@ const markup = 'theFullMarkupOfAllPatterns';
 Patterns.addVanillaBehaviours('foo-bar', window.document);
 ```
 
-## Updating
+## Development
+
+* Run `npm run start:dev` then http://localhost:8081/
+* Run `npm run build` to rebuild before committing changes
+* Distribution folder location `/lib` to preview patterns (jsx)
+
+## Design system
+Gihub page: https://crukorg.github.io/cruk-pattern-library-api/
+* currently it integrates with Netlify CI/CD until there's official CRUK one took place
+
+### Updating
 
 * Increment the version number in `package.json`.
 * Increment the version number in `composer.json`.
 * Run `npm run build` to rebuild.
 * Commit and create a new release in github.
-* Publish to NPM.
+* Publish to [NPM](https://www.npmjs.com/package/cruk-pattern-library-api).
 
 ### Adding patterns
 
@@ -138,13 +148,16 @@ For example: `foo-pattern.twig`. Sub-patterns look like `type.variant.twig`.
 
 * UNIT TESTING AS SOON AS POSSIBLE
 * Themable - e.g. rfl, su2c, etc. have different color schemes
-* Display patterns visually using github pages or similar
+* ~~Display patterns visually using github pages or similar~~
 * Provide some way to document each pattern, including what arguments it accepts
-* Add more global styles, reset, etc
+* ~~Add more global styles, reset, etc~~
 * Improve styles! Horizontal and vertical rhythm would be nice
 * Break up the patterns directory into sub-dirs
 * Add all the missing patterns
 * Reduce the effort involved in adding new patterns
 * Extend for other technologies (E.g. React Native, react styled components)
 * CI/CD
-* Compile a CSS file and push to S3 on build
+* ~~Compile a CSS file and~~ push to S3 on build
+
+Track progress here: https://github.com/CRUKorg/cruk-pattern-library-api/issues
+

@@ -8,6 +8,7 @@ export default class MegaMenu extends Component {
     super(props);
     this.handleNav = this.handleNav.bind(this);
     this.handleMenuItem = this.handleMenuItem.bind(this);
+    this.handleChange = this.handleChange.bind(this);
   }
 
   handleMenuItem = (href, title) => {
@@ -26,10 +27,16 @@ export default class MegaMenu extends Component {
     );
   };
 
-  // @TODO: top level item weight? and tidy up the rubbish code, mobile onClick reset both checkboxes
+  handleChange(e) {
+    document.querySelectorAll('.cr-menu__btn').forEach( el => el.checked = false );
+    document.getElementById(e.target.id).checked = true;
+  }
+
+  // @TODO: Refactor and extract checkbox to separate reusable component
   handleNav = (data) => {
     const menuItems= Object.keys(data)
       .filter(obj => data[obj]['#title'] !== undefined )
+      .sort((a, b) => data[a]['#original_link'].weight - data[b]['#original_link'].weight)
       .map(obj => {
         const level1 = data[obj];
         const menuBar = (
@@ -96,9 +103,9 @@ export default class MegaMenu extends Component {
             <hr className="cr-menu__divider" />
             <div className="cr-menu__inner">
               <div className="cr-menu">
-                <input type="checkbox" id="cr-menu__btn--menu" className="cr-menu__btn" />
+                <input type="checkbox" id="cr-menu__btn--menu" className="cr-menu__btn" onClick={this.handleChange} />
                 <label htmlFor="cr-menu__btn--menu" className="cr-menu__label">Menu</label>
-                <input type="checkbox" id="cr-menu__btn--search" className="cr-menu__btn" />
+                <input type="checkbox" id="cr-menu__btn--search" className="cr-menu__btn" onClick={this.handleChange}/>
                 <label htmlFor="cr-menu__btn--search" className="cr-menu__label">Search</label>
                 <div className="cr-menu__main-menu">
                   {this.handleNav(data)}

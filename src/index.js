@@ -1,6 +1,8 @@
 /* eslint-disable */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+
 import Breadcrumb from '../patterns/breadcrumb';
 import Collapsible from '../patterns/collapsible.jsx';
 import CtaLink from '../patterns/cta.link';
@@ -15,16 +17,11 @@ import ListUnordered from '../patterns/list.unordered';
 import MegaMenu from '../patterns/menu';
 import NavigationBlock from '../patterns/navigation_block';
 import RelatedLinks from '../patterns/related.links';
-import PropTypes from 'prop-types';
 
 // @TODO:
-// fix eslint
-// import all components, add dummy data for props
-// issues - Breadcrumb, Collapsible, ListOrdered, ListUnordered
-// styling issue - loader
-// fix components
-// create readme file
-// bridge between /docs and /lib
+// 1) remove eslint error
+// 2) add Breadcrumb, Collapsible, ListOrdered, ListUnordered, loader (styling only)
+// 3) import component to astrum (vuejs)
 const data = {
   NavigationBlock: {
     title: 'Navigation Block',
