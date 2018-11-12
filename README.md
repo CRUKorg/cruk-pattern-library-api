@@ -158,6 +158,7 @@ For example: `foo-pattern.twig`. Sub-patterns look like `type.variant.twig`.
 * Extend for other technologies (E.g. React Native, react styled components)
 * CI/CD
 * ~~Compile a CSS file and~~ push to S3 on build
+* Exclude build folder
 
 Track progress here: https://github.com/CRUKorg/cruk-pattern-library-api/issues
 
