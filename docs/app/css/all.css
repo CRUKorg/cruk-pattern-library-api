@@ -1832,11 +1832,11 @@ ul[role='menubar'] div a {
   color: #333333;
   display: block;
   border: 1px solid transparent;
-  text-align: center;
   word-break: break-word;
   line-height: 60px;
   height: 61px;
-  z-index: 1000; }
+  z-index: 1000;
+  padding-left: 15px; }
 
 ul[role='menubar'] li:hover > div a {
   color: #ec008c;
@@ -1861,6 +1861,7 @@ ul[role='menu'] {
   opacity: 0;
   filter: alpha(opacity=0);
   width: 0;
+  height: 0;
   position: absolute;
   top: 20px;
   left: 50%;
@@ -1877,7 +1878,8 @@ ul[role='menu'] a {
   font-size: 0.875rem; }
 
 ul[role='menu'] ul li a {
-  color: #333333; }
+  color: #333333;
+  padding-right: 5px; }
 
 /* Responsive - large breakpoint */
 @media only screen and (min-width: 992px) {
@@ -1909,7 +1911,9 @@ ul[role='menu'] ul li a {
   ul[role='menubar'] div a {
     font-size: 1.0625rem;
     /* 17px */
-    color: #2e008b; }
+    color: #2e008b;
+    text-align: center;
+    padding-left: 0; }
     ul[role='menubar'] div a::after {
       content: '';
       border: solid #b3b3b3;

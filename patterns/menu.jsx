@@ -52,6 +52,7 @@ export default class MegaMenu extends Component {
               const level2 = level1['#below'][obj2];
               const menuItem = Object.keys(level2['#below'])
                 .filter(obj3 => level2['#below'][obj3]['#title'] !== undefined )
+                .sort((a, b) => level2['#below'][a]['#original_link'].weight - level2['#below'][b]['#original_link'].weight)
                 .map(
                   obj3 => {
                     const level3 = level2['#below'][obj3];
