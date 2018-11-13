@@ -9,6 +9,7 @@ import CtaLink from '../patterns/cta.link';
 import CtaPrimary from '../patterns/cta.primary';
 import CtaSecondary from '../patterns/cta.secondary';
 import Divider from '../patterns/divider';
+import Header from '../patterns/header';
 import HeaderPageTitle from '../patterns/header.page-title';
 import Loader from '../patterns/loader';
 import Search from '../patterns/search';
@@ -67,6 +68,7 @@ export default class App extends Component {
       <div className='cr-layout'>
         <div className='cr-layout__row cr-layout__row cr-layout__row--100'>
           <div className='cr-layout__cell'>
+            <Header />
             <HeaderPageTitle
               text={data.HeaderPageTitle.text}
             />

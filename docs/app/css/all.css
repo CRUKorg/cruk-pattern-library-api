@@ -1261,6 +1261,9 @@ sub {
   padding: initial;
   position: initial; }
 
+.cruk-logo {
+  text-align: center; }
+
 .cr-page-title {
   clear: both; }
   .cr-page-title:after {
