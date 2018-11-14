@@ -34,6 +34,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.54",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-function-bind": "^7.0.0",
     "@babel/polyfill": "^7.0.0-beta.54",
     "@babel/preset-env": "^7.0.0-beta.54",
     "@babel/preset-react": "^7.0.0-beta.54",
@@ -59,7 +61,7 @@
     "stylelint-scss": "^2.5.0",
     "stylelint-webpack-plugin": "^0.10.4",
     "webpack": "^4.8.1",
-    "webpack-cli": "^2.1.5",
+    "webpack-cli": "^3.1.1",
     "webpack-dev-server": "^3.1.9"
   }
 }

@@ -53,8 +53,10 @@ module.exports = {
             query: {
               presets: [
                 '@babel/react',
-                '@babel/env',
-                '@babel/stage-0'
+                '@babel/env'
+              ],
+              plugins: [
+                '@babel/plugin-proposal-class-properties'
               ]
             }
           },

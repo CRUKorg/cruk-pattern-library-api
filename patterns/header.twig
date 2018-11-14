@@ -1,0 +1,34 @@
+<div class="cr-header">
+  <div class="cr-header__logo">
+    <a href={{ text }} title={{ logoTitle }} rel="home">
+      <img src={{ logoSrc }} alt="Cancer Research UK Homepage" />
+    </a>
+  </div>
+  <div class="cr-header__slogan">
+    <h2>{{ slogan }}</h2>
+  </div>
+  <div class="cr-header__search">
+    <form role="search" class="cr-search-input">
+    <label for="{{ uniqueId }}" class="cr-search-input__label">{{ label }}</label>
+    <input
+      type="search"
+      name="search"
+      id="{{ uniqueId }}"
+      class="cr-search-input__input"
+      placeholder="{{ label }}"
+      autocomplete="off"
+      autocorrect="off"
+    />
+    <button
+      type="submit"
+      class="cr-search-input__button"
+      aria-label="Submit your search"
+    >
+      Search
+    </button>
+</form>
+  </div>
+  <div class="cr-header__cta">
+    <a class="cr-cta--primary" href="{{ href }}">{{ text }}</a>
+  </div>
+</div>

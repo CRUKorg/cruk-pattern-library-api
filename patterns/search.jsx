@@ -48,6 +48,10 @@ class Search extends Component {
   }
 }
 
+Search.defaultProps = {
+  label: 'Search'
+};
+
 Search.propTypes = {
   changeCallback: PropTypes.func,
   label: PropTypes.string,

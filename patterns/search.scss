@@ -9,10 +9,6 @@
   @extend .vertical-spacing;
 }
 
-.cr-search-input--focused {
-  @extend %input-group__group--focused;
-}
-
 .cr-search-input__input {
   @extend %input-group__input;
 }
@@ -22,4 +18,13 @@
   @include text-replace($icon-search, $gray-20);
   border: 0;
   background-size: 18px;
+}
+
+.cr-search-input--focused {
+  @extend %input-group__group--focused;
+
+  .cr-search-input__button {
+    @include text-replace($icon-search, $brand-info);
+    background-size: 18px;
+  }
 }

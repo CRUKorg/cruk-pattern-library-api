@@ -1261,8 +1261,9 @@ sub {
   padding: initial;
   position: initial; }
 
-.cruk-logo {
-  text-align: center; }
+.cr-header {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto; }
 
 .cr-page-title {
   clear: both; }

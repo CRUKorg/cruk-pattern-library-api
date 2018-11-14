@@ -1,3 +1,58 @@
-.cruk-logo {
-  text-align: center;
+.cr-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $rhythm-vertical-base 15px;
+
+  .cr-header__slogan,
+  .cr-header__search {
+    display: none;
+  }
+
+  .cr-header__logo {
+    flex-basis: 40%;
+  }
+
+  .cr-header__cta {
+    margin-top: $rhythm-vertical-base;
+  }
+
+  @include breakpoint($breakpoint-b) {
+
+    .cr-header__logo {
+      flex-basis: initial;
+    }
+
+    .cr-header__slogan {
+      display: block;
+    }
+
+    .cr-header__cta {
+      margin-top: 0;
+    }
+  }
+
+  @include breakpoint($breakpoint-c) {
+    padding: $rhythm-vertical-base*2 0 $rhythm-vertical-base;
+
+    .cr-header__search {
+      display: block;
+    }
+  }
 }
+
+.cr-header__logo-img {
+  width: 100%;
+}
+
+.cr-header__site-slogan {
+  color: $KINGFISHER_DAISY;
+  font-weight: 500;
+  font-size: 1.5625rem; // 25px
+  padding: 0 30px;
+}
+
+.cr-header__search .cr-search-input__input {
+  width: 80px;
+}
+
