@@ -15,6 +15,10 @@ module.exports = {
     umdNamedDefine: true,
     globalObject: 'typeof self !== \'undefined\' ? self : this'
   },
+  devServer: {
+    inline:true,
+    port: 9999
+  },
   optimization: {
     splitChunks: {
       cacheGroups: {

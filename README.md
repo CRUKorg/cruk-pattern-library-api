@@ -111,7 +111,7 @@ Patterns.addVanillaBehaviours('foo-bar', window.document);
 
 ## Development
 
-* Run `npm run start:dev` then http://localhost:8081/
+* Run `npm run start:dev` then http://localhost:9999/
 * Run `npm run build` to rebuild before committing changes
 * Distribution folder location `/lib` to preview patterns (jsx)
 

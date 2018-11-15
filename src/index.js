@@ -136,9 +136,7 @@ export default class App extends Component {
               staticContent={data.RelatedLinks.staticContent}
             />
           </div>
-          <Search
-            label={data.Search.label}
-          />
+          <Search />
         </div>
         <Divider />
       </div>
