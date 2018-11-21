@@ -68,6 +68,7 @@ export default {
       'related.links',
       'search',
       'text',
+      'video',
     ];
   },
 };
