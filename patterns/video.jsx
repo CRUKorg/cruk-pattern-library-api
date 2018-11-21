@@ -6,7 +6,12 @@ function Video(props) {
   return (
     <div class="cr-video">
       <div class="cr-video__holder">
-        <Iframe width="640" height="360" url={props.url} allowfullscreen display="initial" position="relative"/>
+        <Iframe
+          width="100%"
+          height="100%"
+          url={props.url}
+          allowfullscreen
+          position="relative"/>
       </div>
     </div>
   );
