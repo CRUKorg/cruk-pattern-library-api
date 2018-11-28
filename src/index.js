@@ -73,7 +73,7 @@ const data = {
   },
   Video: {
     url: 'https://www.youtube-nocookie.com/embed/tS4a6I4-Yjo',
-    autoplay: 1,
+    autoplay: 0,
     rel: 0,
     modestbranding: 1
   }

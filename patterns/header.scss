@@ -2,8 +2,13 @@
 
 .cr-header {
   display: flex;
+  display: -ms-flexbox;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
+  -ms-flex-direction: row;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
   padding: $rhythm-vertical-base 15px;
 
   .cr-header__slogan,
@@ -22,7 +27,7 @@
   @include breakpoint($breakpoint-b) {
 
     .cr-header__logo {
-      flex-basis: initial;
+      flex-basis: auto;
     }
 
     .cr-header__slogan {
@@ -35,16 +40,23 @@
   }
 
   @include breakpoint($breakpoint-c) {
-    padding: $rhythm-vertical-base*2 0 $rhythm-vertical-base;
+    padding: $rhythm-vertical-base*2 $rhythm-horizontal-base $rhythm-vertical-base;
 
     .cr-header__search {
       display: block;
+      flex-basis: 15%;
+      margin-right: $rhythm-horizontal-base;
     }
+  }
+
+  @include breakpoint($breakpoint-d) {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
 .cr-header__logo-img {
-  width: 100%;
+  width: auto;
 }
 
 .cr-header__site-slogan {
@@ -55,6 +67,8 @@
 }
 
 .cr-header__search .cr-search-input__input {
-  width: 110px;
+  max-width: 110px;
+  display: inline-block;
+  -webkit-appearance: none;
 }
 
