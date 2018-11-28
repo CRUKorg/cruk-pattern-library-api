@@ -64,6 +64,10 @@ a, button {
     color: $brand-secondary;
     text-decoration: underline;
     background-color: transparent;
+  }
+
+  &:hover,
+  &:active {
     outline: none;
   }
 

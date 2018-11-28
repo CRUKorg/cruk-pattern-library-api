@@ -15,6 +15,10 @@ module.exports = {
     umdNamedDefine: true,
     globalObject: 'typeof self !== \'undefined\' ? self : this'
   },
+  devServer: {
+    inline:true,
+    port: 9999
+  },
   optimization: {
     splitChunks: {
       cacheGroups: {
@@ -53,8 +57,10 @@ module.exports = {
             query: {
               presets: [
                 '@babel/react',
-                '@babel/env',
-                '@babel/stage-0'
+                '@babel/env'
+              ],
+              plugins: [
+                '@babel/plugin-proposal-class-properties'
               ]
             }
           },

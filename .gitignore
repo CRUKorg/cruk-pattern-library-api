@@ -63,3 +63,5 @@ typings/
 /vendor/
 
 .DS_Store
+
+package-lock.json
