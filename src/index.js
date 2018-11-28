@@ -18,6 +18,7 @@ import ListUnordered from '../patterns/list.unordered';
 import MegaMenu from '../patterns/menu';
 import NavigationBlock from '../patterns/navigation_block';
 import RelatedLinks from '../patterns/related.links';
+import Video from '../patterns/video';
 
 // @TODO:
 // 1) remove eslint error
@@ -69,6 +70,12 @@ const data = {
     href: 'https://www.cancerresearchuk.org/get-involved/donate/',
     text: 'Donate',
     formDest: 'https://www.cancerresearchuk.org/searchredirect'
+  },
+  Video: {
+    url: 'https://www.youtube-nocookie.com/embed/tS4a6I4-Yjo',
+    autoplay: 1,
+    rel: 0,
+    modestbranding: 1
   }
 };
 
@@ -137,6 +144,16 @@ export default class App extends Component {
             />
           </div>
           <Search />
+        </div>
+        <div className='cr-layout__row cr-layout__row cr-layout__row--100'>
+          <div className='cr-layout__cell'>
+            <Video
+              url={data.Video.url}
+              autoplay={data.Video.autoplay}
+              rel={data.Video.rel}
+              modestbranding={data.Video.modestbranding}
+            />
+          </div>
         </div>
         <Divider />
       </div>
