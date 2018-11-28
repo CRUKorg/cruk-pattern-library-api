@@ -1,14 +1,25 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import { Fetch } from 'react-data-fetching';
+import axios from 'axios';
 import Search from './search';
 
 export default class MegaMenu extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      menuData: []
+    };
     this.handleNav = this.handleNav.bind(this);
     this.handleMenuItem = this.handleMenuItem.bind(this);
     this.handleChange = this.handleChange.bind(this);
+  }
+
+  componentDidMount() {
+    axios.get(this.props.url)
+      .then(res => {
+        const menuData = res.data;
+        this.setState({ menuData });
+      });
   }
 
   handleMenuItem = (href, title) => {
@@ -96,31 +107,25 @@ export default class MegaMenu extends Component {
 
   render() {
     return (
-      <Fetch
-        url={this.props.url}
-      >
-        {({ data }) => (
-          <div className="cr-menu__wrapper">
-            <hr className="cr-menu__divider" />
-            <div className="cr-menu__inner">
-              <div className="cr-menu">
-                <input type="checkbox" id="cr-menu__btn--menu" className="cr-menu__btn" onClick={this.handleChange} />
-                <label htmlFor="cr-menu__btn--menu" className="cr-menu__label">Menu</label>
-                <input type="checkbox" id="cr-menu__btn--search" className="cr-menu__btn" onClick={this.handleChange}/>
-                <label htmlFor="cr-menu__btn--search" className="cr-menu__label">Search</label>
-                <div className="cr-menu__main-menu">
-                  {this.handleNav(data)}
-                </div>
-                <div className="cr-menu__search">
-                  <Search
-                    label='Search'
-                  />
-                </div>
-              </div>
+      <div className="cr-menu__wrapper">
+        <hr className="cr-menu__divider" />
+        <div className="cr-menu__inner">
+          <div className="cr-menu">
+            <input type="checkbox" id="cr-menu__btn--menu" className="cr-menu__btn" onClick={this.handleChange} />
+            <label htmlFor="cr-menu__btn--menu" className="cr-menu__label">Menu</label>
+            <input type="checkbox" id="cr-menu__btn--search" className="cr-menu__btn" onClick={this.handleChange}/>
+            <label htmlFor="cr-menu__btn--search" className="cr-menu__label">Search</label>
+            <div className="cr-menu__main-menu">
+              {this.handleNav(this.state.menuData)}
+            </div>
+            <div className="cr-menu__search">
+              <Search
+                label='Search'
+              />
             </div>
           </div>
-        )}
-      </Fetch>
+        </div>
+      </div>
     );
   }
 }
