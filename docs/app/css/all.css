@@ -105,7 +105,7 @@ button {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -415,7 +415,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -602,7 +602,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -697,7 +697,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -870,7 +870,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -959,7 +959,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -1060,7 +1060,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -1149,7 +1149,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -1250,7 +1250,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -1324,7 +1324,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -1441,7 +1441,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -1512,7 +1512,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -1620,7 +1620,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -1707,7 +1707,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -1795,7 +1795,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -1871,7 +1871,7 @@ sub {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -2296,7 +2296,7 @@ a.external:after {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
@@ -2373,7 +2373,7 @@ a.external:after {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -1px;
-  padding: 6px 12px;
+  padding: 6px;
   position: relative;
   vertical-align: middle;
   white-space: nowrap;
