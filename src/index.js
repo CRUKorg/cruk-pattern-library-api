@@ -98,9 +98,6 @@ export default class App extends Component {
         </div>
         <div className='cr-layout__row cr-layout__row--fullbleed'>
           <div className='cr-layout__cell'>
-            <MegaMenu
-              url={data.MegaMenu.url}
-            />
           </div>
         </div>
         <div className='cr-layout__row cr-layout__row cr-layout__row--100'>
