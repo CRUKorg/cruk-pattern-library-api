@@ -15,6 +15,7 @@ export {default as ListUnordered} from './patterns/list.unordered';
 export {default as MegaMenu} from './patterns/menu';
 export {default as NavigationBlock} from './patterns/navigation_block';
 export {default as RelatedLinks} from './patterns/related.links';
+export {default as Video} from './patterns/video';
 
 import vCollapsible from './patterns/collapsible.js';
 import vCtaPrint from './patterns/cta.print.js';
@@ -69,6 +70,7 @@ export default {
       'related.links',
       'search',
       'text',
+      'video',
     ];
   },
 };
