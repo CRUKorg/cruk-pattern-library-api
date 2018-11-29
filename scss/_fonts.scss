@@ -1,21 +1,33 @@
 @import 'base';
 
-@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_9_0", 900, normal);
+@include font-face('MuseoSans', '#{$fonts-directory}/2D649C_9_0', 900, normal);
 
-@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_0_0", 700, normal);
+@include font-face('MuseoSans', '#{$fonts-directory}/2D649C_0_0', 700, normal);
 
-@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_1_0", 300, normal);
+@include font-face('MuseoSans', '#{$fonts-directory}/2D649C_1_0', 300, normal);
 
-@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_3_0", 500, normal);
+@include font-face('MuseoSans', '#{$fonts-directory}/2D649C_3_0', 500, normal);
 
-@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_4_0", 100, normal);
+@include font-face('MuseoSans', '#{$fonts-directory}/2D649C_4_0', 100, normal);
 
-@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_2_0", 900, italic);
+@include font-face('MuseoSans', '#{$fonts-directory}/2D649C_2_0', 900, italic);
 
-@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_5_0", 700, italic);
+@include font-face('MuseoSans', '#{$fonts-directory}/2D649C_5_0', 700, italic);
 
-@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_8_0", 500, italic);
+@include font-face('MuseoSans', '#{$fonts-directory}/2D649C_8_0', 500, italic);
 
-@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_6_0", 300, italic);
+@include font-face('MuseoSans', '#{$fonts-directory}/2D649C_6_0', 300, italic);
 
-@include font-face("MuseoSans", "#{$fonts-directory}/2D649C_7_0", 100, italic);
+@include font-face('MuseoSans', '#{$fonts-directory}/2D649C_7_0', 100, italic);
+
+@include font-face('MuseoSansRounded-1000', '#{$fonts-directory}/MuseoSansRounded-1000', 900, normal);
+
+@include font-face('MuseoSansRounded-900', '#{$fonts-directory}/MuseoSansRounded-900', 900, normal);
+
+@include font-face('MuseoSansRounded-700', '#{$fonts-directory}/MuseoSansRounded-700', 700, normal);
+
+@include font-face('MuseoSansRounded-500', '#{$fonts-directory}/MuseoSansRounded-500', 500, normal);
+
+@include font-face('MuseoSansRounded-300', '#{$fonts-directory}/MuseoSansRounded-300', 300, normal);
+
+@include font-face('MuseoSansRounded-100', '#{$fonts-directory}/MuseoSansRounded-100', 100, normal);

@@ -22,14 +22,13 @@
 }
 .cr-menu {
   position: relative;
-  font-family: $font-family-museo;
-  font-weight: 500;
   width: 100%;
   padding: 0;
   margin: 0;
 
   a {
     text-decoration: none;
+    font-family: $font-family-MuseoSansRounded-500;
 
     &:hover,
     &:focus,
@@ -99,6 +98,8 @@
   }
 }
 .cr-menu__label {
+  font-family: $font-family-MuseoSansRounded-500;
+  font-weight: 500;
   padding: 0 20px;
   border: 1px solid transparent;
 
@@ -262,7 +263,7 @@ ul[role='menu'] ul li a {
     color: $KINGFISHER_DAISY;
     text-align: center;
     position: relative;
-    padding-left: 23px;
+    padding-left: 22px;
     padding-right: 34px;
 
     &::after {

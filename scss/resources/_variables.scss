@@ -72,11 +72,17 @@ $disabled-gray:         $gray-40;
 $font-family-sans-serif:  Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 $font-family-monospace:   Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 $font-family-museo:       'MuseoSans', 'museo-sans-rounded', 'Museo Sans', $font-family-sans-serif;
+$font-family-MuseoSansRounded-100: 'MuseoSansRounded-100', $font-family-sans-serif;
+$font-family-MuseoSansRounded-300: 'MuseoSansRounded-300', $font-family-sans-serif;
+$font-family-MuseoSansRounded-500: 'MuseoSansRounded-500', $font-family-sans-serif;
+$font-family-MuseoSansRounded-700: 'MuseoSansRounded-700', $font-family-sans-serif;
+$font-family-MuseoSansRounded-900: 'MuseoSansRounded-900', $font-family-sans-serif;
+$font-family-MuseoSansRounded-1000: 'MuseoSansRounded-1000', $font-family-sans-serif;
 
 $fonts-directory: 'https://ccp-s3.int.cruk.org/fonts' !default;
 
 $font-family-base:        $font-family-sans-serif;
-$font-family-headings:    $font-family-museo;
+$font-family-headings:    $font-family-MuseoSansRounded-500;
 
 $font-weight-heavy:  700;
 $font-weight-medium: 500;

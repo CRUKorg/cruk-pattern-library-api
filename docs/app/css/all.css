@@ -223,7 +223,7 @@ h6 {
       line-height: 2; } }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "MuseoSans", "museo-sans-rounded", "Museo Sans", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "MuseoSansRounded-500", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700; }
 
 p {
@@ -574,6 +574,78 @@ sub {
     font-family: "MuseoSans";
     src: url("https://ccp-s3.int.cruk.org/fonts/2D649C_7_0.svg#MuseoSans") format("svg"); } }
 
+@font-face {
+  font-family: "MuseoSansRounded-1000";
+  src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-1000.eot");
+  src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-1000.eot?#iefix") format("embedded-opentype"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-1000.woff") format("woff"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-1000.woff2") format("woff2"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-1000.ttf") format("truetype"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-1000.svg#MuseoSansRounded-1000") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "MuseoSansRounded-1000";
+    src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-1000.svg#MuseoSansRounded-1000") format("svg"); } }
+
+@font-face {
+  font-family: "MuseoSansRounded-900";
+  src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-900.eot");
+  src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-900.eot?#iefix") format("embedded-opentype"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-900.woff") format("woff"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-900.woff2") format("woff2"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-900.ttf") format("truetype"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-900.svg#MuseoSansRounded-900") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "MuseoSansRounded-900";
+    src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-900.svg#MuseoSansRounded-900") format("svg"); } }
+
+@font-face {
+  font-family: "MuseoSansRounded-700";
+  src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-700.eot");
+  src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-700.eot?#iefix") format("embedded-opentype"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-700.woff") format("woff"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-700.woff2") format("woff2"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-700.ttf") format("truetype"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-700.svg#MuseoSansRounded-700") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "MuseoSansRounded-700";
+    src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-700.svg#MuseoSansRounded-700") format("svg"); } }
+
+@font-face {
+  font-family: "MuseoSansRounded-500";
+  src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-500.eot");
+  src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-500.eot?#iefix") format("embedded-opentype"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-500.woff") format("woff"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-500.woff2") format("woff2"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-500.ttf") format("truetype"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-500.svg#MuseoSansRounded-500") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "MuseoSansRounded-500";
+    src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-500.svg#MuseoSansRounded-500") format("svg"); } }
+
+@font-face {
+  font-family: "MuseoSansRounded-300";
+  src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-300.eot");
+  src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-300.eot?#iefix") format("embedded-opentype"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-300.woff") format("woff"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-300.woff2") format("woff2"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-300.ttf") format("truetype"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-300.svg#MuseoSansRounded-300") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "MuseoSansRounded-300";
+    src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-300.svg#MuseoSansRounded-300") format("svg"); } }
+
+@font-face {
+  font-family: "MuseoSansRounded-100";
+  src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-100.eot");
+  src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-100.eot?#iefix") format("embedded-opentype"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-100.woff") format("woff"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-100.woff2") format("woff2"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-100.ttf") format("truetype"), url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-100.svg#MuseoSansRounded-100") format("svg");
+  font-weight: 100;
+  font-style: normal; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: "MuseoSansRounded-100";
+    src: url("https://ccp-s3.int.cruk.org/fonts/MuseoSansRounded-100.svg#MuseoSansRounded-100") format("svg"); } }
+
 .cr-page-title {
   clear: both; }
   .cr-page-title:after {
@@ -788,7 +860,7 @@ sub {
   padding-left: 60px;
   width: 100%;
   text-align: left;
-  font-family: "MuseoSans", "museo-sans-rounded", "Museo Sans", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "MuseoSansRounded-500", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700; }
   .cr-collapsible__heading-button::before {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -256 1792 1792' width='1792' height='1792'%3E%3Cpath fill='%232e008b' d='M1613 569v192q0 40-28 68t-68 28h-416v416q0 40-28 68t-68 28H813q-40 0-68-28t-28-68V857H301q-40 0-68-28t-28-68V569q0-40 28-68t68-28h416V57q0-40 28-68t68-28h192q40 0 68 28t28 68v416h416q40 0 68 28t28 68z'/%3E%3C/svg%3E") no-repeat center center;
@@ -1053,7 +1125,7 @@ sub {
   border: 1px solid #ec008c;
   color: white;
   display: inline-block;
-  font-family: "MuseoSans", "museo-sans-rounded", "Museo Sans", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "MuseoSansRounded-700", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   padding: 10px 19px;
   position: relative;
@@ -1512,7 +1584,8 @@ sub {
   color: #2e008b;
   font-weight: 500;
   font-size: 1.5625rem;
-  padding: 0 30px; }
+  padding: 0 30px;
+  font-family: "MuseoSansRounded-500", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 .cr-header__search .cr-search-input__input {
   max-width: 110px;
@@ -2111,13 +2184,12 @@ sub {
 
 .cr-menu {
   position: relative;
-  font-family: "MuseoSans", "museo-sans-rounded", "Museo Sans", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 500;
   width: 100%;
   padding: 0;
   margin: 0; }
   .cr-menu a {
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: "MuseoSansRounded-500", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
     .cr-menu a:hover, .cr-menu a:focus, .cr-menu a:active {
       color: #ec008c; }
   .cr-menu ul {
@@ -2171,6 +2243,8 @@ sub {
     border-color: #ec008c; }
 
 .cr-menu__label {
+  font-family: "MuseoSansRounded-500", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 500;
   padding: 0 20px;
   border: 1px solid transparent; }
   .cr-menu__label:after {
@@ -2319,7 +2393,7 @@ ul[role='menu'] ul li a {
     color: #2e008b;
     text-align: center;
     position: relative;
-    padding-left: 23px;
+    padding-left: 22px;
     padding-right: 34px; }
     ul[role='menubar'] div a::after {
       content: '';
