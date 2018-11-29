@@ -31,21 +31,6 @@ module.exports = {
       }
     }
   },
-  plugins: [
-    new StyleLintPlugin({
-      context: './patterns',
-      syntax: 'scss',
-    }),
-    new MiniCssExtractPlugin({
-      filename: 'all.css',
-    })
-  ],
-  resolve: {
-    alias: {
-      react: path.resolve('./node_modules/react'),
-    },
-    extensions:['.js', '.jsx', '.webpack.js', '.web.js','*']
-  },
   module: {
     rules: [
       {
@@ -71,18 +56,45 @@ module.exports = {
         test: /\.(sa|sc|c)ss$/,
         use: [
           MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader',
-        ],
-      },
-      {
-        test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader'
+          {
+            loader: 'css-loader',
+            options: {
+              minimize: {
+                safe: true
+              }
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => [require('autoprefixer')({
+                'browsers': ['> 1%', 'last 2 versions', 'ie >= 10']
+              })],
+              grid: true
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {}
+          }
         ]
       }
     ]
+  },
+  plugins: [
+    new StyleLintPlugin({
+      context: './patterns',
+      syntax: 'scss',
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'all.css',
+    })
+  ],
+  resolve: {
+    alias: {
+      react: path.resolve('./node_modules/react'),
+    },
+    extensions:['.js', '.jsx', '.webpack.js', '.web.js','*']
   },
   stats: {
     colors: true

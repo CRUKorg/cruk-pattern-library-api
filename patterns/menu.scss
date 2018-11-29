@@ -237,10 +237,19 @@ ul[role='menu'] ul li a {
   }
 
   ul[role='menubar'] {
-    display: inline-grid;
-    grid-template-columns: auto auto auto auto auto auto;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
+
   ul[role='menubar'] div {
     width: 100%;
     height: 60px;
@@ -252,16 +261,18 @@ ul[role='menu'] ul li a {
     font-size: 1.0625rem; /* 17px */
     color: $KINGFISHER_DAISY;
     text-align: center;
-    padding-left: 0;
+    position: relative;
+    padding-left: 23px;
+    padding-right: 34px;
 
     &::after {
       content: '';
       border: solid $gray-30;
       border-width: 0 3px 3px 0;
       display: inline-block;
-      position: relative;
-      top: -3px;
-      left: 10px;
+      position: absolute;
+      top: 24px;
+      right: 16px;
       height: 10px;
       width: 10px;
       transform: rotate(45deg);
@@ -290,11 +301,21 @@ ul[role='menu'] ul li a {
     background-color: $gray-2;
     border-top: 1px solid transparent;
     border-radius: 0;
-    display: inline-grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
-  ul[role='menu'] li ul {
+  ul[role='menu'] li {
+    width: 20%;
+  }
+  ul[role='menu'] li ul,
+  ul[role='menu'] li ul li {
     display: block;
+    width: 100%;
   }
 }
 /* Responsive - small breakpoint */
