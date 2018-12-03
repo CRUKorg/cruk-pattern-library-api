@@ -1,0 +1,41 @@
+<div class="cr-menu__wrapper">
+    <hr class="cr-menu__divider" />
+    <div class="cr-menu__inner">
+        <div class="cr-menu">
+            <input type="checkbox" id="cr-menu__btn--menu" class="cr-menu__btn" />
+            <label htmlFor="cr-menu__btn--menu" class="cr-menu__label">Menu</label>
+            <input type="checkbox" id="cr-menu__btn--search" class="cr-menu__btn" />
+            <label htmlFor="cr-menu__btn--search" class="cr-menu__label">Search</label>
+            <div class="cr-menu__main-menu">
+                <nav class="cr-menu__nav">
+                    <ul role="menubar" tabindex="0">
+                        {% for item in items %}
+                        <li>
+                            <div class="cr-menu__block">
+                            <span>
+                            </span>
+                                <a role="menuitem" href="#">{{ title }}</a>
+                            </div>
+                            <ul role="menu">
+                                {% for item in items %}
+                                <li>
+                                    <a role="menuitem" href="#">{{ title }}</a>
+                                    <ul>
+                                        {% for item in items %}
+                                            <li><a href="#">{{ item|raw }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+            <div class="cr-menu__search">
+                {{ include('search.twig') }}
+            </div>
+        </div>
+    </div>
+</div>

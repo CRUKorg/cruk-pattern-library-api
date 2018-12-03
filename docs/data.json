@@ -33,7 +33,9 @@
         "css": [
             "app/css/all.css"
         ],
-        "js": []
+        "js": [
+            "app/js/vendor.js"
+        ]
     },
     "font_libraries": {
         "typekit_code": null,

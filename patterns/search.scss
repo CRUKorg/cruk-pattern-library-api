@@ -9,17 +9,24 @@
   @extend .vertical-spacing;
 }
 
-.cr-search-input--focused {
-  @extend %input-group__group--focused;
-}
-
 .cr-search-input__input {
   @extend %input-group__input;
 }
 
 .cr-search-input__button {
   @extend %input-group__button;
-  @include text-replace($icon-search, $gray-20);
-  border: 0;
-  background-size: 18px;
+  border-left: 2px solid $gray-20;
+  color: $gray-60;
+
+  &:hover {
+    border-left: 2px solid $gray-20;
+  }
+}
+
+.cr-search-input--focused {
+  @extend %input-group__group--focused;
+
+  .cr-search-input__button {
+    border-left: 2px solid $brand-info;
+  }
 }

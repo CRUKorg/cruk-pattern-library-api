@@ -25,5 +25,11 @@
     color: $WHITE;
   }
 
+  &:focus {
+    border-color: $brand-secondary;
+    color: $WHITE;
+    background-color: $brand-secondary;
+  }
+
   @extend .vertical-spacing;
 }
