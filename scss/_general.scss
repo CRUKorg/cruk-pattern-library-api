@@ -44,10 +44,12 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-headings;
   font-weight: $font-weight-heavy;
+  @extend .vertical-spacing;
 }
 
 p {
   @include font-size-map($base-font-map);
+  @extend .vertical-spacing;
 }
 
 a, button {
@@ -161,4 +163,6 @@ sub {
 
 .cr-image--standard {
   max-width: 100%;
+  width: 100%;
+  @extend .vertical-spacing;
 }
