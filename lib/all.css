@@ -883,7 +883,6 @@ sub {
 .cr-cta--link {
   color: #2e008b;
   font-weight: 700;
-  padding: 0.3em 0;
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
@@ -2309,6 +2308,12 @@ a.external:after {
 .cr-related-links {
   background-color: #ebf9ff;
   border-radius: 3px; }
+  .cr-related-links .cr-cta--link {
+    display: block;
+    margin-bottom: 5px; }
+
+.cr-related-links__heading {
+  margin-bottom: 10px; }
 
 .cr-related-links__content {
   padding: 15px; }
