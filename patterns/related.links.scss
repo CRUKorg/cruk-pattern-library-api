@@ -4,6 +4,15 @@
   background-color: $LILY_WHITE;
   border-radius: $border-radius;
   @extend .vertical-spacing;
+
+  .cr-cta--link {
+    display: block;
+    margin-bottom: $rhythm-vertical-base / 3;
+  }
+}
+
+.cr-related-links__heading {
+  margin-bottom: $rhythm-vertical-base / 3 * 2;
 }
 
 .cr-related-links__content {

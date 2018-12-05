@@ -351,11 +351,12 @@ sub {
 .paragraph-small {
   font-size: 0.857rem; }
 
-.vertical-spacing, .cr-collapsible, .cr-cta--link, .cr-cta--primary, .cr-cta--print, .cr-cta--secondary, .cr-layout__row, .cr-list--unordered, .cr-list--ordered, .cr-search-input, .cr-navigation-block, .cr-related-links {
+.vertical-spacing, h1, h2, h3, h4, h5, h6, p, .cr-image--standard, .cr-collapsible, .cr-cta--link, .cr-cta--primary, .cr-cta--print, .cr-cta--secondary, .cr-layout__row, .cr-list--unordered, .cr-list--ordered, .cr-search-input, .cr-navigation-block, .cr-related-links {
   margin-bottom: 15px; }
 
 .cr-image--standard {
-  max-width: 100%; }
+  max-width: 100%;
+  width: 100%; }
 
 .cr-page-title {
   clear: both; }
@@ -882,7 +883,6 @@ sub {
 .cr-cta--link {
   color: #2e008b;
   font-weight: 700;
-  padding: 0.3em 0;
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
@@ -1528,7 +1528,7 @@ sub {
   grid-column-gap: 15px;
   grid-row-gap: 15px; }
 
-.cr-layout__row.cr-layout__row--fullbleed {
+.cr-layout__row.cr-layout__row--full {
   max-width: none; }
 
 @media screen and (min-width: 768px) {
@@ -2308,6 +2308,12 @@ a.external:after {
 .cr-related-links {
   background-color: #ebf9ff;
   border-radius: 3px; }
+  .cr-related-links .cr-cta--link {
+    display: block;
+    margin-bottom: 5px; }
+
+.cr-related-links__heading {
+  margin-bottom: 10px; }
 
 .cr-related-links__content {
   padding: 15px; }
