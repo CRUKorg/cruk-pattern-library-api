@@ -97,7 +97,7 @@ export default class App extends Component {
               />
             </div>
           </div>
-          <div className='cr-layout__row cr-layout__row--fullbleed'>
+          <div className='cr-layout__row cr-layout__row--full'>
             <div className='cr-layout__cell'>
             </div>
           </div>
