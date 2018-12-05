@@ -1097,6 +1097,7 @@
     }
 }
 
+.cr-layout-demo .cr-layout__row--full,
 .cr-layout-demo .cr-layout__row--100,
 .cr-layout-demo .cr-layout__row--50-50,
 .cr-layout-demo .cr-layout__row--66-33,
