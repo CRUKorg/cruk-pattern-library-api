@@ -33,7 +33,7 @@
     "selector-max-attribute": 0,
     "selector-max-combinators": 2,
     "selector-max-id": 0,
-    "selector-max-type": 0,
+    "selector-max-type": null,
     "selector-max-universal": 0,
     "selector-pseudo-class-parentheses-space-inside": "always",
     "selector-pseudo-element-colon-notation": "double",

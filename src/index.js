@@ -9,6 +9,7 @@ import CtaLink from '../patterns/cta.link';
 import CtaPrimary from '../patterns/cta.primary';
 import CtaSecondary from '../patterns/cta.secondary';
 import Divider from '../patterns/divider';
+import Footer from '../patterns/footer';
 import Header from '../patterns/header';
 import HeaderPageTitle from '../patterns/header.page-title';
 import Loader from '../patterns/loader';
@@ -83,27 +84,20 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <Header
+          logoSrc={data.Header.logoSrc}
+          logoTitle={data.Header.logoTitle}
+          logoAlt={data.Header.logoAlt}
+          logoHref={data.Header.logoHref}
+          slogan={data.Header.slogan}
+          ctaHref={data.Header.href}
+          ctaText={data.Header.text}
+        />
+        <MegaMenu
+          url={data.MegaMenu.url}
+        />
         <div className='cr-layout'>
-          <div className='cr-layout__row cr-layout__row--100'>
-            <div className='cr-layout__cell'>
-              <Header
-                logoSrc={data.Header.logoSrc}
-                logoTitle={data.Header.logoTitle}
-                logoAlt={data.Header.logoAlt}
-                logoHref={data.Header.logoHref}
-                slogan={data.Header.slogan}
-                ctaHref={data.Header.href}
-                ctaText={data.Header.text}
-              />
-            </div>
-          </div>
-          <div className='cr-layout__row cr-layout__row--full'>
-            <div className='cr-layout__cell'>
-              <MegaMenu
-                url={data.MegaMenu.url}
-              />
-            </div>
-          </div>
+          <h1 className="cr-page-title">Page title</h1>
           <div className='cr-layout__row cr-layout__row cr-layout__row--100'>
             <div className='cr-layout__cell'>
               <HeaderPageTitle
@@ -158,8 +152,8 @@ export default class App extends Component {
           </div>
           <Divider />
         </div>
-        <h1 className="cr-page-title">Cycle 300</h1>
         <div className='cr-layout'>
+          <h1 className="cr-page-title">Cycle 300</h1>
           <div className='cr-layout__row cr-layout__row--full'>
             <div className ='cr-layout__cell'>
               <img
@@ -275,10 +269,8 @@ export default class App extends Component {
                 </a>
             </div>
           </div>
-          <div className='cr-layout__row cr-layout__row--100'>
-              <div className='cr-layout__cell'> </div>
-          </div>
         </div>
+        <Footer />
       </div>
     );
   }

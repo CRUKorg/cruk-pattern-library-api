@@ -10,8 +10,13 @@
   grid-row-gap: $rhythm-horizontal-base;
 }
 
-.cr-layout__row.cr-layout__row--full {
+.cr-layout__row.cr-layout__row--full,
+.cr-layout__row.cr-layout__row--fullbleed {
   max-width: none;
+
+  .cr-image--standard {
+    margin-bottom: 0;
+  }
 }
 
 // On screens that are big enough, apply the grid.
