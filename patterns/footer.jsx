@@ -103,9 +103,9 @@ function Footer(props) {
           />
         </a>
       </div>
-      <div className="footer-secondary-content">
+      <address className="footer-secondary-content">
         Cancer Research UK is a registered charity in England and Wales (1089464), Scotland (SC041666) and the Isle of Man (1103). A company limited by guarantee. Registered company in England and Wales (4325234) and the Isle of Man (5713F). Registered address: Angel Building, 407 St John Street, London EC1V 4AD.
-      </div>
+      </address>
     </footer>
   );
 }
