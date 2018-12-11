@@ -159,8 +159,7 @@ export default class App extends Component {
               <img
                 className='cr-image cr-image--standard'
                 sizes='100vw'
-                srcSet='https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/thanks-cycle300-hero.jpg?itok=sBX2TbKm 980w, https://content.rel.cruk.org/s3/files/styles/standard_mobile/s3/2018-11/thanks-cycle300-hero.jpg?itok=lee-osLT 575w'
-                src='https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/thanks-cycle300-hero.jpg?itok=sBX2TbKm'
+                src='https://ccp-s3.rel.cruk.org/images/test_page/thanks-cycle300-hero.jpg'
                 alt='cycle' />
             </div>
           </div>
@@ -225,8 +224,7 @@ export default class App extends Component {
             <h2 className='cr-heading-pattern'>Prepare for your cycle</h2>
               <img
                 className='cr-image cr-image--standard' sizes='100vw'
-                srcSet='https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/improve_performance_1.png?itok=AV13TAzv 980w, https://content.rel.cruk.org/s3/files/styles/standard_mobile/s3/2018-11/improve_performance_1.png?itok=JAR_Pqw5 575w'
-                src='https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/improve_performance_1.png?itok=AV13TAzv'
+                src='https://ccp-s3.rel.cruk.org/images/test_page/improve_performance.png'
                 alt='cycle' />
               <div className='cr-text-pattern'>
                 <p>Follow our guide to help you prepare for your cycling challenge.</p>
@@ -241,10 +239,9 @@ export default class App extends Component {
               <h2 className='cr-heading-pattern'>Get fundraising !</h2>
           <img
             className = 'cr-image cr-image--standard'
-            sizes = '100vw'
-            srcSet = 'https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/cycle_pink_lady_3box.jpg?itok=MHxN0_C5 980w, https://content.rel.cruk.org/s3/files/styles/standard_mobile/s3/2018-11/cycle_pink_lady_3box.jpg?itok=gy76hJJs 575w'
-            src = 'https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/cycle_pink_lady_3box.jpg?itok=MHxN0_C5'
-            alt = 'cycle 2' />
+            sizes='100vw'
+            src='https://ccp-s3.rel.cruk.org/images/test_page/cycle_pink_lady_3box.jpg'
+            alt='cycle 2' />
               <div className = 'cr-text-pattern' >
               <p>Our fundraising tools are guaranteed to help you smash your target.</p>
           </div>
@@ -256,8 +253,7 @@ export default class App extends Component {
             <div className='cr-layout__cell'>
               <h2 className='cr-heading-pattern'>Improve performance</h2>
               <img className='cr-image cr-image--standard' sizes='100vw'
-                   srcSet='https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/improve_performance_1.png?itok=AV13TAzv 980w, https://content.rel.cruk.org/s3/files/styles/standard_mobile/s3/2018-11/improve_performance_1.png?itok=JAR_Pqw5 575w'
-                   src='https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/improve_performance_1.png?itok=AV13TAzv'
+                   src='https://ccp-s3.rel.cruk.org/images/test_page/improve_performance.png'
                    alt='cycle' />
                 <div className='cr-text-pattern'>
                   <p>Make every ride count this September with our tops tips.</p>
