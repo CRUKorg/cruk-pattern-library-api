@@ -6,6 +6,7 @@
 .cr-menu__wrapper {
   background-color: $gray-2;
   position: relative;
+  @extend .vertical-spacing;
 }
 .cr-menu__inner {
   max-width: 940px;
@@ -213,6 +214,18 @@ ul[role='menu'] ul li a {
   padding-right: 5px;
 }
 
+@media only screen and (max-width: $breakpoint-c) {
+  .cr-menu__main-menu,
+  .cr-menu__search,
+  #cr-menu__btn--menu:checked ~ label ~ .cr-menu__search,
+  #cr-menu__btn--search:checked ~ label ~ .cr-menu__main-menu {
+    width: 0;
+  }
+  #cr-menu__btn--menu:checked ~ label ~ .cr-menu__main-menu,
+  #cr-menu__btn--search:checked ~ label ~ .cr-menu__search {
+    width: auto;
+  }
+}
 /* Responsive - large breakpoint */
 @media only screen and (min-width: $breakpoint-c) {
   .cr-menu__wrapper {

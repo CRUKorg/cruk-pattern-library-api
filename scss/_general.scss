@@ -13,6 +13,7 @@ body {
   color: $text-color;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   min-width: $min-supported-width;
   @include font-size-map($base-font-map);
 }

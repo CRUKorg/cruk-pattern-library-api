@@ -7,6 +7,7 @@ export {default as CtaLink} from './patterns/cta.link';
 export {default as CtaPrimary} from './patterns/cta.primary';
 export {default as CtaSecondary} from './patterns/cta.secondary';
 export {default as Divider} from './patterns/divider';
+export {default as Footer} from './patterns/footer';
 export {default as Header} from './patterns/header';
 export {default as HeaderPageTitle} from './patterns/header.page-title';
 export {default as Loader} from './patterns/loader';
@@ -59,6 +60,7 @@ export default {
       'cta.print',
       'cta.secondary',
       'divider',
+      'footer',
       'header',
       'header.h2',
       'header.h3',

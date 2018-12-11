@@ -9,6 +9,7 @@ import CtaLink from '../patterns/cta.link';
 import CtaPrimary from '../patterns/cta.primary';
 import CtaSecondary from '../patterns/cta.secondary';
 import Divider from '../patterns/divider';
+import Footer from '../patterns/footer';
 import Header from '../patterns/header';
 import HeaderPageTitle from '../patterns/header.page-title';
 import Loader from '../patterns/loader';
@@ -83,27 +84,20 @@ export default class App extends Component {
   render() {
     return (
       <div>
+        <Header
+          logoSrc={data.Header.logoSrc}
+          logoTitle={data.Header.logoTitle}
+          logoAlt={data.Header.logoAlt}
+          logoHref={data.Header.logoHref}
+          slogan={data.Header.slogan}
+          ctaHref={data.Header.href}
+          ctaText={data.Header.text}
+        />
+        <MegaMenu
+          url={data.MegaMenu.url}
+        />
         <div className='cr-layout'>
-          <div className='cr-layout__row cr-layout__row--100'>
-            <div className='cr-layout__cell'>
-              <Header
-                logoSrc={data.Header.logoSrc}
-                logoTitle={data.Header.logoTitle}
-                logoAlt={data.Header.logoAlt}
-                logoHref={data.Header.logoHref}
-                slogan={data.Header.slogan}
-                ctaHref={data.Header.href}
-                ctaText={data.Header.text}
-              />
-            </div>
-          </div>
-          <div className='cr-layout__row cr-layout__row--full'>
-            <div className='cr-layout__cell'>
-              <MegaMenu
-                url={data.MegaMenu.url}
-              />
-            </div>
-          </div>
+          <h1 className="cr-page-title">Page title</h1>
           <div className='cr-layout__row cr-layout__row cr-layout__row--100'>
             <div className='cr-layout__cell'>
               <HeaderPageTitle
@@ -158,15 +152,14 @@ export default class App extends Component {
           </div>
           <Divider />
         </div>
-        <h1 className="cr-page-title">Cycle 300</h1>
         <div className='cr-layout'>
+          <h1 className="cr-page-title">Cycle 300</h1>
           <div className='cr-layout__row cr-layout__row--full'>
             <div className ='cr-layout__cell'>
               <img
                 className='cr-image cr-image--standard'
                 sizes='100vw'
-                srcSet='https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/thanks-cycle300-hero.jpg?itok=sBX2TbKm 980w, https://content.rel.cruk.org/s3/files/styles/standard_mobile/s3/2018-11/thanks-cycle300-hero.jpg?itok=lee-osLT 575w'
-                src='https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/thanks-cycle300-hero.jpg?itok=sBX2TbKm'
+                src='https://ccp-s3.rel.cruk.org/images/test_page/thanks-cycle300-hero.jpg'
                 alt='cycle' />
             </div>
           </div>
@@ -231,8 +224,7 @@ export default class App extends Component {
             <h2 className='cr-heading-pattern'>Prepare for your cycle</h2>
               <img
                 className='cr-image cr-image--standard' sizes='100vw'
-                srcSet='https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/improve_performance_1.png?itok=AV13TAzv 980w, https://content.rel.cruk.org/s3/files/styles/standard_mobile/s3/2018-11/improve_performance_1.png?itok=JAR_Pqw5 575w'
-                src='https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/improve_performance_1.png?itok=AV13TAzv'
+                src='https://ccp-s3.rel.cruk.org/images/test_page/improve_performance.png'
                 alt='cycle' />
               <div className='cr-text-pattern'>
                 <p>Follow our guide to help you prepare for your cycling challenge.</p>
@@ -247,10 +239,9 @@ export default class App extends Component {
               <h2 className='cr-heading-pattern'>Get fundraising !</h2>
           <img
             className = 'cr-image cr-image--standard'
-            sizes = '100vw'
-            srcSet = 'https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/cycle_pink_lady_3box.jpg?itok=MHxN0_C5 980w, https://content.rel.cruk.org/s3/files/styles/standard_mobile/s3/2018-11/cycle_pink_lady_3box.jpg?itok=gy76hJJs 575w'
-            src = 'https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/cycle_pink_lady_3box.jpg?itok=MHxN0_C5'
-            alt = 'cycle 2' />
+            sizes='100vw'
+            src='https://ccp-s3.rel.cruk.org/images/test_page/cycle_pink_lady_3box.jpg'
+            alt='cycle 2' />
               <div className = 'cr-text-pattern' >
               <p>Our fundraising tools are guaranteed to help you smash your target.</p>
           </div>
@@ -262,8 +253,7 @@ export default class App extends Component {
             <div className='cr-layout__cell'>
               <h2 className='cr-heading-pattern'>Improve performance</h2>
               <img className='cr-image cr-image--standard' sizes='100vw'
-                   srcSet='https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/improve_performance_1.png?itok=AV13TAzv 980w, https://content.rel.cruk.org/s3/files/styles/standard_mobile/s3/2018-11/improve_performance_1.png?itok=JAR_Pqw5 575w'
-                   src='https://ccp-s3.rel.cruk.org/styles/standard_full/s3/2018-11/improve_performance_1.png?itok=AV13TAzv'
+                   src='https://ccp-s3.rel.cruk.org/images/test_page/improve_performance.png'
                    alt='cycle' />
                 <div className='cr-text-pattern'>
                   <p>Make every ride count this September with our tops tips.</p>
@@ -275,10 +265,8 @@ export default class App extends Component {
                 </a>
             </div>
           </div>
-          <div className='cr-layout__row cr-layout__row--100'>
-              <div className='cr-layout__cell'> </div>
-          </div>
         </div>
+        <Footer />
       </div>
     );
   }
