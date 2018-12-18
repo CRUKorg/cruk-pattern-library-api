@@ -2299,7 +2299,8 @@ sub {
  */
 .cr-menu__wrapper {
   background-color: #fafafa;
-  position: relative; }
+  position: relative;
+  min-height: 60px; }
 
 .cr-menu__inner {
   max-width: 940px;
