@@ -15,11 +15,17 @@ export default class MegaMenu extends Component {
   }
 
   componentDidMount() {
-    axios.get(this.props.url)
-      .then(res => {
-        const menuData = res.data;
-        this.setState({ menuData });
-      });
+    if(this.props.loadData) {
+
+      this.setState({ menuData: this.props.loadData });
+    } else {
+
+      axios.get(this.props.url)
+        .then(res => {
+          const menuData = res.data;
+          this.setState({ menuData });
+        });
+    }
   }
 
   handleMenuItem = (href, title) => {
@@ -130,6 +136,11 @@ export default class MegaMenu extends Component {
   }
 }
 
+MegaMenu.defaultProps = {
+  url: 'https://www.cancerresearchuk.org/cruk-navigation/menu-mdd/json',
+};
+
 MegaMenu.propTypes = {
+  loadData: PropTypes.array,
   url: PropTypes.string,
 };

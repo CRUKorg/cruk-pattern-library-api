@@ -59,9 +59,6 @@ const data = {
     staticContent: '',
     content: `<div class="cr-text-pattern"><p>Lobortis viverra torquent cras litora nisl amet tempor et&nbsp; consectetur feugiat bibendum fames ad</p></div><hr class="cr-divider"><h2 class="cr-heading-pattern">Another H2</h2><h3 class="cr-heading-pattern">Another H3</h3><div class="cr-text-pattern"><p>Viverra torquent cras litora nisl amet tempor et consectetur&nbsp; feugiat bibendum fames ad</p></div><h3 class="cr-heading-pattern">Navigation block</h3><a class="cr-cta--primary" href="https://www.cancerresearchuk.org/about-cancer" target="_blank" rel="noopener noreferrer">Primary</a><a class="cr-cta--secondary" href="https://www.cancerresearchuk.org/about-cancer" target="_blank" rel="noopener noreferrer">Secondary</a><hr class="cr-divider">`,
   },
-  MegaMenu: {
-    url: 'https://www.cancerresearchuk.org/cruk-navigation/menu-mdd/json'
-  },
   Header: {
     logoSrc: 'https://www.cancerresearchuk.org/sites/all/themes/custom/cruk/cruk-logo.svg',
     logoTitle: 'Cancer Research UK Homepage',
@@ -93,9 +90,7 @@ export default class App extends Component {
           ctaHref={data.Header.href}
           ctaText={data.Header.text}
         />
-        <MegaMenu
-          url={data.MegaMenu.url}
-        />
+        <MegaMenu />
         <div className='cr-layout'>
           <h1 className="cr-page-title">Page title</h1>
           <div className='cr-layout__row cr-layout__row cr-layout__row--100'>

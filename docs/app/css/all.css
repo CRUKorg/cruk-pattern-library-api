@@ -1466,7 +1466,8 @@ sub {
 .cr-footer {
   background-color: #e3e3e3;
   margin-top: 15px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  clear: both; }
   .cr-footer h2 {
     font-size: 1.3125rem; }
   .cr-footer a {
@@ -1669,7 +1670,7 @@ sub {
   -ms-flex-direction: row;
   -ms-flex-pack: center;
   -ms-flex-align: center;
-  padding: 15px 15px; }
+  padding: 15px 15px 0; }
   .cr-header .cr-header__slogan,
   .cr-header .cr-header__search {
     display: none; }
@@ -1688,7 +1689,7 @@ sub {
       margin-top: 0; } }
   @media (min-width: 992px) {
     .cr-header {
-      padding: 30px 15px 15px; }
+      min-height: 115px; }
       .cr-header .cr-header__search {
         display: block;
         -ms-flex-preferred-size: 15%;
@@ -2299,7 +2300,8 @@ sub {
  */
 .cr-menu__wrapper {
   background-color: #fafafa;
-  position: relative; }
+  position: relative;
+  min-height: 62px; }
 
 .cr-menu__inner {
   max-width: 940px;
