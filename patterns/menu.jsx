@@ -137,7 +137,7 @@ export default class MegaMenu extends Component {
 }
 
 MegaMenu.defaultProps = {
-  url: 'https://uat.cancerresearchuk.org/cruk-navigation/menu-mdd/json',
+  url: 'https://www.cancerresearchuk.org/cruk-navigation/menu-mdd/json',
 };
 
 MegaMenu.propTypes = {
