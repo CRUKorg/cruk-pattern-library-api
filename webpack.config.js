@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   entry: {
     'patterns': './main.js',
-    'index': './src/index.js',
+    'index': './lib/App.js',
   },
   output: {
     path: path.resolve(__dirname, 'lib'),
@@ -17,7 +17,9 @@ module.exports = {
   },
   devServer: {
     inline:true,
-    port: 9999
+    port: 9999,
+    publicPath: '/',
+    contentBase: './lib',
   },
   optimization: {
     splitChunks: {

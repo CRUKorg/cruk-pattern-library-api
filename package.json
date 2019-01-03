@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node ./scripts/processPatterns.js && webpack --mode production && npm run copy:css",
-    "dev": "node ./scripts/processPatterns.js && webpack --progress --colors --watch --mode development",
-    "start:dev": "webpack-dev-server && webpack --progress --colors --watch",
+    "dev": "node ./scripts/processPatterns.js && webpack --progress --colors --mode development",
+    "start:dev": "webpack-dev-server && webpack --progress --colors",
     "build:css": "webpack -p && npm run copy:css",
     "copy:css": "cp lib/all.css docs/app/css/"
   },
@@ -67,7 +67,6 @@
   },
   "directories": {
     "doc": "docs",
-    "lib": "lib",
-    "test": "test"
+    "lib": "lib"
   }
 }

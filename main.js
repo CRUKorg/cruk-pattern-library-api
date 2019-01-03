@@ -1,5 +1,5 @@
 import Twig from 'twig';
-import patternsData from './patternsData.build';
+import patternsData from './lib/patternsData.build';
 
 export {default as Breadcrumb} from './patterns/breadcrumb';
 export {default as Collapsible} from './patterns/collapsible.jsx';

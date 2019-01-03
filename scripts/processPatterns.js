@@ -64,7 +64,7 @@ readPatternFiles(patternsDir)
   .then(
     function (results) {
       const fileOutput = `export default ${JSON.stringify(patternsData)}; //eslint-disable-line`;
-      fs.writeFile('patternsData.build.js', fileOutput, function(err) {
+      fs.writeFile('lib/patternsData.build.js', fileOutput, function(err) {
         if(err) {
           return console.log(err);
         }
