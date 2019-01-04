@@ -1711,7 +1711,7 @@ sub {
   font-family: "MuseoSansRounded-500", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 .cr-header__search .cr-search-input__input {
-  max-width: 110px;
+  width: 57px;
   display: inline-block;
   -webkit-appearance: none; }
 
@@ -2205,14 +2205,24 @@ sub {
       -ms-flex: 0 0 36px;
           flex: 0 0 36px; }
 
+.cr-search-input__input {
+  padding: 7px 0 5px 12px; }
+
 .cr-search-input__button {
-  border-left: 2px solid #c8c8c8;
-  color: #666666; }
-  .cr-search-input__button:hover {
-    border-left: 2px solid #c8c8c8; }
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 952 951' width='952' height='951'%3E%3Cpath fill='%23c8c8c8' d='M403.29 658.29c-141.15 0-256-114.86-256-256s114.85-256 256-256 256 114.85 256 256-114.86 256-256 256zM878.7 950.86c40 0 73.15-33.14 73.15-73.14 0-19.43-8-38.3-21.72-51.43l-195.43-196c46.29-66.86 70.86-146.86 70.86-228C805.57 180 625.57 0 403.28 0S1 180 1 402.29s180 402.28 402.28 402.28c81.15 0 161.15-24.57 228-70.85l196 196c13.15 13.14 32 21.14 51.43 21.14z'/%3E%3C/svg%3E") no-repeat center center;
+  background-size: contain;
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-size: 18px; }
 
 .cr-search-input--focused .cr-search-input__button {
-  border-left: 2px solid #00b6ed; }
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 952 951' width='952' height='951'%3E%3Cpath fill='%2300b6ed' d='M403.29 658.29c-141.15 0-256-114.86-256-256s114.85-256 256-256 256 114.85 256 256-114.86 256-256 256zM878.7 950.86c40 0 73.15-33.14 73.15-73.14 0-19.43-8-38.3-21.72-51.43l-195.43-196c46.29-66.86 70.86-146.86 70.86-228C805.57 180 625.57 0 403.28 0S1 180 1 402.29s180 402.28 402.28 402.28c81.15 0 161.15-24.57 228-70.85l196 196c13.15 13.14 32 21.14 51.43 21.14z'/%3E%3C/svg%3E") no-repeat center center;
+  background-size: contain;
+  text-indent: 200%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-size: 18px; }
 
 .cr-page-title {
   clear: both; }
@@ -2301,7 +2311,7 @@ sub {
 .cr-menu__wrapper {
   background-color: #fafafa;
   position: relative;
-  min-height: 62px; }
+  min-height: 60px; }
 
 .cr-menu__inner {
   max-width: 940px;

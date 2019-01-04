@@ -70,8 +70,12 @@
 }
 
 .cr-header__search .cr-search-input__input {
-  max-width: 110px;
+  width: 57px;
   display: inline-block;
   -webkit-appearance: none;
 }
 
+.cr-header__search .cr-search-input__input,
+.cr-menu__search .cr-search-input__input {
+  padding: 7px 0 5px 12px;
+}

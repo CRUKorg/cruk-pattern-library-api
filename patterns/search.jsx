@@ -42,7 +42,7 @@ class Search extends Component {
           className="cr-search-input__button"
           aria-label="Submit your search"
         >
-          Go
+          {this.props.label}
         </button>
       </form>
     );
