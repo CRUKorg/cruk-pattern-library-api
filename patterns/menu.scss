@@ -253,7 +253,7 @@ ul[role='menu'] ul li a {
   }
   #cr-menu__btn--menu:checked ~ label ~ .cr-menu__main-menu,
   #cr-menu__btn--search:checked ~ label ~ .cr-menu__search {
-    border-bottom: 1px solid transparent;
+    border-bottom: 0px;
   }
   ul[role='menubar'] {
     width: 100%;
