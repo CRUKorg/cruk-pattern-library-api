@@ -58,7 +58,7 @@
   }
 }
 .cr-menu__nav {
-  padding: 20px 5%;
+  padding: 10px;
   position: relative;
 }
 .cr-menu__down-arrow {
@@ -140,7 +140,7 @@
   height: 0;
 }
 #cr-menu__btn--search:checked ~ label ~ .cr-menu__search {
-  padding: 25px;
+  padding: 20px;
 }
 
 /* Nested menu behaviour */
@@ -154,24 +154,25 @@ ul[role='menubar'] div span {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 40px;
   padding: 0;
   margin: 0;
   cursor: pointer;
 }
 ul[role='menubar'] div a {
-  font-size: 1rem; // 16px;
-  color: $gray-80;
+  font-size: 0.875rem; // 14px;
+  color: $KINGFISHER_DAISY;
+  line-height: 40px;
   display: block;
   border: 1px solid transparent;
   word-break: break-word;
-  line-height: 60px;
-  height: 61px;
   z-index: 1000;
   padding-left: 15px;
 }
 
-ul[role='menubar'] li:hover > div a {
+ul[role='menubar'] li:hover > div a,
+ul[role='menubar'] li:focus > div a,
+ul[role='menubar'] li:active > div a {
   color: $HOLLYWOOD_CERISE;
   background-color: $WHITE;
   border-radius: 5px 0 0 5px;
@@ -185,7 +186,7 @@ ul[role='menubar'] li:active > ul[role='menu'] {
   z-index: 999;
   overflow: visible;
   width: 45%;
-  height: 90%;
+  height: 93%;
 }
 ul[role='menu']  {
   background-color: $WHITE;
@@ -196,23 +197,23 @@ ul[role='menu']  {
   width: 0;
   height: 0;
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 50%;
   overflow: hidden;
-  padding: 25px;
+  padding: 3px 5px 10px 20px;
 }
 ul[role='menu'] li ul {
   display: none;
 }
 ul[role='menu'] a {
-  color: $KINGFISHER_DAISY;
+  color: $gray-55;
   display: block;
-  padding-bottom: 18px;
+  padding: 10px 0 10px;
   font-size: 0.875rem; // 14px
 }
 ul[role='menu'] ul li a {
   color: $gray-80;
-  padding-right: 5px;
+  padding-right: 20px;
 }
 
 @media only screen and (max-width: $breakpoint-c) {
@@ -250,7 +251,10 @@ ul[role='menu'] ul li a {
     opacity: 1;
     filter: alpha(opacity=100);
   }
-
+  #cr-menu__btn--menu:checked ~ label ~ .cr-menu__main-menu,
+  #cr-menu__btn--search:checked ~ label ~ .cr-menu__search {
+    border-bottom: 1px solid transparent;
+  }
   ul[role='menubar'] {
     width: 100%;
     display: -webkit-box;
@@ -274,7 +278,8 @@ ul[role='menu'] ul li a {
   }
   ul[role='menubar'] div a {
     font-size: 1.0625rem; /* 17px */
-    color: $KINGFISHER_DAISY;
+    line-height: 60px;
+    height: 61px;
     text-align: center;
     position: relative;
     padding-left: 22px;
@@ -313,6 +318,7 @@ ul[role='menu'] ul li a {
   ul[role='menu'] {
     top: 61px;
     left: 0;
+    padding: 5px 20px 15px;
     background-color: $gray-2;
     border-top: 1px solid transparent;
     border-radius: 0;
@@ -332,13 +338,14 @@ ul[role='menu'] ul li a {
     display: block;
     width: 100%;
   }
+  ul[role='menu'] a {
+    color: $KINGFISHER_DAISY;
+    padding: 6px 0 0;
+  }
 }
 /* Responsive - small breakpoint */
 @media only screen and (max-width: $breakpoint-a) {
-  ul[role='menubar'] li:nth-child(4) div a {
-    line-height: 25px;
-    padding-top: 5px;
-  }
+
 }
 /* CSS code put here will only run in non-IE */
 @supports (top:0){
@@ -348,12 +355,22 @@ ul[role='menu'] ul li a {
     filter: alpha(opacity=100);
     z-index: 9999;
     overflow: visible;
-    width: 50%;
-    padding: 25px;
-  }
-
-  ul[role='menubar'] > li:focus-within > ul[role='menu'] {
     width: 100%;
+    height: 295px;
+  }
+  @media only screen and (max-width: $breakpoint-c) {
+
+    ul[role='menubar'] li:focus-within > ul[role='menu'] {
+      width: 45%;
+      height: 93%;
+      padding: 3px 5px 10px 20px;
+    }
+    ul[role='menubar'] li:focus-within > div a {
+      color: $HOLLYWOOD_CERISE;
+      background-color: $WHITE;
+      border-radius: 5px 0 0 5px;
+      border-color: $gray-10 transparent $gray-10 $gray-10;
+    }
   }
 }
 
