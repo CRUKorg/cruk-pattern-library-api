@@ -226,7 +226,7 @@ h6 {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "MuseoSansRounded-500", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-weight: 700; }
+  font-weight: 500; }
 
 p {
   font-size: 1rem;
@@ -1473,7 +1473,10 @@ sub {
   .cr-footer a {
     text-decoration: none;
     font-family: "MuseoSansRounded-500", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 1rem; }
+    font-size: 0.857rem; }
+  .cr-footer address {
+    font-size: 0.857rem;
+    font-family: "MuseoSansRounded-500", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 .footer-secondary-content {
   font-style: normal;
@@ -1564,10 +1567,10 @@ sub {
     padding-bottom: 15px; }
     .footer-links__list--horizontal li {
       display: inline;
-      padding-right: 20px;
+      padding-right: 29px;
       padding-left: 0; }
       .footer-links__list--horizontal li > a {
-        padding-right: 20px;
+        padding-right: 30px;
         border-right: 1px solid #c8c8c8; }
       .footer-links__list--horizontal li:last-child {
         padding-right: 0; }
@@ -1800,7 +1803,6 @@ sub {
           flex: 0 0 36px; }
 
 .cr-page-title {
-  font-weight: 700;
   text-align: left; }
 
 .cr-page-title {
