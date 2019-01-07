@@ -1473,9 +1473,9 @@ sub {
   .cr-footer a {
     text-decoration: none;
     font-family: "MuseoSansRounded-500", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 0.857rem; }
+    font-size: 1rem; }
   .cr-footer address {
-    font-size: 0.857rem;
+    font-size: 1rem;
     font-family: "MuseoSansRounded-500", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 .footer-secondary-content {
@@ -1567,10 +1567,10 @@ sub {
     padding-bottom: 15px; }
     .footer-links__list--horizontal li {
       display: inline;
-      padding-right: 29px;
+      padding-right: 20px;
       padding-left: 0; }
       .footer-links__list--horizontal li > a {
-        padding-right: 30px;
+        padding-right: 20px;
         border-right: 1px solid #c8c8c8; }
       .footer-links__list--horizontal li:last-child {
         padding-right: 0; }
@@ -1693,8 +1693,9 @@ sub {
       min-height: 115px; }
       .cr-header .cr-header__search {
         display: block;
-        -ms-flex-preferred-size: 15%;
-            flex-basis: 15%;
+        -ms-flex-preferred-size: 20%;
+            flex-basis: 20%;
+        max-width: 20%;
         margin-right: 15px; } }
   @media (min-width: 1200px) {
     .cr-header {
@@ -1709,16 +1710,17 @@ sub {
   font-weight: 500;
   font-size: 1.5625rem;
   padding: 0 30px;
+  margin: 0;
   font-family: "MuseoSansRounded-500", Arial, Calibri, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 .cr-header__search .cr-search-input__input {
-  width: 57px;
-  display: inline-block;
-  -webkit-appearance: none; }
+  width: 80%;
+  max-width: 80%;
+  display: inline-block; }
 
 .cr-header__search .cr-search-input__input,
 .cr-menu__search .cr-search-input__input {
-  padding: 7px 0 5px 12px; }
+  padding: 7px 5px 5px 12px; }
 
 .cr-page-title {
   clear: both; }
@@ -2209,13 +2211,21 @@ sub {
       -ms-flex: 0 0 36px;
           flex: 0 0 36px; }
 
+.cr-search-input__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 .cr-search-input__button {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 952 951' width='952' height='951'%3E%3Cpath fill='%23c8c8c8' d='M403.29 658.29c-141.15 0-256-114.86-256-256s114.85-256 256-256 256 114.85 256 256-114.86 256-256 256zM878.7 950.86c40 0 73.15-33.14 73.15-73.14 0-19.43-8-38.3-21.72-51.43l-195.43-196c46.29-66.86 70.86-146.86 70.86-228C805.57 180 625.57 0 403.28 0S1 180 1 402.29s180 402.28 402.28 402.28c81.15 0 161.15-24.57 228-70.85l196 196c13.15 13.14 32 21.14 51.43 21.14z'/%3E%3C/svg%3E") no-repeat center center;
   background-size: contain;
   text-indent: 200%;
   white-space: nowrap;
   overflow: hidden;
+  border-left: 2px solid #c8c8c8;
   background-size: 18px; }
+  .cr-search-input__button:hover {
+    border-left: 2px solid #c8c8c8; }
 
 .cr-search-input--focused .cr-search-input__button {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 952 951' width='952' height='951'%3E%3Cpath fill='%232e008b' d='M403.29 658.29c-141.15 0-256-114.86-256-256s114.85-256 256-256 256 114.85 256 256-114.86 256-256 256zM878.7 950.86c40 0 73.15-33.14 73.15-73.14 0-19.43-8-38.3-21.72-51.43l-195.43-196c46.29-66.86 70.86-146.86 70.86-228C805.57 180 625.57 0 403.28 0S1 180 1 402.29s180 402.28 402.28 402.28c81.15 0 161.15-24.57 228-70.85l196 196c13.15 13.14 32 21.14 51.43 21.14z'/%3E%3C/svg%3E") no-repeat center center;
@@ -2223,6 +2233,7 @@ sub {
   text-indent: 200%;
   white-space: nowrap;
   overflow: hidden;
+  border-left: 2px solid #00b6ed;
   background-size: 18px; }
 
 .cr-page-title {
@@ -2315,7 +2326,7 @@ sub {
   min-height: 60px; }
 
 .cr-menu__inner {
-  max-width: 940px;
+  max-width: 1020px;
   margin: 0 auto; }
 
 .cr-menu__divider {
@@ -2368,8 +2379,8 @@ sub {
 
 .cr-menu__btn,
 .cr-menu__label {
-  font-size: 1.0625rem;
-  /* 17px */
+  font-size: 1.125rem;
+  /* 18px */
   display: inline-block;
   height: 60px;
   line-height: 60px;
@@ -2444,9 +2455,10 @@ ul[role='menubar'] div span {
   cursor: pointer; }
 
 ul[role='menubar'] div a {
-  font-size: 0.875rem;
+  font-size: 1rem;
   color: #2e008b;
-  line-height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: block;
   border: 1px solid transparent;
   word-break: break-word;
@@ -2491,8 +2503,7 @@ ul[role='menu'] li ul {
 ul[role='menu'] a {
   color: #737373;
   display: block;
-  padding: 10px 0 10px;
-  font-size: 0.875rem; }
+  padding: 12px 0 0; }
 
 ul[role='menu'] ul li a {
   color: #333333;
@@ -2528,7 +2539,7 @@ ul[role='menu'] ul li a {
     filter: alpha(opacity=100); }
   #cr-menu__btn--menu:checked ~ label ~ .cr-menu__main-menu,
   #cr-menu__btn--search:checked ~ label ~ .cr-menu__search {
-    border-bottom: 0px; }
+    border-bottom: 0; }
   ul[role='menubar'] {
     width: 100%;
     display: -webkit-box;
@@ -2547,24 +2558,23 @@ ul[role='menu'] ul li a {
   ul[role='menubar'] span {
     display: none; }
   ul[role='menubar'] div a {
-    font-size: 1.0625rem;
-    /* 17px */
+    font-size: 1.125rem;
+    /* 18px */
     line-height: 60px;
     height: 61px;
     text-align: center;
     position: relative;
-    padding-left: 22px;
-    padding-right: 34px; }
+    padding: 0 34px 0 23px; }
     ul[role='menubar'] div a::after {
       content: '';
       border: solid #b3b3b3;
       border-width: 0 3px 3px 0;
       display: inline-block;
       position: absolute;
-      top: 24px;
+      top: 23px;
       right: 16px;
-      height: 10px;
-      width: 10px;
+      height: 11px;
+      width: 11px;
       transform: rotate(45deg);
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg); }
@@ -2602,9 +2612,13 @@ ul[role='menu'] ul li a {
     width: 100%; }
   ul[role='menu'] a {
     color: #2e008b;
-    padding: 6px 0 0; } }
+    font-size: 1rem; } }
 
-/* Responsive - small breakpoint */
+/* Responsive - custom breakpoint */
+@media only screen and (min-width: 1035px) {
+  ul[role='menubar'] div a {
+    padding: 0 41px 0 23px; } }
+
 /* CSS code put here will only run in non-IE */
 @supports (top: 0) {
   ul[role='menubar'] li:focus-within > ul[role='menu'] {
@@ -2613,7 +2627,7 @@ ul[role='menu'] ul li a {
     z-index: 9999;
     overflow: visible;
     width: 100%;
-    height: 295px; }
+    height: 370px; }
   @media only screen and (max-width: 992px) {
     ul[role='menubar'] li:focus-within > ul[role='menu'] {
       width: 45%;
@@ -2629,61 +2643,6 @@ a.external:after {
   content: url(https://www.cancerresearchuk.org/sites/all/themes/custom/cruk/images/cruk-icons/external-link-icons/external-link-text.png);
   padding-left: 5px; }
 
-/* CSS fallback - if we need to support IE9 */
-/*
-@media only screen and (min-width: $breakpoint-c) {
-  .cr-menu {
-    ul li {
-      display: inline-block;
-    }
-  }
-  ul[role='menubar'] {
-    font-size: 0; // fix inline-block gap
-  }
-  ul[role='menubar'] li:nth-child(1) {
-    width: 17%;
-  }
-  ul[role='menubar'] li:nth-child(2) {
-    width: 17%;
-  }
-  ul[role='menubar'] li:nth-child(3) {
-    width: 17%;
-  }
-  ul[role='menubar'] li:nth-child(4) {
-    width: 26%;
-  }
-  ul[role='menubar'] li:nth-child(5) {
-    width: 10%;
-  }
-  ul[role='menubar'] li:nth-child(6) {
-    width: 13%;
-  }
-  ul[role='menubar'] li:nth-child(1) li li,
-  ul[role='menubar'] li:nth-child(2) li li,
-  ul[role='menubar'] li:nth-child(3) li li,
-  ul[role='menubar'] li:nth-child(4) li li,
-  ul[role='menubar'] li:nth-child(5) li li,
-  ul[role='menubar'] li:nth-child(6) li li {
-    width: 100%;
-    padding: 0;
-  }
-  ul[role='menubar'] > li:hover > ul[role='menu'],
-  ul[role='menubar'] > li:focus > ul[role='menu'],
-  ul[role='menubar'] > li:active > ul[role='menu'] {
-    width: 100%;
-    padding: 0;
-  }
-  ul[role='menubar'] li:nth-child(1) li,
-  ul[role='menubar'] li:nth-child(2) li,
-  ul[role='menubar'] li:nth-child(3) li,
-  ul[role='menubar'] li:nth-child(4) li,
-  ul[role='menubar'] li:nth-child(5) li,
-  ul[role='menubar'] li:nth-child(6) li {
-    width: 19%;
-    padding: 20px 18px 10px;
-  }
-}
-*/
 .cr-navigation-block {
   border: 1px solid #e3e3e3;
   border-radius: 3px;

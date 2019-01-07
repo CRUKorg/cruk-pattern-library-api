@@ -10,12 +10,20 @@
 
 .cr-search-input__input {
   @extend %input-group__input;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .cr-search-input__button {
   @extend %input-group__button;
   @include text-replace($icon-search, $gray-20);
+  border-left: 2px solid $SILVER;
   background-size: 18px;
+
+  &:hover {
+    border-left: 2px solid $SILVER;
+  }
 }
 
 .cr-search-input--focused {
@@ -23,6 +31,7 @@
 
   .cr-search-input__button {
     @include text-replace($icon-search, $brand-primary);
+    border-left: 2px solid $brand-info;
     background-size: 18px;
   }
 }

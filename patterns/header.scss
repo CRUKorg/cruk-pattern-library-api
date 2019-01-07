@@ -42,7 +42,8 @@
 
     .cr-header__search {
       display: block;
-      flex-basis: 15%;
+      flex-basis: 20%;
+      max-width: 20%;
       margin-right: $rhythm-horizontal-base;
     }
   }
@@ -62,16 +63,17 @@
   font-weight: 500;
   font-size: 1.5625rem; // 25px
   padding: 0 30px;
+  margin: 0;
   font-family: $font-family-MuseoSansRounded-500;
 }
 
 .cr-header__search .cr-search-input__input {
-  width: 57px;
+  width: 80%;
+  max-width: 80%;
   display: inline-block;
-  -webkit-appearance: none;
 }
 
 .cr-header__search .cr-search-input__input,
 .cr-menu__search .cr-search-input__input {
-  padding: 7px 0 5px 12px;
+  padding: 7px 5px 5px 12px;
 }

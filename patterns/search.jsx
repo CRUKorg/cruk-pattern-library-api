@@ -50,7 +50,7 @@ class Search extends Component {
 }
 
 Search.defaultProps = {
-  label: 'Search',
+  label: 'Search...',
   searchUrl: 'https://find.cancerresearchuk.org/',
   name: 'xss-q'
 };
