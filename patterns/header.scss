@@ -35,10 +35,6 @@
     .cr-header__slogan {
       display: block;
     }
-
-    .cr-header__cta {
-      margin-top: 0;
-    }
   }
 
   @include breakpoint($breakpoint-c) {

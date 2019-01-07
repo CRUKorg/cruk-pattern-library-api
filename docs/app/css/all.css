@@ -1687,9 +1687,7 @@ sub {
       -ms-flex-preferred-size: auto;
           flex-basis: auto; }
     .cr-header .cr-header__slogan {
-      display: block; }
-    .cr-header .cr-header__cta {
-      margin-top: 0; } }
+      display: block; } }
   @media (min-width: 992px) {
     .cr-header {
       min-height: 115px; }
