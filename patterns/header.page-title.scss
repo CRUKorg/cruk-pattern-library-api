@@ -3,6 +3,5 @@
 .cr-page-title {
   @extend %constrain-width;
   @extend %clearfix;
-  font-weight: $font-weight-heavy;
   text-align: left;
 }

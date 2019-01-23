@@ -52,7 +52,7 @@ const data = {
     text: 'This is H1'
   },
   Search: {
-    label: 'Search'
+    label: 'Search...'
   },
   Collapsible: {
     title: 'Collapsible Box',
