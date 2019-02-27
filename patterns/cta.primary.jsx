@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function CtaPrimary(props) {
   return (
-    <a className="cr-cta--primary" href={props.href}>
+    <a className="cr-cta--primary" href={`${props.href}`}>
       {props.text}
     </a>
   );
