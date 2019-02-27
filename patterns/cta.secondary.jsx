@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function CtaSecondary(props) {
   return (
-    <a className="cr-cta--secondary" href={`${props.href}`}>
+    <a className="cr-cta--secondary" href={props.href}>
       {props.text}
     </a>
   );
