@@ -220,7 +220,7 @@
     color: #303637;
     font-weight: 300;
     margin: 0 24px 24px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity .5s ease;
 }
 .wf-opensans-n4-active .ndpl-loading__title {
