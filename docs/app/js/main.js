@@ -613,11 +613,11 @@ new Vue({
                 group_path = './components/' + group.name;
 
             // Get and set component description
-            _this.$http.get(group_path + '/description.md' + '?cb=' + new Date()).then(function (response) {
+            _this.$http.get(group_path + '/' + group.name + '.md' + '?cb=' + new Date()).then(function (response) {
                 group.description = marked(response.data);
                 _this.areGroupsLoaded();
             }, function () {
-                _this.logError('Description file for <strong>' + group.name + '</strong> group failed to load from <code>' + group_path + '/description.md</code>');
+                _this.logError('Description file for <strong>' + group.name + '</strong> group failed to load from <code>' + group_path + '/' + group.name + '.md</code>');
             });
         },
 
@@ -631,7 +631,7 @@ new Vue({
                 component_path = './components/' + component.group + '/' + component.name;
 
             // Get and set component markup
-            _this.$http.get(component_path + '/markup.html' + '?cb=' + new Date()).then(function (response) {
+            _this.$http.get(component_path + '/' + component.name + '.html' + '?cb=' + new Date()).then(function (response) {
                 component.html = response.data;
                 _this.areComponentsLoaded();
             }, function () {
@@ -639,11 +639,11 @@ new Vue({
             });
 
             // Get and set component description
-            _this.$http.get(component_path + '/description.md' + '?cb=' + new Date()).then(function (response) {
+            _this.$http.get(component_path + '/' + component.name + '.md' + '?cb=' + new Date()).then(function (response) {
                 component.description = marked(response.data);
                 _this.areComponentsLoaded();
             }, function () {
-                _this.logError('Description file for <strong>' + component.name + '</strong> component failed to load from <code>' + component_path + '/description.md</code>');
+                _this.logError('Description file for <strong>' + component.name + '</strong> component failed to load from <code>' + component_path + '/' + component.name + '.md</code>');
             });
         },
 

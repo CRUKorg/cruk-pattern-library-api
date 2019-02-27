@@ -1,9 +1,9 @@
 {
-    "project_logo": "cruk-logo.svg",
-    "project_favicon": "favicon.png",
+    "project_logo": "app/static/cruk-logo.svg",
+    "project_favicon": "app/static/favicon.png",
     "project_name": "CM&S DESIGN SYSTEM",
     "project_url": "/",
-    "copyright_start_year": "2018",
+    "copyright_start_year": "2019",
     "client_name": "Cancer Research UK",
     "client_url": "https://www.cancerresearchuk.org/",
     "creators": [
@@ -24,14 +24,15 @@
         "show_version": true,
         "max_width": null,
         "titles": {
-            "library_title": "Pattern Library",
+            "library_title": "Design System",
             "pages_title": null,
-            "components_title": "Guidelines"
+            "components_title": null
         }
     },
     "assets": {
         "css": [
-            "app/css/all.css"
+            "app/css/all.css",
+            "app/css/override.css"
         ],
         "js": [
             "app/js/vendor.js"
@@ -50,34 +51,92 @@
                 "name": "introduction",
                 "title": "Introduction",
                 "file": "./pages/intro.md"
+            },
+            {
+                "name": "design",
+                "title": "Design",
+                "file": "./pages/design.md"
+            },
+            {
+                "name": "content",
+                "title": "Content",
+                "file": "./pages/content.md"
+            },
+            {
+                "name": "guideline",
+                "title": "Guideline",
+                "file": "./pages/guideline.md"
             }
         ]
     },
     "groups": [
         {
-            "name": "base",
-            "title": "Base Style",
+            "name": "designElements",
+            "title": "Design Elements",
             "components": [
                 {
-                    "group": "base",
+                  "group": "designElements",
+                  "name": "colour_brand",
+                  "title": "Colour: Brand",
+                  "type": "colors",
+                  "colors": [
+                    "#2e008b,",
+                    "#ec008c",
+                    "#00b6ed,",
+                    "#666666",
+                    "#C8C9C7",
+                    "#E3E3E3"
+                  ]
+                },
+                {
+                  "group": "designElements",
+                  "name": "colour_grayscale",
+                  "title": "Colour: Grayscale",
+                  "type": "colors",
+                  "colors": [
+                    "#fafafa,#f2f2f2",
+                    "#e3e3e3,#d8d8d8",
+                    "#c7c7c7,#b2b2b2",
+                    "#999999,#8c8c8c",
+                    "#7f7f7f,#727272",
+                    "#666666,#4c4c4c",
+                    "#333333,#191919",
+                    "#000000,#ffffff"
+                  ]
+                },
+                {
+                  "group": "designElements",
+                  "name": "colour_extended",
+                  "title": "Colour: Extended",
+                  "type": "colors",
+                  "colors": [
+                    "#f7fcff,#e6e4df",
+                    "#ffe0ec,#ef5350",
+                    "#ebf9ff,#6c5c99",
+                    "#bfe8f6,#007eff",
+                    "#fdc02f,#8bc34a"
+                  ]
+                },
+                {
+                    "group": "designElements",
                     "name": "fonts_heading",
-                    "title": "Heading fonts: MuseoSans, MuseoSansRounded",
+                    "title": "Heading",
                     "width": "half",
                     "options": {
                         "disable_code_sample": true
                     }
                 },
                 {
-                    "group": "base",
+                    "group": "designElements",
                     "name": "fonts_base",
-                    "title": "Base fonts: Arial",
+                    "title": "Base fonts",
                     "width": "half",
                     "options": {
                         "disable_code_sample": true
                     }
                 },
                 {
-                    "group": "base",
+                    "group": "designElements",
                     "name": "typography",
                     "title": "Typography",
                     "options": {
@@ -85,7 +144,7 @@
                     }
                 },
                 {
-                    "group": "base",
+                    "group": "designElements",
                     "name": "paragraph",
                     "title": "Paragraph",
                     "options": {
@@ -93,8 +152,8 @@
                     }
                 },
                 {
-                    "group": "base",
-                    "name": "body-text",
+                    "group": "designElements",
+                    "name": "body_text",
                     "title": "Body text",
                     "width": "half",
                     "options": {
@@ -102,294 +161,110 @@
                     }
                 },
                 {
-                    "group": "base",
-                    "name": "text-link",
+                    "group": "designElements",
+                    "name": "text_link",
                     "title": "Text link",
                     "width": "half",
                     "options": {
                         "disable_code_sample": true
                     }
+                },
+                {
+                  "group": "designElements",
+                  "name": "page-width",
+                  "title": "Page width",
+                  "options": {
+                    "disable_code_sample": true
+                  }
+                },
+                {
+                  "group": "designElements",
+                  "name": "breakpoint",
+                  "title": "Breakpoint",
+                  "options": {
+                    "disable_code_sample": true
+                  }
+                },
+                {
+                  "group": "designElements",
+                  "name": "spacing",
+                  "title": "Spacing",
+                  "options": {
+                    "disable_code_sample": true
+                  }
+                },
+                {
+                  "group": "designElements",
+                  "name": "grid",
+                  "title": "CSS Grid",
+                  "options": {
+                    "disable_code_sample": true
+                  }
                 }
             ]
         },
         {
-            "name": "colours",
-            "title": "Colours",
+            "name": "uiComponents",
+            "title": "UI Components",
             "components": [
                 {
-                    "group": "colours",
-                    "name": "brand",
-                    "title": "Brand",
-                    "type": "colors",
-                    "colors": [
-                        "#2e008b,",
-                        "#ec008c",
-                        "#00b6ed,",
-                        "#666666",
-                        "#C8C9C7",
-                        "#E3E3E3"
-                    ]
+                  "group": "uiComponents",
+                  "name": "cta",
+                  "title": "Call to action"
                 },
                 {
-                    "group": "colours",
-                    "name": "grayscale",
-                    "title": "Grayscale",
-                    "type": "colors",
-                    "colors": [
-                        "#fafafa,#f2f2f2",
-                        "#e3e3e3,#d8d8d8",
-                        "#c7c7c7,#b2b2b2",
-                        "#999999,#8c8c8c",
-                        "#7f7f7f,#727272",
-                        "#666666,#4c4c4c",
-                        "#333333,#191919",
-                        "#000000,#ffffff"
-                    ]
+                  "group": "uiComponents",
+                  "name": "list",
+                  "title": "List"
                 },
                 {
-                    "group": "colours",
-                    "name": "extended",
-                    "title": "Extended",
-                    "type": "colors",
-                    "colors": [
-                        "#f7fcff,#e6e4df",
-                        "#ffe0ec,#ef5350",
-                        "#ebf9ff,#6c5c99",
-                        "#bfe8f6,#007eff",
-                        "#fdc02f,#8bc34a"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "layout",
-            "title": "Layout",
-            "components": [
-                {
-                    "group": "layout",
-                    "name": "page-width",
-                    "title": "Page width",
-                    "options": {
-                        "disable_code_sample": true
-                    }
+                  "group": "uiComponents",
+                  "name": "search",
+                  "title": "Search"
                 },
                 {
-                    "group": "layout",
-                    "name": "breakpoint",
-                    "title": "Breakpoint",
-                    "options": {
-                        "disable_code_sample": true
-                    }
+                  "group": "uiComponents",
+                  "name": "collapsible",
+                  "title": "Collapsible"
                 },
                 {
-                    "group": "layout",
-                    "name": "spacing",
-                    "title": "Spacing",
-                    "options": {
-                        "disable_code_sample": true
-                    }
+                  "group": "uiComponents",
+                  "name": "navigation_block",
+                  "title": "Navigation Block"
                 },
                 {
-                    "group": "layout",
-                    "name": "grid",
-                    "title": "CCS grid",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                }
-            ]
-        },
-        {
-            "name": "elements",
-            "title": "Elements",
-            "components": [
-                {
-                    "group": "elements",
-                    "name": "cta",
-                    "title": "Call to action",
-                    "width": "half"
+                  "group": "uiComponents",
+                  "name": "related_links",
+                  "title": "Related Links"
                 },
                 {
-                    "group": "elements",
-                    "name": "search",
-                    "title": "Search",
-                    "width": "half"
+                    "group": "uiComponents",
+                    "name": "header",
+                    "title": "Header"
                 },
                 {
-                    "group": "elements",
-                    "name": "list",
-                    "title": "Lists",
-                    "width": "half"
+                    "group": "uiComponents",
+                    "name": "megaMenu",
+                    "title": "Mega Menu"
                 },
                 {
-                    "group": "elements",
-                    "name": "form",
-                    "title": "Form",
-                    "width": "half"
-                },
-                {
-                    "group": "elements",
-                    "name": "table",
-                    "title": "Table",
-                    "width": "half",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                },
-                {
-                    "group": "elements",
-                    "name": "tab",
-                    "title": "Tab",
-                    "width": "half",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                },                {
-                    "group": "elements",
-                    "name": "pagination",
-                    "title": "Pagination",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                },                {
-                    "group": "elements",
-                    "name": "quote",
-                    "title": "Quote",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                },                {
-                    "group": "elements",
-                    "name": "alert",
-                    "title": "Alert",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                }
-            ]
-        },
-        {
-            "name": "patterns",
-            "title": "Patterns",
-            "components": [
-                {
-                    "group": "patterns",
-                    "name": "collapsible",
-                    "title": "Collapsible box",
-                    "width": "half"
-                },
-                {
-                    "group": "patterns",
-                    "name": "navigation_block",
-                    "title": "Navigation block",
-                    "width": "half"
-                },
-                {
-                    "group": "patterns",
-                    "name": "related_links",
-                    "title": "Related links",
-                    "width": "half"
-                },
-                {
-                    "group": "patterns",
-                    "name": "azlist",
-                    "title": "A to Z list",
-                    "width": "half",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                },
-                {
-                    "group": "patterns",
-                    "name": "greybar",
-                    "title": "Grey bar",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                }
-            ]
-        },
-        {
-            "name": "components",
-            "title": "Components",
-            "components": [
-                {
-                    "group": "components",
+                    "group": "uiComponents",
                     "name": "breadcrumb",
                     "title": "Breadcrumb"
                 },
                 {
-                    "group": "components",
-                    "name": "menu",
-                    "title": "Menu",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                },
-                {
-                    "group": "components",
-                    "name": "mobile_menu",
-                    "title": "Mobile menu",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                },
-                {
-                    "group": "components",
-                    "name": "header",
-                    "title": "Header",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                },
-                {
-                    "group": "components",
+                    "group": "uiComponents",
                     "name": "footer",
-                    "title": "Footer",
-                    "options": {
-                        "disable_code_sample": true
-                    }
+                    "title": "Footer"
                 },
                 {
-                    "group": "components",
-                    "name": "social",
-                    "title": "Social share",
-                    "options": {
-                        "disable_code_sample": true
-                    }
+                  "group": "uiComponents",
+                  "name": "video",
+                  "title": "Video"
                 }
-            ]
-        },
-        {
-            "name": "media",
-            "title": "Media",
-            "components": [
-                {
-                    "group": "media",
-                    "name": "image",
-                    "title": "Image",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                },
-                {
-                    "group": "media",
-                    "name": "video",
-                    "title": "Video",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                },
-                {
-                    "group": "media",
-                    "name": "icons",
-                    "title": "Icon",
-                    "options": {
-                        "disable_code_sample": true
-                    }
-                }
-            ]
+           ]
         }
+
     ],
     "version": "1.9.5"
 }

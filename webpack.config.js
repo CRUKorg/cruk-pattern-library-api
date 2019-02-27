@@ -19,7 +19,7 @@ module.exports = {
     inline:true,
     port: 9999,
     publicPath: '/',
-    contentBase: './lib',
+    contentBase: './',
   },
   optimization: {
     splitChunks: {
