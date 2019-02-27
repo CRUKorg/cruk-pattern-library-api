@@ -28,24 +28,27 @@
 .ndpl-group__description,
 .ndpl-component__title,
 .ndpl-component__description,
+.ndpl-component__description h2,
+.ndpl-component__description h3,
+.ndpl-component__description h4,
 .ndpl-component__label,
 .ndpl-component__code-toggle,
 .ndpl-component__color,
 .ndpl-page,
 .ndpl-nav__title,
 .ndpl-sidebar__title {
-
+    font-family: "Open Sans";
 }
 
 /* Heading type sizes */
 .ndpl-library__title {
     font-size: 27px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 36px;
 }
 .ndpl-component__title {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 32px;
 }
 
@@ -55,7 +58,6 @@
 .ndpl-group__description,
 .ndpl-component__description {
     font-size: 12px;
-    font-weight: 300;
     line-height: 24px;
 }
 
@@ -218,7 +220,7 @@
     color: #303637;
     font-weight: 300;
     margin: 0 24px 24px;
-    opacity: 0;
+    opacity: 1;
     transition: opacity .5s ease;
 }
 .wf-opensans-n4-active .ndpl-loading__title {
@@ -402,14 +404,12 @@
  */
 .ndpl-header {
     background-color: #FFF;
-    border-bottom: 1px solid #DDD;
-    box-shadow: 0 0 1px rgba(0,0,0,0.1);
-    margin:0 0 36px;
-    padding: 12px;
-    position: fixed;
-    top: 0;
+    padding: 15px;
     width: 100%;
     z-index: 9998;
+    float: left;
+    position: fixed;
+    top: 0;
 }
 .ndpl-header:after {
     display: none;
@@ -417,13 +417,12 @@
 .ndpl-header__logo {
     float: left;
     height: 28px;
-    margin: 0 6px 0 0;
+    margin: 0 10px 0 0;
 }
 .ndpl-header__title {
     color: #303637;
     font-size: 18px;
     font-weight: 700;
-    line-height: 28px;
     float: left;
     margin: 0;
 }
@@ -435,19 +434,24 @@
     text-decoration: none !important;
 }
 .ndpl-header__title small {
-    font-size: 60%;
-    font-weight: 300;
-    margin-left: 6px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 @media only screen and (min-width: 60em) {
 
-    .ndpl-header {
-        display: none;
+    .ndpl-header__title {
+        margin-top: 10px;
     }
-
     .ndpl-header__title a {
         display: block;
+    }
+    .ndpl-header__title small {
+        display: none;
+    }
+    .ndpl-header__logo {
+        float: left;
+        height: 50px;
     }
 }
 
@@ -458,7 +462,6 @@
 .ndpl-sidebar {
     background-color: #FFF;
     bottom: 0;
-    box-shadow: 1px 0 2px rgba(0,0,0,0.2);
     height: 100%;
     left: -100%;
     overflow-y: auto;
@@ -476,14 +479,6 @@
 .ndpl-sidebar.open {
     left: 0;
 }
-.ndpl-sidebar__header {
-    display: none;
-}
-.ndpl-sidebar__logo {
-    float: left;
-    margin: 0 0 24px 0;
-    height: 50px;
-}
 
 @media only screen and (min-width: 60em) {
 
@@ -494,40 +489,11 @@
         left: -264px;
         padding: 0;
         position: fixed;
-        top: 0;
+        top: 80px;
         width: 264px;
     }
     .loaded .ndpl-sidebar {
         left: 0;
-    }
-
-    /**
-     * Sidebar - Header
-     * ----------------------------------------//
-     */
-    .ndpl-sidebar__header {
-        display: block;
-        padding: 24px 24px 36px;
-    }
-    .ndpl-sidebar__title {
-        color: #303637;
-        clear: left;
-        display: block;
-        font-size: 18px;
-        line-height: 24px;
-        font-weight: 700;
-        margin: 0;
-    }
-    .ndpl-sidebar__title a {
-        text-decoration: none;
-    }
-    .ndpl-sidebar__title a:hover {
-        color: #FEA1AC;
-    }
-    .ndpl-sidebar__title small {
-        display: block;
-        font-size: 16px;
-        font-weight: 400;
     }
 }
 
@@ -537,13 +503,15 @@
  */
 .ndpl-copyright {
     display: block;
-    padding: 0 24px 24px;
 }
 .ndpl-copyright p {
     color: #B0B1B3;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 21px;
+}
+.ndpl-copyright a {
+    font-size: 14px;
 }
 .ndpl-copyright p:last-of-type {
     margin: 0;
@@ -552,6 +520,34 @@
     text-decoration: none;
 }
 
+/**
+ * Navigation - Nav page
+ * ----------------------------------------//
+ */
+.ndpl-nav__pages {
+    display: none;
+}
+@media only screen and (min-width: 60em) {
+    .ndpl-nav__pages {
+        float: right;
+        display: block;
+    }
+    .ndpl-nav__pages ul li {
+        display: inline-block;
+    }
+    .ndpl-nav__pages ul {
+        margin: 0px;
+    }
+    .ndpl-nav__pages a {
+        border-bottom: 6px solid transparent;
+        cursor: pointer;
+        display: block;
+        font-weight: 400;
+        padding: 6px 24px 6px 18px;
+        position: relative;
+        text-decoration: none;
+    }
+}
 /**
  * Navigation - Title
  * ----------------------------------------//
@@ -572,6 +568,7 @@
  */
 .ndpl-nav__items {
     border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
@@ -682,7 +679,7 @@
 }
 
 /*
- * Navigation
+ * Navigation - Handle
  * ----------------------------------------//
  */
 .ndpl-nav-handle {
@@ -773,7 +770,7 @@
 
 @media only screen and (min-width: 35em) {
     .ndpl-page {
-        max-width: 580px;
+        // max-width: 580px;
         margin: 0 auto;
     }
 }
@@ -852,9 +849,7 @@
     clear: both;
     margin-bottom: 60px;
 }
-.ndpl-component__title,
 .ndpl-component__description {
-    color: #616367;
     padding: 0 12px;
 }
 .ndpl-component__title {

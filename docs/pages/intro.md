@@ -1,7 +1,7 @@
 
 ## Introduction
 
-This is a prototype for CRUK content product, listing styling elements and guidelines. Including base styles, components and patterns.
+This is a prototype for CRUK Design System, listing styling elements and guidelines. Including base styles, components and patterns.
 
 It is intended to act as a steping stone towards next generation of organisational Pattern Library.
 

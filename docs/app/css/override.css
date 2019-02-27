@@ -1,0 +1,12 @@
+/*
+ * Override
+ */
+.cr-menu__inner {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .footer-links__list--horizontal li {
+        padding-right: 16px;
+    }
+}
