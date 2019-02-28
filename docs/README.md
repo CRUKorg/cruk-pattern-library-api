@@ -1,5 +1,5 @@
 ## Objective
-A design system to fit current workflow and easy to integrate with exist Pattern Library. Simple to use, non-opinionated and doesn't expect you to write your markup or code in any particular way. *
+A design system to fit current workflow and easy to integrate with exist Pattern Library. Simple to use, non-opinionated and doesn't expect you to write your markup or code in any particular way.
 
 ### Demo
 [https://crukorg.github.io/cruk-pattern-library-api/](https://crukorg.github.io/cruk-pattern-library-api/)
