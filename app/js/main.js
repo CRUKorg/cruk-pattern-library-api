@@ -632,7 +632,7 @@ new Vue({
 
             // Pointing to ./patterns
             if (component.group === 'uiComponents') {
-              component_path = '../patterns/' + component.name;
+              component_path = './patterns/' + component.name;
             }
 
             // Get and set component markup
@@ -640,7 +640,7 @@ new Vue({
                 component.html = response.data;
                 _this.areComponentsLoaded();
             }, function () {
-                _this.logError('HTML file for <strong>' + component.name + '</strong> component failed to load from <code>' + component_path + '/html.md</code>');
+                _this.logError('HTML file for <strong>' + component.name + '</strong> component failed to load from <code>' + component_path + '/' + component.name + '.html</code>');
             });
 
             // Get and set component description
