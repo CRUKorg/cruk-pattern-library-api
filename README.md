@@ -116,7 +116,7 @@ Patterns.addVanillaBehaviours('foo-bar', window.document);
 * Distribution folder location `/lib` to preview patterns (jsx)
 
 ## Design system
-Gihub page: https://crukorg.github.io/cruk-pattern-library-api/
+Demo: https://cruk-design-system.netlify.com/
 * currently it integrates with Netlify CI/CD until there's official CRUK one took place
 
 ### Updating
