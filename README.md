@@ -116,7 +116,6 @@ Patterns.addVanillaBehaviours('foo-bar', window.document);
 * Distribution folder location `/lib` to preview patterns (jsx)
 
 ## Design system
-Demo: https://cruk-design-system.netlify.com/
 * currently it integrates with Netlify CI/CD until there's official CRUK one took place
 
 ### Updating
@@ -167,7 +166,7 @@ Track progress here: https://github.com/CRUKorg/cruk-pattern-library-api/issues
 **Objective:** A design system to fit current workflow and easy to integrate with exist Pattern Library. Simple to use, non-opinionated and doesn't expect you to write your markup or code in any particular way.
 
 ### Demo
-[https://crukorg.github.io/cruk-pattern-library-api/](https://crukorg.github.io/cruk-pattern-library-api/)
+[https://cruk-design-system.netlify.com/](https://cruk-design-system.netlify.com/)
 
 ### Astrum
 Currently this design system is powered up by [Astrum](http://astrum.nodividestudio.com/).
