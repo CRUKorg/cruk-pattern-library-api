@@ -404,6 +404,7 @@
  */
 .ndpl-header {
     background-color: #FFF;
+    box-shadow: 0px 5px 10px -5px #999;
     padding: 15px;
     width: 100%;
     z-index: 9998;
@@ -796,7 +797,7 @@
         margin-top: 0;
     }
     .ndpl-content {
-        padding: 36px 48px 36px 312px;
+        padding: 80px 48px 36px 312px;
     }
 }
 

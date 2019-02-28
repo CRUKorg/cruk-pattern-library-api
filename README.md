@@ -159,6 +159,7 @@ For example: `foo-pattern.twig`. Sub-patterns look like `type.variant.twig`.
 * CI/CD
 * ~~Compile a CSS file and~~ push to S3 on build
 * Exclude build folder
+* Design system automation
 
 Track progress here: https://github.com/CRUKorg/cruk-pattern-library-api/issues
 

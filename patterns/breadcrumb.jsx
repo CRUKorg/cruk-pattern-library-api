@@ -14,7 +14,7 @@ function Breadcrumb(props) {
       <ol itemScope itemType="http://schema.org/BreadcrumbList" className="cr-breadcrumb-nav">
         {props.crumbs.map((crumb, i) => {
           return (
-            <li itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem" aria-level={ i + 1 } className="cr-breadcrumb__item">
+            <li key={i} itemProp="itemListElement" itemScope itemType="http://schema.org/ListItem" aria-level={ i + 1 } className="cr-breadcrumb__item">
               <a itemProp="item" href={ crumb.href } className="cr-breadcrumb__link">{ crumb.label }</a>
               <span />
               <meta itemProp="position" content={ i + 1 } />

@@ -200,6 +200,14 @@
                   "options": {
                     "disable_code_sample": true
                   }
+                },
+                {
+                  "group": "designElements",
+                  "name": "divider",
+                  "title": "Divider",
+                  "options": {
+                    "disable_code_sample": true
+                  }
                 }
             ]
         },
@@ -234,7 +242,7 @@
                 },
                 {
                   "group": "uiComponents",
-                  "name": "related_links",
+                  "name": "related.links",
                   "title": "Related Links"
                 },
                 {
@@ -244,7 +252,7 @@
                 },
                 {
                     "group": "uiComponents",
-                    "name": "megaMenu",
+                    "name": "menu",
                     "title": "Mega Menu"
                 },
                 {

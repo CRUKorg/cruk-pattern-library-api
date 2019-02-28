@@ -628,10 +628,15 @@ new Vue({
          */
         loadComponent: function(component) {
             var _this = this,
-                component_path = './components/' + component.group + '/' + component.name;
+                component_path = './components/' + component.group + '/' + component.name + '/' + component.name;
+
+            // Pointing to ./patterns
+            if (component.group === 'uiComponents') {
+              component_path = '../patterns/' + component.name;
+            }
 
             // Get and set component markup
-            _this.$http.get(component_path + '/' + component.name + '.html' + '?cb=' + new Date()).then(function (response) {
+            _this.$http.get(component_path + '.html' + '?cb=' + new Date()).then(function (response) {
                 component.html = response.data;
                 _this.areComponentsLoaded();
             }, function () {
@@ -639,7 +644,7 @@ new Vue({
             });
 
             // Get and set component description
-            _this.$http.get(component_path + '/' + component.name + '.md' + '?cb=' + new Date()).then(function (response) {
+            _this.$http.get(component_path + '.md' + '?cb=' + new Date()).then(function (response) {
                 component.description = marked(response.data);
                 _this.areComponentsLoaded();
             }, function () {

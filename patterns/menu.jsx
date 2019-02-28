@@ -75,7 +75,7 @@ export default class MegaMenu extends Component {
                   obj3 => {
                     const level3 = level2['#below'][obj3];
                     return (
-                      <li>
+                      <li key={level3['#title']}>
                         {this.handleMenuItem(level3['#href'], level3['#title'])}
                       </li>
                     );
@@ -83,7 +83,7 @@ export default class MegaMenu extends Component {
                 );
 
               return (
-                <li>
+                <li key={level2['#title']}>
                   {this.handleMenuItem(level2['#href'], level2['#title'])}
                   <ul>
                     {menuItem}
@@ -94,7 +94,7 @@ export default class MegaMenu extends Component {
           );
 
         return (
-          <li>
+          <li key={level1['#title']}>
             {menuBar}
             <ul role="menu">
               {menu}
