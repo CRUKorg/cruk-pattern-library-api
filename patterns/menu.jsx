@@ -7,11 +7,13 @@ export default class MegaMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuData: []
+      menuData: [],
+      enableSubmit: false
     };
     this.handleNav = this.handleNav.bind(this);
     this.handleMenuItem = this.handleMenuItem.bind(this);
     this.handleChange = this.handleChange.bind(this);
+    this.changeCallback = this.changeCallback.bind(this);
   }
 
   componentDidMount() {
@@ -26,7 +28,13 @@ export default class MegaMenu extends Component {
           this.setState({ menuData });
         });
     }
-  }
+  };
+
+  changeCallback = (e) => {
+    if (e.target.value !== '' ) {
+      this.setState({ enableSubmit: true });
+    }
+  };
 
   handleMenuItem = (href, title) => {
     const regex = /(twitter\.com|facebook\.com|addthis\.com|ebay)/;
@@ -128,6 +136,8 @@ export default class MegaMenu extends Component {
             <div className="cr-menu__search">
               <Search
                 label='Search'
+                submitCallback={this.state.enableSubmit}
+                changeCallback={this.changeCallback}
               />
             </div>
           </div>
