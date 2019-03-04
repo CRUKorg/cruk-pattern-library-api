@@ -339,11 +339,11 @@
             </div>
             <div class="cr-menu__search">
                 <!-- Search component -->
-                <form role="search" class="cr-search-input">
+                <form role="search" class="cr-search-input" action="https://find.cancerresearchuk.org/">
                     <label for="{{ uniqueId }}" class="cr-search-input__label">Search</label>
                     <input
                         type="search"
-                        name="search"
+                        name="xss-q"
                         id="{{ uniqueId }}"
                         class="cr-search-input__input"
                         placeholder="Search..."
